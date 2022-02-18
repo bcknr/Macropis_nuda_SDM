@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.1/eml.xsd"
+        packageId="e8a25a42-f125-476c-8554-3ec21cd51a84"  system="http://gbif.org" scope="system"
+  xml:lang="en">
+
+<dataset>
+      <alternateIdentifier>10.15468/zc4csq</alternateIdentifier>
+        <alternateIdentifier>https://data.canadensys.net/ipt/resource?r=acad-specimens</alternateIdentifier>
+        <alternateIdentifier>http://data.canadensys.net/ipt/manage/metadata-additional.do?r=nspm-specimens</alternateIdentifier>
+        <alternateIdentifier>http://data.canadensys.net/ipt/resource?r=acad-specimens</alternateIdentifier>
+        <alternateIdentifier>http://data.canadensys.net/ipt/resource.do?r=acad-specimens</alternateIdentifier>
+        <alternateIdentifier>e8a25a42-f125-476c-8554-3ec21cd51a84</alternateIdentifier>
+        <alternateIdentifier>14027</alternateIdentifier>
+    <title>E. C. Smith Herbarium (ACAD)</title>
+    <creator>
+    <individualName>
+<givenName>Rodger</givenName>          <surName>Evans</surName>
+    </individualName>
+<organizationName>Acadia University</organizationName><positionName>Director - E. C. Smith Herbarium</positionName>    <address>
+<deliveryPoint>33 Westwood Avenue</deliveryPoint><city>Wolfville</city><administrativeArea>Nova Scotia</administrativeArea><postalCode>B4P 2R6</postalCode><country>CANADA</country>    </address>
+<phone>902-585-1710</phone><electronicMailAddress>rodger.evans@acadiau.ca</electronicMailAddress><onlineUrl>http://herbarium.acadiau.ca/</onlineUrl>    </creator>
+    <creator>
+    <individualName>
+<givenName>Jennifer</givenName>          <surName>Richard</surName>
+    </individualName>
+<organizationName>Acadia University</organizationName><positionName>Consulting Librarian</positionName>    <address>
+<city>Wolfville</city><administrativeArea>Nova Scotia</administrativeArea><country>CANADA</country>    </address>
+<electronicMailAddress>jennifer.richard@acadiau.ca</electronicMailAddress>    </creator>
+    <metadataProvider>
+    <individualName>
+<givenName>Rodger</givenName>          <surName>Evans</surName>
+    </individualName>
+<organizationName>Acadia University</organizationName><positionName>Director - E. C. Smith Herbarium</positionName>    <address>
+<deliveryPoint>33 Westwood Avenue</deliveryPoint><city>Wolfville</city><administrativeArea>Nova Scotia</administrativeArea><postalCode>B4P 2R6</postalCode><country>CANADA</country>    </address>
+<phone>902-585-1710</phone><electronicMailAddress>rodger.evans@acadiau.ca</electronicMailAddress><onlineUrl>http://herbarium.acadiau.ca/</onlineUrl>    </metadataProvider>
+    <associatedParty>
+    <individualName>
+<givenName>Steve</givenName>          <surName>MacNeil</surName>
+    </individualName>
+<positionName>IT Consultant</positionName>    <address>
+<city>Wolfville</city><administrativeArea>Nova Scotia</administrativeArea><country>CANADA</country>    </address>
+<electronicMailAddress>steve@acadiau.ca</electronicMailAddress>    <role>PROGRAMMER</role>
+    </associatedParty>
+      <pubDate>
+      2019-09-30
+      </pubDate>
+    <language>ENGLISH</language>
+    <abstract>
+        <para>Today, the E. C. Smith Herbarium contains over 200,000 specimens, including vascular plants, bryophytes, and fungi. It is the largest herbarium in Atlantic Canada and the first Canadian herbarium to have a digital database with scanned images of the collection.
+The Acadia Herbarium began as an initial gift to Dr. H. G. Perry of a small collection made by G. U. Hay of St. John, New Brunswick. Included in this collection were a few plants collected by J. Fowler of New Brunswick before he went to Queen&amp;#39;s University. These first specimens were collected between 1868 and 1880. Some of the plants were cultivated and some were from the United States.
+Subsequently, in these early years, the additions were made chiefly through the work of Dr. H. G. Perry and his students. No records were available until the collection numbered some 6,000 sheets. Included in the 6,000, however, are a number of sheets from the Gray Herbarium Expeditions to Nova Scotia in 1920 and 1921.
+Of the specimens above the 6000 count, the majority have been added by the work of Dr. M. V. Roscoe and her students from 1928-1940 and Dr. H. P. Banks and his students from 1940-1946. In 1946 a large collection was being assembled by Mr. David Erskine, who catalogued the Flora of Wolfville and vicinity.
+During Dr. E. C. Smith&amp;#39;s tenure at Acadia (1947-1971) the number of specimens grew from 20,000 sheets to over 70,000. In 1970, Acadia University&amp;#39;s Board of Governors announced that the department&amp;#39;s excellent collection of plants would be named the E. C. Smith Herbarium as tribute to him for his contributions to the collection.</para>
+    </abstract>
+        <keywordSet>
+              <keyword>New Brunswick</keyword>
+              <keyword>Vermont</keyword>
+              <keyword>Maine</keyword>
+              <keyword>specimens</keyword>
+              <keyword>collection</keyword>
+              <keyword>Canada</keyword>
+              <keyword>herbarium</keyword>
+              <keyword>Harriet Irving Botanical Gardens</keyword>
+              <keyword>Nova Scotia</keyword>
+              <keyword>ACAD</keyword>
+              <keyword>E. C. Smith Herbarium</keyword>
+              <keyword>Canadensys</keyword>
+              <keyword>Cape Breton University</keyword>
+              <keyword>Acadia University</keyword>
+              <keywordThesaurus>n/a</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+              <keyword>Occurrence</keyword>
+              <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+              <keyword>Specimen</keyword>
+              <keywordThesaurus>GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml</keywordThesaurus>
+        </keywordSet>
+      <intellectualRights>
+        <para>To the extent possible under law, the publisher has waived all rights to these data and has dedicated them to the <ulink url="http://creativecommons.org/publicdomain/zero/1.0/legalcode"><citetitle>Public Domain (CC0 1.0)</citetitle></ulink>. Users may copy, modify, distribute and use the work, including for commercial purposes, without restriction.</para>
+      </intellectualRights>
+      <distribution scope="document">
+          <online>
+              <url function="information">http://herbarium.acadiau.ca/</url>
+          </online>
+      </distribution>
+      <coverage>
+            <geographicCoverage>
+                  <geographicDescription>Primarily the Flora of the Acadian Forest Region. However, there are smaller collections within the herbarium that stem from research initiatives across the globe.</geographicDescription>
+                  <boundingCoordinates>
+                      <westBoundingCoordinate>-74.12</westBoundingCoordinate>
+                      <eastBoundingCoordinate>-59.83</eastBoundingCoordinate>
+                      <northBoundingCoordinate>46.31</northBoundingCoordinate>
+                      <southBoundingCoordinate>42.56</southBoundingCoordinate>
+                  </boundingCoordinates>
+            </geographicCoverage>
+              <taxonomicCoverage>
+                    <generalTaxonomicCoverage>This dataset includes all vascular plant specimens from the E. C. Smith Herbarium that have been digitized, databased and geo-referenced. The top 3 families are Cyperaceae (11%), Asteraceae (10%) and Poaceae (8%).</generalTaxonomicCoverage>
+                    <taxonomicClassification>
+                          <taxonRankName>Kingdom</taxonRankName>
+                        <taxonRankValue>Plantae</taxonRankValue>
+                          <commonName>Plants</commonName>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Class</taxonRankName>
+                        <taxonRankValue>Equisetopsida</taxonRankValue>
+                          <commonName>Vascular plants</commonName>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Family</taxonRankName>
+                        <taxonRankValue>Cyperaceae</taxonRankValue>
+                          <commonName>Sedges</commonName>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Family</taxonRankName>
+                        <taxonRankValue>Asteraceae</taxonRankValue>
+                          <commonName>Sunflowers</commonName>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Family</taxonRankName>
+                        <taxonRankValue>Poaceae</taxonRankValue>
+                          <commonName>Grasses</commonName>
+                    </taxonomicClassification>
+              </taxonomicCoverage>
+      </coverage>
+      <maintenance>
+          <description>
+              <para></para>
+          </description>
+          <maintenanceUpdateFrequency>asNeeded</maintenanceUpdateFrequency>
+      </maintenance>
+      <contact>
+    <individualName>
+<givenName>Rodger</givenName>          <surName>Evans</surName>
+    </individualName>
+<organizationName>Acadia University</organizationName><positionName>Director - E. C. Smith Herbarium</positionName>    <address>
+<deliveryPoint>33 Westwood Avenue</deliveryPoint><city>Wolfville</city><administrativeArea>Nova Scotia</administrativeArea><postalCode>B4P 2R6</postalCode><country>CANADA</country>    </address>
+<phone>902-585-1710</phone><electronicMailAddress>rodger.evans@acadiau.ca</electronicMailAddress><onlineUrl>http://herbarium.acadiau.ca/</onlineUrl>      </contact>
+      <contact>
+    <individualName>
+<givenName>Alain</givenName>          <surName>Belliveau</surName>
+    </individualName>
+<organizationName>Acadia University, K. C. Irving Environmental Science Centre</organizationName><positionName>Curator - E. C. Smith Herbarium</positionName>    <address>
+<deliveryPoint>32 University Avenue</deliveryPoint><city>Wolfville</city><administrativeArea>Nova Scotia</administrativeArea><postalCode>B4P 2R6</postalCode><country>CANADA</country>    </address>
+<phone>902-585-1335</phone><electronicMailAddress>alain.belliveau@acadiau.ca</electronicMailAddress><onlineUrl>http://herbarium.acadiau.ca/</onlineUrl>      </contact>
+      <contact>
+    <individualName>
+<givenName>Allison</givenName>          <surName>Walker</surName>
+    </individualName>
+<organizationName>Acadia University, Department of Biology</organizationName><positionName>Assistant Professor</positionName>    <address>
+<deliveryPoint>33 Westwood Avenue</deliveryPoint><city>Wolfville</city><administrativeArea>Nova Scotia</administrativeArea><postalCode>B4P 2R6</postalCode><country>CANADA</country>    </address>
+<phone>902-585-1333</phone><electronicMailAddress>allison.walker@acadiau.ca</electronicMailAddress><onlineUrl>https://biology.acadiau.ca</onlineUrl>      </contact>
+      <methods>
+            <methodStep>
+                <description>
+                    <para>Data are entered into the main database through in-house software, some of which is verified electronically (e.g. all taxonomic data using ITIS).</para>
+                </description>
+            </methodStep>
+            <sampling>
+                <studyExtent>
+                    <description>
+                        <para>Digitization of Vascular plants from the E. C. Smith Herbarium with a focus on plants of the Acadian Forest Region.</para>
+                    </description>
+                </studyExtent>
+                <samplingDescription>
+                    <para>All data are manually digitized as text from high resolution scans of each herbarium specimen.</para>
+                </samplingDescription>
+            </sampling>
+            <qualityControl>
+                <description>
+                    <para>Records are corrected on an ad hoc basis.</para>
+                </description>
+            </qualityControl>
+      </methods>
+
+      <project id="CESP2018-005">
+          <title>E. C. Smith Herbarium Digital Repository</title>
+          <personnel>
+    <individualName>
+<givenName>Rodger</givenName>          <surName>Evans</surName>
+    </individualName>
+    <role>POINT_OF_CONTACT</role>
+          </personnel>
+          <abstract>
+              <para></para>
+          </abstract>
+          <funding>
+              <para>Various; CFI</para>
+          </funding>
+      </project>
+</dataset>
+
+<additionalMetadata>
+    <metadata>
+      <gbif>
+        <dateStamp>2021-06-17T19:14:37Z</dateStamp>
+      <citation identifier="n/a">Evans R, Richard J (2019). E. C. Smith Herbarium (ACAD). Version 7.5. Acadia University. Occurrence dataset https://doi.org/10.15468/zc4csq accessed via GBIF.org on 2021-06-17.</citation>
+              <physical>
+                  <objectName>Old Canadensys explorer</objectName>
+                  <characterEncoding>UTF-8</characterEncoding>
+                  <dataFormat>
+                      <externallyDefinedFormat>
+                          <formatName>HTML</formatName>
+                      </externallyDefinedFormat>
+                  </dataFormat>
+                  <distribution>
+                      <online>
+                          <url function="download">http://data.canadensys.net/explorer/en/resources/acad-specimens</url>
+                      </online>
+                  </distribution>
+              </physical>
+              <physical>
+                  <objectName>GBIF data portal</objectName>
+                  <characterEncoding>UTF-8</characterEncoding>
+                  <dataFormat>
+                      <externallyDefinedFormat>
+                          <formatName>HTML</formatName>
+                      </externallyDefinedFormat>
+                  </dataFormat>
+                  <distribution>
+                      <online>
+                          <url function="download">http://www.gbif.org/dataset/e8a25a42-f125-476c-8554-3ec21cd51a84</url>
+                      </online>
+                  </distribution>
+              </physical>
+              <physical>
+                  <objectName>Canadensys Explorer</objectName>
+                  <characterEncoding>UTF-8</characterEncoding>
+                  <dataFormat>
+                      <externallyDefinedFormat>
+                          <formatName>HTML</formatName>
+                      </externallyDefinedFormat>
+                  </dataFormat>
+                  <distribution>
+                      <online>
+                          <url function="download">http://explorer.canadensys.net/occurrences/search?q=data_resource_uid:dr43#tab_mapView</url>
+                      </online>
+                  </distribution>
+              </physical>
+              <resourceLogoUrl>http://data.canadensys.net/ipt/logo.do?r=nspm-specimens</resourceLogoUrl>
+              <collection>
+                <parentCollectionIdentifier>ACAD</parentCollectionIdentifier>
+                <collectionIdentifier>ACAD</collectionIdentifier>
+                <collectionName>E. C. Smith Herbarium</collectionName>
+              </collection>
+              <formationPeriod>1854-present</formationPeriod>
+                <specimenPreservationMethod>MOUNTED</specimenPreservationMethod>
+      </gbif>
+    </metadata>
+</additionalMetadata>
+
+</eml:eml>

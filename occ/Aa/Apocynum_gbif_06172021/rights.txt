@@ -1,0 +1,47 @@
+
+Dataset: Moscow University Herbarium (MW)
+Rights as supplied: http://creativecommons.org/licenses/by/4.0/legalcode
+Dataset: Botany Division, Yale Peabody Museum
+Rights as supplied: http://creativecommons.org/publicdomain/zero/1.0/legalcode
+Dataset: University of South Carolina, A. C. Moore Herbarium
+Rights as supplied: http://creativecommons.org/licenses/by/4.0/legalcode
+Dataset: E. C. Smith Herbarium (ACAD)
+Rights as supplied: http://creativecommons.org/publicdomain/zero/1.0/legalcode
+Dataset: University of Alberta Vascular Plant Herbarium (ALTA-VP)
+Rights as supplied: http://creativecommons.org/publicdomain/zero/1.0/legalcode
+Dataset: Field Museum of Natural History (Botany)  Seed Plant Collection
+Rights as supplied: http://creativecommons.org/publicdomain/zero/1.0/legalcode
+Dataset: University of Florida Herbarium (FLAS)
+Rights as supplied: http://creativecommons.org/licenses/by-nc/4.0/legalcode
+Dataset: Herbier Louis-Marie (QFA) - Collection de plantes vasculaires
+Rights as supplied: http://creativecommons.org/publicdomain/zero/1.0/legalcode
+Dataset: Herbier du Québec (QUE) - Collection de plantes vasculaires
+Rights as supplied: http://creativecommons.org/publicdomain/zero/1.0/legalcode
+Dataset: International Barcode of Life project (iBOL)
+Rights as supplied: http://creativecommons.org/licenses/by/4.0/legalcode
+Dataset: Naturalis Biodiversity Center (NL) - Botany
+Rights as supplied: http://creativecommons.org/publicdomain/zero/1.0/legalcode
+Dataset: R. L. McGregor Herbarium Vascular Plants Collection
+Rights as supplied: http://creativecommons.org/licenses/by/4.0/legalcode
+Dataset: The New York Botanical Garden Herbarium (NY)
+Rights as supplied: http://creativecommons.org/publicdomain/zero/1.0/legalcode
+Dataset: University of Vermont, Pringle Herbarium
+Rights as supplied: http://creativecommons.org/licenses/by/4.0/legalcode
+Dataset: Geographically tagged INSDC sequences
+Rights as supplied: http://creativecommons.org/licenses/by/4.0/legalcode
+Dataset: Canadian Museum of Nature Herbarium
+Rights as supplied: http://creativecommons.org/licenses/by/4.0/legalcode
+Dataset: Marie-Victorin Herbarium (MT) - Plantes vasculaires
+Rights as supplied: http://creativecommons.org/publicdomain/zero/1.0/legalcode
+Dataset: Royal Ontario Museum Green Plant Herbarium (TRT)
+Rights as supplied: http://creativecommons.org/publicdomain/zero/1.0/legalcode
+Dataset: CONN
+Rights as supplied: http://creativecommons.org/licenses/by/4.0/legalcode
+Dataset: Pl@ntNet observations
+Rights as supplied: http://creativecommons.org/licenses/by/4.0/legalcode
+Dataset: Carnegie Museum of Natural History Herbarium
+Rights as supplied: http://creativecommons.org/publicdomain/zero/1.0/legalcode
+Dataset: Pl@ntNet automatically identified occurrences
+Rights as supplied: http://creativecommons.org/licenses/by/4.0/legalcode
+Dataset: iNaturalist Research-grade Observations
+Rights as supplied: http://creativecommons.org/licenses/by-nc/4.0/legalcode

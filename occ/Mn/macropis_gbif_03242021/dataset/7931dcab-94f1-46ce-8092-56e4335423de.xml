@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.1/eml.xsd"
+        packageId="7931dcab-94f1-46ce-8092-56e4335423de"  system="http://gbif.org" scope="system"
+  xml:lang="en">
+
+<dataset>
+      <alternateIdentifier>10.15468/0ywfpc</alternateIdentifier>
+        <alternateIdentifier>https://fmipt.fieldmuseum.org/ipt/resource?r=fmnh_insects</alternateIdentifier>
+        <alternateIdentifier>http://fmipt.fieldmuseum.org:8080/ipt/resource?r=fmnh_insects</alternateIdentifier>
+        <alternateIdentifier>http://fmipt.fieldmuseum.org:8080/ipt/resource.do?r=fmnh_insects</alternateIdentifier>
+        <alternateIdentifier>7931dcab-94f1-46ce-8092-56e4335423de</alternateIdentifier>
+        <alternateIdentifier>14344</alternateIdentifier>
+    <title>Field Museum of Natural History (Zoology) Insect, Arachnid and Myriapod Collection</title>
+    <creator>
+    <individualName>
+<givenName>Sharon</givenName>          <surName>Grant</surName>
+    </individualName>
+<organizationName>Field Museum of Natural History</organizationName><positionName>Technology Liaison to Science</positionName>    <address>
+<deliveryPoint>1400 S Lake Shore Drive</deliveryPoint><city>Chicago</city><administrativeArea>IL</administrativeArea><postalCode>60605</postalCode><country>UNITED_STATES</country>    </address>
+<phone>3126657203</phone><electronicMailAddress>sgrant@fieldmuseum.org</electronicMailAddress><onlineUrl>http://fieldmuseum.org/users/sharon-grant</onlineUrl>      <userId directory="https://orcid.org/">0000-0002-0201-732X</userId>
+    </creator>
+    <creator>
+    <individualName>
+<givenName>Kate</givenName>          <surName>Webbink</surName>
+    </individualName>
+<organizationName>Field Museum of Natural History</organizationName>    <address>
+<deliveryPoint>1400 S Lake Shore Drive</deliveryPoint><city>Chicago</city><administrativeArea>IL</administrativeArea><postalCode>60605</postalCode><country>UNITED_STATES</country>    </address>
+    </creator>
+    <metadataProvider>
+    <individualName>
+<givenName>Maureen</givenName>          <surName>Turcatel</surName>
+    </individualName>
+<organizationName>Field Museum of Natural History</organizationName><positionName>Collection Manager Insects, Arachnids and Myriapods</positionName>    <address>
+<deliveryPoint>1400 S Lake Shore Drive</deliveryPoint><city>Chicago</city><administrativeArea>IL</administrativeArea><postalCode>60605</postalCode><country>UNITED_STATES</country>    </address>
+<phone>3126657743</phone><electronicMailAddress>mturcatel@fieldmuseum.org</electronicMailAddress><onlineUrl>http://www.fieldmuseum.org/about/staff/profile/2051</onlineUrl>    </metadataProvider>
+    <metadataProvider>
+    <individualName>
+<givenName>Rebekah</givenName>          <surName>Shuman</surName>
+    </individualName>
+<organizationName>Field Museum of Natural History</organizationName><positionName>Collection Assistant</positionName>    <address>
+<deliveryPoint>1400 S Lake Shore Drive</deliveryPoint><city>Chicago</city><administrativeArea>IL</administrativeArea><postalCode>60605</postalCode><country>UNITED_STATES</country>    </address>
+    </metadataProvider>
+      <pubDate>
+      2020-12-04
+      </pubDate>
+    <language>ENGLISH</language>
+    <abstract>
+        <para>The Division of Insects’ holdings of worldwide Arthropoda (excluding Crustacea) rank fifth in overall size among North American collections and are of worldwide importance for many groups. The collection presently includes roughly 4.1 million pinned insects plus 8.3 million specimens or lots in alcohol or on microscope slides. In addition, there are over 17,000 partly-sorted “bulk samples” from traps or leaf-litter extractions. The collection receives heavy use by US and international research visitors and borrowers as well as extensive educational use.</para>
+    </abstract>
+        <keywordSet>
+              <keyword>Occurrence</keyword>
+              <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+              <keyword>Specimen</keyword>
+              <keywordThesaurus>GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml</keywordThesaurus>
+        </keywordSet>
+      <additionalInfo>
+          <para>https://www.fieldmuseum.org/field-museum-natural-history-conditions-and-suggested-norms-use-collections-data-and-images</para>
+      </additionalInfo>
+      <intellectualRights>
+        <para>To the extent possible under law, the publisher has waived all rights to these data and has dedicated them to the <ulink url="http://creativecommons.org/publicdomain/zero/1.0/legalcode"><citetitle>Public Domain (CC0 1.0)</citetitle></ulink>. Users may copy, modify, distribute and use the work, including for commercial purposes, without restriction.</para>
+      </intellectualRights>
+      <distribution scope="document">
+          <online>
+              <url function="information">http://fieldmuseum.org/explore/department/zoology/insects/collections</url>
+          </online>
+      </distribution>
+      <coverage>
+            <geographicCoverage>
+                  <geographicDescription>Global</geographicDescription>
+                  <boundingCoordinates>
+                      <westBoundingCoordinate>-180</westBoundingCoordinate>
+                      <eastBoundingCoordinate>180</eastBoundingCoordinate>
+                      <northBoundingCoordinate>90</northBoundingCoordinate>
+                      <southBoundingCoordinate>-90</southBoundingCoordinate>
+                  </boundingCoordinates>
+            </geographicCoverage>
+      </coverage>
+      <maintenance>
+          <description>
+              <para></para>
+          </description>
+          <maintenanceUpdateFrequency>unkown</maintenanceUpdateFrequency>
+      </maintenance>
+      <contact>
+    <individualName>
+<givenName>Sharon</givenName>          <surName>Grant</surName>
+    </individualName>
+<organizationName>Field Museum of Natural History</organizationName><positionName>Technology Liaison to Science</positionName>    <address>
+<deliveryPoint>1400 S Lake Shore Drive</deliveryPoint><city>Chicago</city><administrativeArea>IL</administrativeArea><postalCode>60605</postalCode><country>UNITED_STATES</country>    </address>
+<phone>3126657203</phone><electronicMailAddress>sgrant@fieldmuseum.org</electronicMailAddress><onlineUrl>http://fieldmuseum.org/users/sharon-grant</onlineUrl>      </contact>
+
+</dataset>
+
+<additionalMetadata>
+    <metadata>
+      <gbif>
+        <dateStamp>2021-03-24T17:45:03Z</dateStamp>
+      <citation>Grant S, Webbink K, Turcatel M, Shuman R (2020). Field Museum of Natural History (Zoology) Insect, Arachnid and Myriapod Collection. Version 12.31. Field Museum. Occurrence dataset https://doi.org/10.15468/0ywfpc accessed via GBIF.org on 2021-03-24.</citation>
+              <resourceLogoUrl>https://fmipt.fieldmuseum.org/ipt/logo.do?r=fmnh_insects</resourceLogoUrl>
+        </gbif>
+    </metadata>
+</additionalMetadata>
+
+</eml:eml>

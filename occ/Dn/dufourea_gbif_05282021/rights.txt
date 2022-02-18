@@ -1,0 +1,35 @@
+
+Dataset: CEPANN - Coleção Entomológica Paulo Nogueira-Neto - IB/USP
+Rights as supplied: http://creativecommons.org/licenses/by-nc/4.0/legalcode
+Dataset: USGS PWRC - Native Bee Inventory and Monitoring Lab (BIML)
+Rights as supplied: http://creativecommons.org/publicdomain/zero/1.0/legalcode
+Dataset: Vermont Bee Records Collected by John Ascher
+Rights as supplied: http://creativecommons.org/licenses/by-nc/4.0/legalcode
+Dataset: University of Guelph Insect Collection (DEBU)
+Rights as supplied: http://creativecommons.org/publicdomain/zero/1.0/legalcode
+Dataset: Essig Museum of Entomology
+Rights as supplied: http://creativecommons.org/licenses/by/4.0/legalcode
+Dataset: University of New Hamsphire Collection of Insects and other Arthropods
+Rights as supplied: http://creativecommons.org/licenses/by/4.0/legalcode
+Dataset: Centre for Biodiversity Genomics - Canadian Specimens
+Rights as supplied: http://creativecommons.org/publicdomain/zero/1.0/legalcode
+Dataset: NMNH_material_samples
+Rights as supplied: http://creativecommons.org/publicdomain/zero/1.0/legalcode
+Dataset: iNaturalist Research-grade Observations
+Rights as supplied: http://creativecommons.org/licenses/by-nc/4.0/legalcode
+Dataset: Geographically tagged INSDC sequences
+Rights as supplied: http://creativecommons.org/licenses/by/4.0/legalcode
+Dataset: Leif Richardson Vermont Bee Specimens
+Rights as supplied: http://creativecommons.org/licenses/by-nc/4.0/legalcode
+Dataset: Illinois Natural History Survey Insect Collection
+Rights as supplied: http://creativecommons.org/licenses/by/4.0/legalcode
+Dataset: Snow Entomological Museum Collection
+Rights as supplied: http://creativecommons.org/licenses/by/4.0/legalcode
+Dataset: International Barcode of Life project (iBOL)
+Rights as supplied: http://creativecommons.org/licenses/by/4.0/legalcode
+Dataset: hymenoptera
+Rights as supplied: http://creativecommons.org/licenses/by/4.0/legalcode
+Dataset: Museum of Comparative Zoology, Harvard University
+Rights as supplied: http://creativecommons.org/licenses/by-nc/4.0/legalcode
+Dataset: Bee Biology and Systematics Laboratory
+Rights as supplied: http://creativecommons.org/licenses/by/4.0/legalcode

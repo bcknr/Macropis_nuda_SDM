@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.1/eml.xsd"
+        packageId="c4a5efee-4c61-45d8-bd7a-6275b2388308"  system="http://gbif.org" scope="system"
+  xml:lang="fr">
+
+<dataset>
+      <alternateIdentifier>10.5886/jd11sg3p</alternateIdentifier>
+        <alternateIdentifier>https://data.canadensys.net/ipt/resource?r=que-specimens</alternateIdentifier>
+        <alternateIdentifier>http://data.canadensys.net/ipt/resource?r=que-specimens</alternateIdentifier>
+        <alternateIdentifier>http://data.canadensys.net/ipt/resource.do?r=que-specimens</alternateIdentifier>
+        <alternateIdentifier>c4a5efee-4c61-45d8-bd7a-6275b2388308</alternateIdentifier>
+    <title>Herbier du Québec (QUE) - Collection de plantes vasculaires</title>
+    <creator>
+    <individualName>
+<givenName>Andrée</givenName>          <surName>Michaud</surName>
+    </individualName>
+<organizationName>Herbier du Québec, Gouvernement du Québec, ministère des Forêts, de la Faune et des Parcs</organizationName><positionName>Technicienne de la faune</positionName>    <address>
+<deliveryPoint>Direction de la recherche forestière, 2700 rue Einstein</deliveryPoint><city>Québec</city><administrativeArea>Québec</administrativeArea><postalCode>G1P 3W8</postalCode><country>CANADA</country>    </address>
+<phone>418-643-7994 poste 6681</phone><electronicMailAddress>andree.michaud@mffp.gouv.qc.ca</electronicMailAddress><onlineUrl>http://www.mffp.gouv.qc.ca/publications/enligne/forets/activites-recherche/soutien/herbier.asp</onlineUrl>    </creator>
+    <metadataProvider>
+    <individualName>
+<givenName>Andrée</givenName>          <surName>Michaud</surName>
+    </individualName>
+<organizationName>Herbier du Québec, Gouvernement du Québec, ministère des Forêts, de la Faune et des Parcs</organizationName><positionName>Technicienne de la faune</positionName>    <address>
+<deliveryPoint>Direction de la recherche forestière, 2700 rue Einstein</deliveryPoint><city>Québec</city><administrativeArea>Québec</administrativeArea><postalCode>G1P 3W8</postalCode><country>CANADA</country>    </address>
+<phone>418-643-7994 poste 6681</phone><electronicMailAddress>andree.michaud@mffp.gouv.qc.ca</electronicMailAddress><onlineUrl>http://www.mffp.gouv.qc.ca/publications/enligne/forets/activites-recherche/soutien/herbier.asp</onlineUrl>    </metadataProvider>
+    <associatedParty>
+    <individualName>
+<givenName>Romain</givenName>          <surName>Néron</surName>
+    </individualName>
+<organizationName>Herbier du Québec, Gouvernement du Québec, ministère de l’Agriculture, des Pêcheries et de l’Alimentation</organizationName><positionName>Conservateur</positionName>    <address>
+<deliveryPoint>Direction de la phytoprotection, 200 chemin Ste-Foy, 10e étage</deliveryPoint><city>Québec</city><administrativeArea>Québec</administrativeArea><postalCode>G1R 4X6</postalCode><country>CANADA</country>    </address>
+<phone>(418) 380-2100 poste 3593</phone><electronicMailAddress>romain.neron@mapaq.gouv.qc.ca</electronicMailAddress>    <role>CURATOR</role>
+    </associatedParty>
+    <associatedParty>
+    <individualName>
+<givenName>Norman</givenName>          <surName>Dignard</surName>
+    </individualName>
+<organizationName>Herbier du Québec, Gouvernement du Québec, ministère des Forêts, de la Faune et des Parcs</organizationName><positionName>Conservateur associé</positionName>    <address>
+<deliveryPoint>Direction de la recherche forestière, 2700 rue Einstein</deliveryPoint><city>Québec</city><administrativeArea>Québec</administrativeArea><postalCode>G1P 3W8</postalCode><country>CANADA</country>    </address>
+<phone>418-643-7994 poste 6682</phone><electronicMailAddress>norman.dignard@mffp.gouv.qc.ca</electronicMailAddress><onlineUrl>http://www.mffp.gouv.qc.ca/publications/enligne/forets/activites-recherche/soutien/herbier.asp</onlineUrl>    <role>CURATOR</role>
+    </associatedParty>
+    <associatedParty>
+    <individualName>
+<givenName>Andrée</givenName>          <surName>Michaud</surName>
+    </individualName>
+<organizationName>Herbier du Québec, Gouvernement du Québec, ministère des Forêts, de la Faune et des Parcs</organizationName><positionName>Technicienne de la faune</positionName>    <address>
+<deliveryPoint>Direction de la recherche forestière, 2700 rue Einstein</deliveryPoint><city>Québec</city><administrativeArea>Québec</administrativeArea><postalCode>G1P 3W8</postalCode><country>CANADA</country>    </address>
+<phone>418-643-7994 poste 6681</phone><electronicMailAddress>andree.michaud@mffp.gouv.qc.ca</electronicMailAddress><onlineUrl>http://www.mffp.gouv.qc.ca/publications/enligne/forets/activites-recherche/soutien/herbier.asp</onlineUrl>    <role>CUSTODIAN_STEWARD</role>
+    </associatedParty>
+    <associatedParty>
+<organizationName>Gouvernement du Québec, ministère des Forêts, de la Faune et des Parcs</organizationName>    <address>
+<deliveryPoint>Direction de la recherche forestière, 2700 rue Einstein</deliveryPoint><city>Québec</city><administrativeArea>Québec</administrativeArea><postalCode>G1P 3W8</postalCode><country>CANADA</country>    </address>
+<phone>418-643-7994</phone><electronicMailAddress>norman.dignard@mffp.gouv.qc.ca</electronicMailAddress><onlineUrl>http://www.mffp.gouv.qc.ca/publications/enligne/forets/activites-recherche/soutien/herbier.asp</onlineUrl>    <role>PUBLISHER</role>
+    </associatedParty>
+      <pubDate>
+      2019-01-03
+      </pubDate>
+    <language>FRENCH</language>
+    <abstract>
+        <para>L&amp;#39;Herbier du Québec comprend environ 168 000 spécimens dont 145 000 plantes vasculaires, 22 000 bryophytes et lichens, 3 500 plantules de plantes vasculaires, une importante collection de graines et une petite collection d’algues (moins de 200 spécimens). L&amp;#39;Herbier du Québec abrite une collection représentative des zones de végétation tempérée, boréale et arctique du Québec et de l’est du Canada. Il comprend aussi une importante collection de mauvaises herbes et autres plantes d’intérêt agronomique. La quasi totalité des spécimens de plantes vasculaires du Québec est déjà informatisée. Cependant, la numérisation des spécimens débute à peine. Ce jeu de données comprend 93 578 spécimens de plantes vasculaires provenant principalement du Québec, mais aussi d’autres provinces canadiennes. L’Herbier du Québec héberge depuis 2013 l’herbier de l’Institut agricole de La Pocatière (QSA, environ 15 000 spécimens). Son informatisation est commencée. / The Herbier du Québec houses about 168 000 specimens among which 145 000 vascular plants, 22 000 bryophytes and lichens, 3 500 vascular plant seedlings, a large collection of seeds and a small number of algae (under 200 vouchers). The Herbier du Québec maintain a representative collection of plants from the temperate, boreal and arctic vegetation zones of Québec and Eastern Canada and also a large collection of weeds and other plants of agricultural interest. The bulk of the Québec vascular plants specimens is already computerized while digitization is in its early stage. This dataset includes 93 578 specimens of vascular plants mainly from Québec, but also from other canadian provinces. L’Herbier du Québec is now housing the herbarium of the Institut agricole de La Pocatière herbarium (QSA, about 15 000 specimens). Its computerization has begun.</para>
+    </abstract>
+        <keywordSet>
+              <keyword>Specimen</keyword>
+              <keywordThesaurus>GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+              <keyword>Occurrence</keyword>
+              <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+        </keywordSet>
+      <intellectualRights>
+        <para>To the extent possible under law, the publisher has waived all rights to these data and has dedicated them to the <ulink url="http://creativecommons.org/publicdomain/zero/1.0/legalcode"><citetitle>Public Domain (CC0 1.0)</citetitle></ulink>. Users may copy, modify, distribute and use the work, including for commercial purposes, without restriction.</para>
+      </intellectualRights>
+      <distribution scope="document">
+          <online>
+              <url function="information">http://www.mapaq.gouv.qc.ca/dgpar/arico/herbierv/</url>
+          </online>
+      </distribution>
+      <coverage>
+            <geographicCoverage>
+                  <geographicDescription>L&apos;Herbier du Québec accorde une priorité aux espèces tempérées, boréales et arctiques du Québec et de l’est du Canada. Ce jeu de données présente des spécimens provenant principalement du Québec mais aussi d’autres provinces canadiennes. / The Herbier du Québec grants a priority to the temperate, boreal and arctic species from Québec. This dataset is mainly composed of specimens collected in Québec but also includes specimens collected in other canadian provinces.</geographicDescription>
+                  <boundingCoordinates>
+                      <westBoundingCoordinate>-142.59</westBoundingCoordinate>
+                      <eastBoundingCoordinate>-61.17</eastBoundingCoordinate>
+                      <northBoundingCoordinate>72.78</northBoundingCoordinate>
+                      <southBoundingCoordinate>41.76</southBoundingCoordinate>
+                  </boundingCoordinates>
+            </geographicCoverage>
+              <taxonomicCoverage>
+                    <generalTaxonomicCoverage>Le jeu de données comprend des plantes vasculaires de 176 familles différentes. Les familles les mieux représentées sont les Asteraceae (11,7%), Poaceae (10,2%), Cyperaceae (10,1%), Rosaceae (5,0%), Brassicaceae (3,2%), Ericaceae (2,9%), Polygonaceae (2,7%), Juncaceae (2,5%), Ranunculaceae (2,4%) et Orchidaceae (2,0%). / This dataset includes vascular plants of 176 different families. The most represented families are the Asteraceae (11,7%), Poaceae (10,2%), Cyperaceae (10,1%), Rosaceae (5,0%), Brassicaceae (3,2%), Ericaceae (2,9%), Polygonaceae (2,7%), Juncaceae (2,5%), Ranunculaceae (2,4%) et Orchidaceae (2,0%).</generalTaxonomicCoverage>
+                    <taxonomicClassification>
+                          <taxonRankName>Family</taxonRankName>
+                        <taxonRankValue>Asteraceae</taxonRankValue>
+                          <commonName>Asteracées</commonName>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Family</taxonRankName>
+                        <taxonRankValue>Poaceae</taxonRankValue>
+                          <commonName>Poacées</commonName>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Family</taxonRankName>
+                        <taxonRankValue>Cyperaceae</taxonRankValue>
+                          <commonName>Cyperacées</commonName>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Family</taxonRankName>
+                        <taxonRankValue>Rosaceae</taxonRankValue>
+                          <commonName>Rosacées</commonName>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Family</taxonRankName>
+                        <taxonRankValue>Brassicaceae</taxonRankValue>
+                          <commonName>Brassicacées</commonName>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Family</taxonRankName>
+                        <taxonRankValue>Ericaceae</taxonRankValue>
+                          <commonName>Éricacées</commonName>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Family</taxonRankName>
+                        <taxonRankValue>Polygonaceae</taxonRankValue>
+                          <commonName>Polygonacées</commonName>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Family</taxonRankName>
+                        <taxonRankValue>Juncaceae</taxonRankValue>
+                          <commonName>Joncacées</commonName>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Family</taxonRankName>
+                        <taxonRankValue>Ranunculaceae</taxonRankValue>
+                          <commonName>Renonculacées</commonName>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Family</taxonRankName>
+                        <taxonRankValue>Orchidaceae</taxonRankValue>
+                          <commonName>Orchidacées</commonName>
+                    </taxonomicClassification>
+              </taxonomicCoverage>
+      </coverage>
+      <maintenance>
+          <description>
+              <para></para>
+          </description>
+          <maintenanceUpdateFrequency>unkown</maintenanceUpdateFrequency>
+      </maintenance>
+      <contact>
+    <individualName>
+<givenName>Norman</givenName>          <surName>Dignard</surName>
+    </individualName>
+<organizationName>Herbier du Québec, Gouvernement du Québec, ministère des Forêts, de la Faune et des Parcs</organizationName><positionName>Conservateur associé</positionName>    <address>
+<deliveryPoint>Direction de la recherche forestière, 2700 rue Einstein</deliveryPoint><city>Québec</city><administrativeArea>Québec</administrativeArea><postalCode>G1P 3W8</postalCode><country>CANADA</country>    </address>
+<phone>418-643-7994 poste 6682</phone><electronicMailAddress>norman.dignard@mffp.gouv.qc.ca</electronicMailAddress><onlineUrl>http://www.mffp.gouv.qc.ca/publications/enligne/forets/activites-recherche/soutien/herbier.asp</onlineUrl>      </contact>
+
+</dataset>
+
+<additionalMetadata>
+    <metadata>
+      <gbif>
+        <dateStamp>2021-05-25T19:19:26Z</dateStamp>
+      <citation identifier="doi:10.5886/jd11sg3p">Michaud A (2019). Herbier du Québec (QUE) - Collection de plantes vasculaires. Version 2.8. Gouvernement du Québec. Occurrence dataset https://doi.org/10.5886/jd11sg3p accessed via GBIF.org on 2021-05-25.</citation>
+              <physical>
+                  <objectName>GBIF data portal</objectName>
+                  <characterEncoding>UTF-8</characterEncoding>
+                  <dataFormat>
+                      <externallyDefinedFormat>
+                          <formatName>HTML</formatName>
+                      </externallyDefinedFormat>
+                  </dataFormat>
+                  <distribution>
+                      <online>
+                          <url function="download">http://www.gbif.org/dataset/c4a5efee-4c61-45d8-bd7a-6275b2388308</url>
+                      </online>
+                  </distribution>
+              </physical>
+              <physical>
+                  <objectName>Old Canadensys explorer</objectName>
+                  <characterEncoding>UTF-8</characterEncoding>
+                  <dataFormat>
+                      <externallyDefinedFormat>
+                          <formatName>HTML</formatName>
+                      </externallyDefinedFormat>
+                  </dataFormat>
+                  <distribution>
+                      <online>
+                          <url function="download">http://data.canadensys.net/explorer/en/resources/que-specimens</url>
+                      </online>
+                  </distribution>
+              </physical>
+              <physical>
+                  <objectName>Canadensys Explorer</objectName>
+                  <characterEncoding>UTF-8</characterEncoding>
+                  <dataFormat>
+                      <externallyDefinedFormat>
+                          <formatName>HTML</formatName>
+                      </externallyDefinedFormat>
+                  </dataFormat>
+                  <distribution>
+                      <online>
+                          <url function="download">http://explorer.canadensys.net/occurrences/search?q=data_resource_uid:dr0#tab_mapView</url>
+                      </online>
+                  </distribution>
+              </physical>
+              <resourceLogoUrl>http://data.canadensys.net/ipt/logo.do?r=que-specimens</resourceLogoUrl>
+              <collection>
+                <parentCollectionIdentifier>QUE</parentCollectionIdentifier>
+                <collectionIdentifier>QUE</collectionIdentifier>
+                <collectionName>Herbier du Québec</collectionName>
+              </collection>
+              <formationPeriod>1792-présent</formationPeriod>
+                <specimenPreservationMethod>MOUNTED</specimenPreservationMethod>
+        </gbif>
+    </metadata>
+</additionalMetadata>
+
+</eml:eml>

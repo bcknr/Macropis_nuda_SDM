@@ -1,0 +1,52 @@
+﻿id,col_id,species,date,country,state,county,muni,site,lat,lon
+MFVeit_1,,Macropis nuda,7/3/08,US,Massachusetts,Middlesex,Dunstable,Dunstable Rural Land Trust Gregg Property,42.7052,-71.5293
+MFVeit_2,,Macropis nuda,6/27/08,US,Massachusetts,Middlesex,Pepperell,Ashley Street Shoulder,42.6736,-71.6454
+MFVeit_3,,Macropis nuda,6/22/10,US,Maine,Penobscot,Mattawampkeag,Mattawamkeag River,45.5161,-68.3365
+MFVeit_4,,Macropis nuda,7/1/10,US,Massachusetts,Worcester,Lancaster,Pine Hill Road Gravelpit,42.472,-71.652
+MFVeit_5,,Macropis nuda,7/20/11,US,New Hampshire,Coos,Whitefield,Mt. Washington Regional Airport,44.367,-71.553
+MFVeit_6,,Macropis nuda,6/28/12,US,Massachusetts,Middlesex,Dunstable,Dunstable Rural Land Trust Gregg Property,42.7052,-71.5293
+MFVeit_7,,Macropis nuda,7/18/12,US,New Hampshire,Coos,Stewartson,Noyes Road,,
+MFVeit_8,,Macropis nuda,6/28/14,US,Massachusetts,Middlesex,Townsend,Townsend Hill WMA,42.677,-71.6727
+MFVeit_9,,Macropis nuda,7/1/14,US,Massachusetts,Barnstable,Barnstable,Powerline - Little Israel Pond,41.679,-70.283
+MFVeit_10,,Macropis nuda,6/14/15,US,Massachusetts,Middlesex,Groton,Groton Town Forest RR Bed,42.584741,-71.6128
+MFVeit_11,,Macropis nuda,6/25/16,US,Maine,York,Kennebunk,Kennebunk Plains Wildlife Management Area,43.405,-70.627
+MFVeit_12,,Macropis nuda,6/23/16,US,Maine,York,Kennebunk,Kennebunk Plains Wildlife Management Area,43.405,-70.627
+MFVeit_13,,Macropis nuda,6/23/16,US,Maine,York,Kennebunk,Kennebunk Plains Wildlife Management Area,43.405,-70.627
+MFVeit_14,,Macropis nuda,6/25/16,US,Maine,York,Kennebunk,Kennebunk Plains Preserve,43.405,-70.393
+MFVeit_15,,Macropis nuda,6/23/16,US,Maine,York,Kennebunk,Kennebunk Plains Wildlife Management Area,43.405,-70.627
+MFVeit_16,,Macropis nuda,6/25/16,US,Maine,York,Kennebunk,Kennebunk Plains Preserve,43.3994,-70.62625
+MFVeit_17,,Macropis nuda,6/26/17,US,New Hampshire,Cheshire,Richmond,ROW 43P,42.782416,-72.3078
+MFVeit_18,,Macropis nuda,7/3/17,US,Massachusetts,Hampshire,Belchertown,ROW 33P,42.25803,-72.45605
+MFVeit_19,,Macropis nuda,6/28/17,US,Massachusetts,Franklin,Northfield,ROW 35P,42.65635,-72.42692
+MFVeit_20,,Macropis nuda,7/6/17,US,New Hampshire,Cheshire,Hinsdale,ROW 47P,42.79692,-72.4866
+MFVeit_21,,Macropis nuda,7/6/17,US,New Hampshire,Cheshire,Ashuelot,ROW 53P,42.793,-72.42155
+MFVeit_22,,Macropis nuda,6/28/17,US,Massachusetts,Franklin,Erving,ROW 21P,42.58938,-72.46336
+MFVeit_23,,Macropis nuda,7/10/17,US,Massachusetts,Franklin,Northfield,ROW 35P,42.65635,-72.42692
+MFVeit_24,,Macropis nuda,6/26/17,US,New Hampshire,Cheshire,Richmond,ROW 43P,42.782416,-72.3078
+MFVeit_25,,Macropis nuda,6/8/18,US,New Hampshire,Cheshire,Richmond,ROW 43P,42.782416,-72.3078
+GMacI_1,,Macropis nuda,7/9/20,Canada,QC,,Montreal,,45.501337,-73.76413
+BDuCl_1,2015P0665,Macropis nuda,7/9/15,US,Maine,Waldo,Lincolnville,,44.3054,-69.1156
+BDuCl_2,2014P0031,Macropis nuda,7/9/14,US,Maine,Waldo,Belmont,,44.3733,-69.0754
+wLab_1,SWG2016_4735,Macropis nuda,7/6/16,US,New Jersey,Morris,Randolph,Posner_Pond_natural,40.831453,-74.621981
+TJWood_1,,Macropis nuda,7/8/17,US,Michigan,Hillsdale,,Pittsford State Game Area: Tote Road to Trail Road,41.866,-84.522
+TJWood_2,,Macropis nuda,6/25/18,US,Michigan,Tuscola,,Dayton: Plain Rd x Riley Rd,43.465,-83.268
+TJWood_3,,Macropis nuda,6/30/18,US,Michigan,Dickinson,,Foster City: Felch,45.996,-87.825
+TJWood_4,,Macropis nuda,7/14/18,US,Michigan,St Clair,,Algonac State Park,42.65,-82.531
+TJWood_5,,Macropis nuda,7/15/18,US,Michigan,Alcona,,Black River: Black River Rd x La Vigne Rd,44.815,-83.324
+TJWood_6,,Macropis nuda,7/15/18,US,Michigan,Alpena,,Mackinaw State Forest: Long Rapids Rd x Truax Creek,45.116,-83.823
+MAB_1,MN2,Macropis nuda,7/10/21,US,New York,Warren,,Hudson River Park,43.26371801,-73.67442202
+MAB_2,MN3,Macropis nuda,7/12/21,US,Vermont,Chittenden,,Heineburg Bridge Fishing Access,44.524083,-73.25758796
+MAB_3,MN4,Macropis nuda,7/14/21,US,New York,Jefferson,,Black Pond WMA,43.80216602,-76.22442403
+iNat_1,Beeboy,Macropis nuda,6/21/21,US,Vermont,,,,43.80421149,-72.07447564
+iNat_2,Beeboy,Macropis nuda,6/21/21,US,Vermont,,,,43.99092586,-72.15259728
+iNat_3,Beeboy,Macropis nuda,6/21/21,US,Vermont,,,,43.905908,-72.15275001
+iNat_4,rwr,Macropis nuda,6/24/21,Canada,British Columbia,,,,49.39950152,-117.7632029
+iNat_5,nsharp,Macropis nuda,6/21/21,US,Vermont,,,,43.91265667,-72.14435153
+iNat_6,nsharp,Macropis nuda,6/21/21,US,Vermont,,,,43.91249243,-72.14457516
+iNat_7,nsharp,Macropis nuda,6/21/21,US,Vermont,,,,43.9147512,-72.14272644
+iNat_8,nsharp,Macropis nuda,6/21/21,US,Vermont,,,,43.91491471,-72.14261916
+iNat_9,Beeboy,Macropis nuda,7/5/21,US,Vermont,,,,44.5277,-71.81649444
+iNat_10,Beeboy,Macropis nuda,7/5/21,US,Vermont,,,,44.52770833,-71.81234444
+iNat_11,Beeboy,Macropis nuda,7/5/21,US,Vermont,,,,44.52781818,-71.81567642
+iNat_12,nsharp,Macropis nuda,6/28/21,US,Vermont,,,,44.9545787,-73.20448525
+Joe_1,,Macropis nuda,7/8/21,US,New York,Tompkins,Lansing,Kendell Retirement,42.477531,-76.486619

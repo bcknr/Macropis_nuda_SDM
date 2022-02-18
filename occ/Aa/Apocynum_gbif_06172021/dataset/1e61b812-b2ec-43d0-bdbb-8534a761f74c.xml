@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.1/eml.xsd"
+        packageId="1e61b812-b2ec-43d0-bdbb-8534a761f74c"  system="http://gbif.org" scope="system"
+  xml:lang="en">
+
+<dataset>
+      <alternateIdentifier>10.15468/kowta4</alternateIdentifier>
+        <alternateIdentifier>830da118-f762-11e1-a439-00145eb45e9a</alternateIdentifier>
+        <alternateIdentifier>1e61b812-b2ec-43d0-bdbb-8534a761f74c</alternateIdentifier>
+        <alternateIdentifier>http://ipt.nature.ca/resource?r=cmn_herbarium</alternateIdentifier>
+    <title>Canadian Museum of Nature Herbarium</title>
+    <creator>
+    <individualName>
+<givenName>Jennifer</givenName>          <surName>Doubt</surName>
+    </individualName>
+<organizationName>Canadian Museum of Nature</organizationName><positionName>Curator, Botany</positionName>    <address>
+<city>Ottawa</city><administrativeArea>Ontario</administrativeArea><country>CANADA</country>    </address>
+<phone>1-613-364-4076</phone><electronicMailAddress>jdoubt@nature.ca</electronicMailAddress><onlineUrl>https://nature.ca/en/research-collections/science-experts/jennifer-doubt</onlineUrl>    </creator>
+    <metadataProvider>
+    <individualName>
+<givenName>John</givenName>          <surName>Torgersen</surName>
+    </individualName>
+<organizationName>Canadian Museum of Nature</organizationName><positionName>Assistant Collections Information Manager</positionName>    <address>
+<city>Ottawa</city><administrativeArea>Ontario</administrativeArea><country>CANADA</country>    </address>
+<electronicMailAddress>jtorgersen@nature.ca</electronicMailAddress>    </metadataProvider>
+    <associatedParty>
+    <individualName>
+<givenName>Jennifer</givenName>          <surName>Doubt</surName>
+    </individualName>
+<organizationName>Canadian Museum of Nature</organizationName><positionName>Curator, Botany</positionName>    <address>
+<city>Ottawa</city><administrativeArea>Ontario</administrativeArea><country>CANADA</country>    </address>
+<phone>1-613-364-4076</phone><electronicMailAddress>jdoubt@nature.ca</electronicMailAddress><onlineUrl>https://nature.ca/en/research-collections/science-experts/jennifer-doubt</onlineUrl>    <role>CURATOR</role>
+    </associatedParty>
+    <associatedParty>
+    <individualName>
+<givenName>Lyndsey</givenName>          <surName>Sharp</surName>
+    </individualName>
+<organizationName>Canadian Museum of Nature</organizationName><positionName>Collection Technician</positionName>    <address>
+<city>Ottawa</city><administrativeArea>Ontario</administrativeArea><country>CANADA</country>    </address>
+<phone>1-613-364-4081</phone><electronicMailAddress>lsharp@nature.ca</electronicMailAddress>    <role>PROCESSOR</role>
+    </associatedParty>
+    <associatedParty>
+    <individualName>
+<givenName>Paul</givenName>          <surName>Hamilton</surName>
+    </individualName>
+<organizationName>Canadian Museum of Nature</organizationName><positionName>Senior Research Assistant - Phycology</positionName>    <address>
+<city>Ottawa</city><administrativeArea>Ontario</administrativeArea><country>CANADA</country>    </address>
+<phone>1-613-566-4213</phone><electronicMailAddress>phamilton@nature.ca</electronicMailAddress><onlineUrl>https://nature.ca/en/research-collections/science-experts/paul-b-hamilton</onlineUrl>    <role>POINT_OF_CONTACT</role>
+    </associatedParty>
+    <associatedParty>
+    <individualName>
+<givenName>Christopher</givenName>          <surName>Deduke</surName>
+    </individualName>
+<organizationName>Canadian Museum of Nature</organizationName><positionName>Assistant Collections Manager</positionName>    <address>
+<city>Ottawa</city><administrativeArea>Ontario</administrativeArea><country>CANADA</country>    </address>
+<electronicMailAddress>cdeduke@nature.ca</electronicMailAddress>    <role>POINT_OF_CONTACT</role>
+    </associatedParty>
+    <associatedParty>
+    <individualName>
+<givenName>Cassandra</givenName>          <surName>Robillard</surName>
+    </individualName>
+<organizationName>Canadian Museum of Nature</organizationName><positionName>Technical Assistant (Digitization)</positionName>    <address>
+<city>Ottawa</city><administrativeArea>Ontario</administrativeArea><country>CANADA</country>    </address>
+<electronicMailAddress>crobillard@nature.ca</electronicMailAddress>    <role>POINT_OF_CONTACT</role>
+    </associatedParty>
+    <associatedParty>
+    <individualName>
+<givenName>Lisa</givenName>          <surName>Gualtieri</surName>
+    </individualName>
+<organizationName>Canadian Museum of Nature</organizationName><positionName>Technical Assistant (Digitizaton)</positionName>    <address>
+<city>Ottawa</city><administrativeArea>Ontario</administrativeArea><country>CANADA</country>    </address>
+<electronicMailAddress>lgualtieri@nature.ca</electronicMailAddress>    <role>POINT_OF_CONTACT</role>
+    </associatedParty>
+      <pubDate>
+      2021-02-08
+      </pubDate>
+    <language>ENGLISH</language>
+    <abstract>
+        <para>Records from the Canadian Museum of Nature Herbarium (The National Herbarium of Canada), including algae (CANA), bryophytes (CANM), lichens (CANL) and vascular plants (CAN). NOTE that geographical co-ordinates in the records are in some cases transcribed from specimen labels, whereas in others they have been derived by CMN staff from secondary sources (georeferencing). No GBIF field is available to differentiate records of each type. If you require this information, please contact CMN staff.</para>
+    </abstract>
+        <keywordSet>
+              <keyword>Occurrence</keyword>
+              <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+              <keyword>Specimen</keyword>
+              <keywordThesaurus>GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+              <keyword>Macoun</keyword>
+              <keyword>Ireland</keyword>
+              <keyword>Porsild</keyword>
+              <keyword>Argus</keyword>
+              <keyword>Brodo</keyword>
+              <keywordThesaurus>n/a</keywordThesaurus>
+        </keywordSet>
+      <intellectualRights>
+        <para>This work is licensed under a <ulink url="http://creativecommons.org/licenses/by/4.0/legalcode"><citetitle>Creative Commons Attribution (CC-BY) 4.0 License</citetitle></ulink>.</para>
+      </intellectualRights>
+      <distribution scope="document">
+          <online>
+              <url function="information">https://nature.ca/en/research-collections/collections</url>
+          </online>
+      </distribution>
+      <coverage>
+            <geographicCoverage>
+                  <geographicDescription>The National Herbarium of Canada is a global collection of plant and lichen specimens with particular reference to Canada. It includes the world&apos;s largest and most comprehensive collection of Canadian Arctic plants.</geographicDescription>
+                  <boundingCoordinates>
+                      <westBoundingCoordinate>-180</westBoundingCoordinate>
+                      <eastBoundingCoordinate>180</eastBoundingCoordinate>
+                      <northBoundingCoordinate>90</northBoundingCoordinate>
+                      <southBoundingCoordinate>-90</southBoundingCoordinate>
+                  </boundingCoordinates>
+            </geographicCoverage>
+              <taxonomicCoverage>
+                    <taxonomicClassification>
+                        <taxonRankValue></taxonRankValue>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                        <taxonRankValue></taxonRankValue>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                        <taxonRankValue></taxonRankValue>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                        <taxonRankValue></taxonRankValue>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                        <taxonRankValue></taxonRankValue>
+                    </taxonomicClassification>
+              </taxonomicCoverage>
+      </coverage>
+      <maintenance>
+          <description>
+              <para></para>
+          </description>
+          <maintenanceUpdateFrequency>irregular</maintenanceUpdateFrequency>
+      </maintenance>
+      <contact>
+    <individualName>
+<givenName>Jennifer</givenName>          <surName>Doubt</surName>
+    </individualName>
+<organizationName>Canadian Museum of Nature</organizationName><positionName>Curator, Botany</positionName>    <address>
+<city>Ottawa</city><administrativeArea>Ontario</administrativeArea><country>CANADA</country>    </address>
+<phone>1-613-364-4076</phone><electronicMailAddress>jdoubt@nature.ca</electronicMailAddress><onlineUrl>https://nature.ca/en/research-collections/science-experts/jennifer-doubt</onlineUrl>      </contact>
+      <contact>
+    <individualName>
+<givenName>Paul</givenName>          <surName>Hamilton</surName>
+    </individualName>
+<organizationName>Canadian Museum of Nature</organizationName><positionName>Senior Research Assistant - Phycology</positionName>    <address>
+<city>Ottawa</city><administrativeArea>Ontario</administrativeArea><country>CANADA</country>    </address>
+<phone>1-613-566-4213</phone><electronicMailAddress>phamilton@nature.ca</electronicMailAddress><onlineUrl>https://nature.ca/en/research-collections/science-experts/paul-b-hamilton</onlineUrl>      </contact>
+      <contact>
+    <individualName>
+<givenName>Christopher</givenName>          <surName>Deduke</surName>
+    </individualName>
+<organizationName>Canadian Museum of Nature</organizationName><positionName>Assistant Collections Manager</positionName>    <address>
+<city>Ottawa</city><administrativeArea>Ontario</administrativeArea><country>CANADA</country>    </address>
+<electronicMailAddress>cdeduke@nature.ca</electronicMailAddress>      </contact>
+
+      <project >
+          <title>Arctic Flora of Canada and Alaska</title>
+          <personnel>
+    <individualName>
+<givenName>Lynn</givenName>          <surName>Gillespie</surName>
+    </individualName>
+    <role>POINT_OF_CONTACT</role>
+          </personnel>
+          <personnel>
+    <individualName>
+<givenName>Jeff</givenName>          <surName>Saarela</surName>
+    </individualName>
+    <role>POINT_OF_CONTACT</role>
+          </personnel>
+          <personnel>
+    <individualName>
+<givenName>Paul</givenName>          <surName>Sokoloff</surName>
+    </individualName>
+    <role>POINT_OF_CONTACT</role>
+          </personnel>
+          <abstract>
+              <para>The Arctic Flora of Canada and Alaska project aims to produce a new flora for all vascular plants in the Arctic ecozone in Canada and northern Alaska.</para>
+          </abstract>
+          <funding>
+              <para></para>
+          </funding>
+            <studyAreaDescription>
+                <descriptor name="generic" citableClassificationSystem="false">
+                    <descriptorValue>The Flora region includes the north slope of Alaska, arctic northern Yukon, about one third of the Northwest Territories, most of Nunavut, extreme northeastern Manitoba, northern Quebec, and a small portion of northern Newfoundland and Labrador. Within Hudson Bay, the Sleeper Islands, Belcher Islands, Ottawa Islands, Hopewell Islands and the northern Nastapoka Islands — all part of Nunavut — are part of the Flora region.</descriptorValue>
+                </descriptor>
+            </studyAreaDescription>
+            <designDescription>
+                <description>
+                    <para>The results of this research increase our knowledge of the diversity and distribution of Canadian Arctic vascular plants, which is fundamental to understanding the impact of environmental changes. The goals of this research are to produce a new web-based flora of Canadian Arctic vascular plants, develop a collection database of all northern Canadian plant collections, produce DNA barcodes for all Canadian Arctic vascular plants, resolve taxonomic problems in the Arctic flora, and analyze patterns of species and genetic diversity across the Canadian Arctic. This work provides baseline data for conservation, ecological monitoring and predictive modeling studies.</para>
+                </description>
+            </designDescription>
+      </project>
+</dataset>
+
+<additionalMetadata>
+    <metadata>
+      <gbif>
+        <dateStamp>2021-06-17T19:14:38Z</dateStamp>
+      <citation>Doubt J, Torgersen J (2021). Canadian Museum of Nature Herbarium. Version 1.171. Canadian Museum of Nature. Occurrence dataset https://doi.org/10.15468/kowta4 accessed via GBIF.org on 2021-06-17.</citation>
+              <physical>
+                  <objectName>Botany Collections: The National Herbarium of Canada</objectName>
+                  <characterEncoding>UTF-8</characterEncoding>
+                  <dataFormat>
+                      <externallyDefinedFormat>
+                          <formatName>HTML</formatName>
+                      </externallyDefinedFormat>
+                  </dataFormat>
+                  <distribution>
+                      <online>
+                          <url function="download">https://nature.ca/en/research-collections/collections/plants-algae</url>
+                      </online>
+                  </distribution>
+              </physical>
+              <physical>
+                  <objectName>National Phycology Collection of Canada Database</objectName>
+                  <characterEncoding>UTF-8</characterEncoding>
+                  <dataFormat>
+                      <externallyDefinedFormat>
+                          <formatName>HTML</formatName>
+                      </externallyDefinedFormat>
+                  </dataFormat>
+                  <distribution>
+                      <online>
+                          <url function="download">http://www.nature-cana.ca/databases/index.php</url>
+                      </online>
+                  </distribution>
+              </physical>
+              <physical>
+                  <objectName>The Centre for Arctic Knowledge and Exploration</objectName>
+                  <characterEncoding>UTF-8</characterEncoding>
+                  <dataFormat>
+                      <externallyDefinedFormat>
+                          <formatName>HTML</formatName>
+                      </externallyDefinedFormat>
+                  </dataFormat>
+                  <distribution>
+                      <online>
+                          <url function="download">https://nature.ca/en/research-collections/research-projects/centre-arctic-knowledge-exploration</url>
+                      </online>
+                  </distribution>
+              </physical>
+              <physical>
+                  <objectName>The Beaty Centre for Species Discovery</objectName>
+                  <characterEncoding>UTF-8</characterEncoding>
+                  <dataFormat>
+                      <externallyDefinedFormat>
+                          <formatName>HTML</formatName>
+                      </externallyDefinedFormat>
+                  </dataFormat>
+                  <distribution>
+                      <online>
+                          <url function="download">https://nature.ca/en/research-collections/research-projects/centre-species-discovery-change</url>
+                      </online>
+                  </distribution>
+              </physical>
+              <physical>
+                  <objectName>Canadian Arctic Flora - Biodiversity and Change</objectName>
+                  <characterEncoding>UTF-8</characterEncoding>
+                  <dataFormat>
+                      <externallyDefinedFormat>
+                          <formatName>HTML</formatName>
+                      </externallyDefinedFormat>
+                  </dataFormat>
+                  <distribution>
+                      <online>
+                          <url function="download">https://nature.ca/en/research-collections/research-projects/canadian-arctic-flora-biodiversity-change</url>
+                      </online>
+                  </distribution>
+              </physical>
+              <physical>
+                  <objectName>Arctic Flora of Canada and Alaska</objectName>
+                  <characterEncoding>UTF-8</characterEncoding>
+                  <dataFormat>
+                      <externallyDefinedFormat>
+                          <formatName>HTML</formatName>
+                      </externallyDefinedFormat>
+                  </dataFormat>
+                  <distribution>
+                      <online>
+                          <url function="download">http://arcticplants.myspecies.info/</url>
+                      </online>
+                  </distribution>
+              </physical>
+              <resourceLogoUrl>http://ipt.nature.ca/logo.do?r=cmn_herbarium</resourceLogoUrl>
+              <collection>
+                <parentCollectionIdentifier>National Herbarium of Canada</parentCollectionIdentifier>
+                <collectionIdentifier>CANA</collectionIdentifier>
+                <collectionName>Algae</collectionName>
+              </collection>
+              <collection>
+                <parentCollectionIdentifier>National Herbarium of Canada</parentCollectionIdentifier>
+                <collectionIdentifier>CANM</collectionIdentifier>
+                <collectionName>Bryophytes</collectionName>
+              </collection>
+              <collection>
+                <parentCollectionIdentifier>National Herbarium of Canada</parentCollectionIdentifier>
+                <collectionIdentifier>CANL</collectionIdentifier>
+                <collectionName>Lichens</collectionName>
+              </collection>
+              <collection>
+                <parentCollectionIdentifier>National Herbarium of Canada</parentCollectionIdentifier>
+                <collectionIdentifier>CAN</collectionIdentifier>
+                <collectionName>Vascular Plants</collectionName>
+              </collection>
+              <formationPeriod>1776 to current</formationPeriod>
+                <specimenPreservationMethod>MICROSCOPIC_PREPARATION</specimenPreservationMethod>
+      </gbif>
+    </metadata>
+</additionalMetadata>
+
+</eml:eml>

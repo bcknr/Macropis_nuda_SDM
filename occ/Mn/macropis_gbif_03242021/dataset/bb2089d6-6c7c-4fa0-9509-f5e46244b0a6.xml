@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.1/eml.xsd"
+        packageId="bb2089d6-6c7c-4fa0-9509-f5e46244b0a6"  system="http://gbif.org" scope="system"
+  xml:lang="en">
+
+<dataset>
+      <alternateIdentifier>10.15468/vyn8of</alternateIdentifier>
+        <alternateIdentifier>https://unhcollection.unh.edu:443/database/collections/misc/collprofiles.php?collid=1</alternateIdentifier>
+    <title>University of New Hamsphire Collection of Insects and other Arthropods</title>
+    <associatedParty>
+<organizationName>University of New Hampshire Collection of Insects and Arthropods</organizationName><positionName>Collection Manager</positionName>    <address>
+<city>Durham</city><administrativeArea>NH</administrativeArea><country>UNITED_STATES</country>    </address>
+<electronicMailAddress>istvan.miko@gmail.com</electronicMailAddress>    <role>CONTENT_PROVIDER</role>
+    </associatedParty>
+      <pubDate>
+      2019-03-19
+      </pubDate>
+    <language>ENGLISH</language>
+    <abstract>
+        <para>With more than 700,000 specimens and growing, the UNHC is the largest arthropod depository and research collection in northern New England. Over 12,000 species are represented from different regions of New England, featuring many specimens collected from the White Mountains. The UNHC is part of the Department of Biological Sciences and the College of Life Sciences and Agriculture and is dedicated to preserving the rich historical information encompassed by the collection and committed to acquiring new specimens and resources useful to the UNH Department of Biological Sciences and greater scientific community</para>
+    </abstract>
+      <intellectualRights>
+        <para>This work is licensed under a <ulink url="http://creativecommons.org/licenses/by/4.0/legalcode"><citetitle>Creative Commons Attribution (CC-BY) 4.0 License</citetitle></ulink>.</para>
+      </intellectualRights>
+      <contact>
+<organizationName>University of New Hampshire Collection of Insects and Arthropods</organizationName><electronicMailAddress>istvan.miko@gmail.com</electronicMailAddress><onlineUrl>http://UNHCollection.unh.edu</onlineUrl>      </contact>
+
+</dataset>
+
+<additionalMetadata>
+    <metadata>
+      <gbif>
+        <dateStamp>2021-03-24T17:45:04Z</dateStamp>
+      <citation>University of New Hamsphire Collection of Insects and other Arthropods (2019). University of New Hamsphire Collection of Insects and other Arthropods. Occurrence dataset https://doi.org/10.15468/vyn8of accessed via GBIF.org on 2021-03-24.</citation>
+        </gbif>
+    </metadata>
+</additionalMetadata>
+
+</eml:eml>

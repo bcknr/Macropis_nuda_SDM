@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.1/eml.xsd"
+        packageId="f8b3dfc3-e0d9-4173-a63b-436aedce0469"  system="http://gbif.org" scope="system"
+  xml:lang="en">
+
+<dataset>
+      <alternateIdentifier>10.15468/be6owh</alternateIdentifier>
+        <alternateIdentifier>http://www.csbg.nsc.ru:8080/ipt/resource?r=primulaceaens</alternateIdentifier>
+    <title>Family Primulaceae in Digital Herbaria of CSBG SB RAS (NS)</title>
+    <creator>
+    <individualName>
+<givenName>Nataliya</givenName>          <surName>Kovtonyuk</surName>
+    </individualName>
+<organizationName>Central Siberian Botanical Garden, SB RAS</organizationName><positionName>Senior Researcher</positionName>    <address>
+<deliveryPoint>Zolotodolinskaya St. 101</deliveryPoint><city>Novosibirsk</city><administrativeArea>Novosibirskaya oblast&apos;</administrativeArea><postalCode>630090</postalCode><country>RUSSIAN_FEDERATION</country>    </address>
+<phone>+79529365495</phone><electronicMailAddress>knat2008@yandex.ru</electronicMailAddress><onlineUrl>https://csbg-nsk.ru/kovtonyuk_nk</onlineUrl>      <userId directory="http://orcid.org/">0000-0002-4018-6634</userId>
+    </creator>
+    <creator>
+    <individualName>
+<givenName>Irina</givenName>          <surName>Han</surName>
+    </individualName>
+<organizationName>Central Siberian Botanical Garden, SB RAS</organizationName><positionName>main engineer</positionName>    <address>
+<deliveryPoint>Zolotodolinskaya St. 101</deliveryPoint><city>Novosibirsk</city><administrativeArea>Novosibirskaya oblast&apos;</administrativeArea><postalCode>630090</postalCode><country>RUSSIAN_FEDERATION</country>    </address>
+<phone>+79138944819</phone><electronicMailAddress>irahan81@gmail.com</electronicMailAddress><onlineUrl>http://www.csbg.nsc.ru</onlineUrl>      <userId directory="http://orcid.org/">0000-0001-8385-5247</userId>
+    </creator>
+    <creator>
+    <individualName>
+<givenName>Evgeniya</givenName>          <surName>Gatilova</surName>
+    </individualName>
+<organizationName>Central Siberian Botanical Garden, SB RAS</organizationName><positionName>main specialist</positionName>    <address>
+<deliveryPoint>Zolotodolinskaya St. 101</deliveryPoint><city>Novosibirsk</city><administrativeArea>Novosibirskaya oblast&apos;</administrativeArea><postalCode>630090</postalCode><country>RUSSIAN_FEDERATION</country>    </address>
+<phone>+79137396831</phone><electronicMailAddress>zhenya_kl@mail.ru</electronicMailAddress><onlineUrl>http://www.csbg.nsc.ru</onlineUrl>      <userId directory="http://orcid.org/">0000-0001-9478-0244</userId>
+    </creator>
+    <metadataProvider>
+    <individualName>
+<givenName>Nataliya</givenName>          <surName>Kovtonyuk</surName>
+    </individualName>
+<organizationName>Central Siberian Botanical Garden, SB RAS</organizationName><positionName>Senior Researcher</positionName>    <address>
+<deliveryPoint>Zolotodolinskaya St. 101</deliveryPoint><city>Novosibirsk</city><administrativeArea>Novosibirskaya oblast&apos;</administrativeArea><postalCode>630090</postalCode><country>RUSSIAN_FEDERATION</country>    </address>
+<phone>+79529365495</phone><electronicMailAddress>knat2008@yandex.ru</electronicMailAddress><onlineUrl>https://csbg-nsk.ru/kovtonyuk_nk</onlineUrl>      <userId directory="http://orcid.org/">0000-0002-4018-6634</userId>
+    </metadataProvider>
+    <associatedParty>
+    <individualName>
+<givenName>Nataliya</givenName>          <surName>Kovtonyuk</surName>
+    </individualName>
+<organizationName>Central Siberian Botanical Garden, SB RAS</organizationName><positionName>Senior Researcher</positionName>    <address>
+<deliveryPoint>Zolotodolinskaya St. 101</deliveryPoint><city>Novosibirsk</city><administrativeArea>Novosibirskaya oblast&apos;</administrativeArea><postalCode>630090</postalCode><country>RUSSIAN_FEDERATION</country>    </address>
+<phone>+79529365495</phone><electronicMailAddress>knat2008@yandex.ru</electronicMailAddress><onlineUrl>https://csbg-nsk.ru/kovtonyuk_nk</onlineUrl>      <userId directory="http://orcid.org/">0000-0002-4018-6634</userId>
+    <role>PUBLISHER</role>
+    </associatedParty>
+      <pubDate>
+      2019-08-09
+      </pubDate>
+    <language>ENGLISH</language>
+    <abstract>
+        <para>The first herbarium at the Central Siberian Botanical Garden, Siberian Branch of the Russian Academy of Sciences (CSBG), was organized in 1946. Now there are two herbarium collections with their own acronyms and registrations in the Index Herbariorum: M.G. Popov Herbarium (NSK) and I.M. Krasnoborov Herbarium (NS). Approximately 800,000 herbarium specimens of higher vascular plants, mosses, lichens and fungi collected in Siberia, Russian Far East, Europe, Asia and North America are stored in NSK and NS.
+
+Digitization of the higher vascular plants at 600 dpi was initiated in 2014 using a special scanner, Herbscan, starting with type specimens. In 2017 a new research group “USU-Herbarium” was organized in CSBG for the digitization and management of herbarium collections. Herbarium specimens are being digitized using three customized scanners: Herbscan and two ObjectScan 1600, according international standarts at 600 dpi, with barcode, 24-color scale and scale bar. Images and metadata are stored in the CSBG Database (http://84.237.85.99:8081) generated by ScanWizard Botany and MiVapp Botany software (Microtek, Taiwan).</para>
+    </abstract>
+        <keywordSet>
+              <keyword>biodiversity</keyword>
+              <keyword>NS</keyword>
+              <keyword>Occurrence</keyword>
+              <keyword>Primulaceae</keyword>
+              <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+              <keyword>Specimen</keyword>
+              <keywordThesaurus>GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml</keywordThesaurus>
+        </keywordSet>
+      <intellectualRights>
+        <para>This work is licensed under a <ulink url="http://creativecommons.org/licenses/by/4.0/legalcode"><citetitle>Creative Commons Attribution (CC-BY) 4.0 License</citetitle></ulink>.</para>
+      </intellectualRights>
+      <distribution scope="document">
+          <online>
+              <url function="information">http://herb.csbg.nsc.ru:8081</url>
+          </online>
+      </distribution>
+      <coverage>
+            <geographicCoverage>
+                  <geographicDescription>Approximately 800,000 herbarium specimens of higher vascular plants, mosses, lichens and fungi collected in Siberia, Russian Far East, European Russia and West Europe, Asia and North America are stored in NSK and NS.</geographicDescription>
+                  <boundingCoordinates>
+                      <westBoundingCoordinate>-179.969</westBoundingCoordinate>
+                      <eastBoundingCoordinate>180</eastBoundingCoordinate>
+                      <northBoundingCoordinate>77.768</northBoundingCoordinate>
+                      <southBoundingCoordinate>40.98</southBoundingCoordinate>
+                  </boundingCoordinates>
+            </geographicCoverage>
+          <temporalCoverage>
+            <rangeOfDates>
+              <beginDate>
+                <calendarDate>      1851-01-01
+</calendarDate>
+              </beginDate>
+              <endDate>
+                <calendarDate>      2018-10-15
+</calendarDate>
+              </endDate>
+            </rangeOfDates>
+          </temporalCoverage>
+              <taxonomicCoverage>
+                    <generalTaxonomicCoverage>The family Primulaceae Batch. ex Bork was proposed as model object for the development of a scanning technique and the information entry into a virtual herbarium and the database of the Herbarium CSBG. In I.M. Krasnoborov&apos;s Herbarium (NS) about 1900 herbarium specimens from 8 genera, 112 species and 16 subspecies are stored.</generalTaxonomicCoverage>
+                    <taxonomicClassification>
+                          <taxonRankName>Family</taxonRankName>
+                        <taxonRankValue>Primulaceae</taxonRankValue>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Genus</taxonRankName>
+                        <taxonRankValue>Primula</taxonRankValue>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Genus</taxonRankName>
+                        <taxonRankValue>Androsace</taxonRankValue>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Genus</taxonRankName>
+                        <taxonRankValue>Lysimachia</taxonRankValue>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Genus</taxonRankName>
+                        <taxonRankValue>Glaux</taxonRankValue>
+                    </taxonomicClassification>
+              </taxonomicCoverage>
+      </coverage>
+      <purpose>
+          <para>In 2017 a new research group Unique Scientific Unit – Herbarium (USU-Herbarium) was organized in the CSBG for the digitization and management of herbarium collections.</para>
+      </purpose>
+      <maintenance>
+          <description>
+              <para></para>
+          </description>
+          <maintenanceUpdateFrequency>unkown</maintenanceUpdateFrequency>
+      </maintenance>
+      <contact>
+    <individualName>
+<givenName>Nataliya</givenName>          <surName>Kovtonyuk</surName>
+    </individualName>
+<organizationName>Central Siberian Botanical Garden, SB RAS</organizationName><positionName>Senior Researcher</positionName>    <address>
+<deliveryPoint>Zolotodolinskaya St. 101</deliveryPoint><city>Novosibirsk</city><administrativeArea>Novosibirskaya oblast&apos;</administrativeArea><postalCode>630090</postalCode><country>RUSSIAN_FEDERATION</country>    </address>
+<phone>+79529365495</phone><electronicMailAddress>knat2008@yandex.ru</electronicMailAddress><onlineUrl>https://csbg-nsk.ru/kovtonyuk_nk</onlineUrl>      <userId directory="http://orcid.org/">0000-0002-4018-6634</userId>
+      </contact>
+      <contact>
+    <individualName>
+<givenName>Irina</givenName>          <surName>Han</surName>
+    </individualName>
+<organizationName>Central Siberian Botanical Garden, SB RAS</organizationName><positionName>main engineer</positionName>    <address>
+<deliveryPoint>Zolotodolinskaya St. 101</deliveryPoint><city>Novosibirsk</city><administrativeArea>Novosibirskaya oblast&apos;</administrativeArea><postalCode>630090</postalCode><country>RUSSIAN_FEDERATION</country>    </address>
+<phone>+79138944819</phone><electronicMailAddress>irahan81@gmail.com</electronicMailAddress><onlineUrl>http://www.csbg.nsc.ru</onlineUrl>      <userId directory="http://orcid.org/">0000-0001-8385-5247</userId>
+      </contact>
+      <contact>
+    <individualName>
+<givenName>Evgeniya</givenName>          <surName>Gatilova</surName>
+    </individualName>
+<organizationName>Central Siberian Botanical Garden, SB RAS</organizationName><positionName>main specialist</positionName>    <address>
+<deliveryPoint>Zolotodolinskaya St. 101</deliveryPoint><city>Novosibirsk</city><administrativeArea>Novosibirskaya oblast&apos;</administrativeArea><postalCode>630090</postalCode><country>RUSSIAN_FEDERATION</country>    </address>
+<phone>+79137396831</phone><electronicMailAddress>zhenya_kl@mail.ru</electronicMailAddress><onlineUrl>http://www.csbg.nsc.ru</onlineUrl>      <userId directory="http://orcid.org/">0000-0001-9478-0244</userId>
+      </contact>
+      <methods>
+            <methodStep>
+                <description>
+                    <para>The digitization process includes the following 6 steps:
+
+1. Mounting of dry plant material onto an herbarium sheet;
+2. Check of the identification and nomenclature by a specialist;
+3. Barcoding the specimen: printing a barcode on the thermal printer and affixing it to the herbarium sheet;
+4. Placing the herbarium sheet, 24-color scale and scale bar (Fig. 8a) on the scanner platform and image capturing;
+5. Metadata generation, label OCR by ScanWizard Botany and verification of the label text by experts;
+6. Archive management by MiVapp-Botany.</para>
+                </description>
+            </methodStep>
+            <sampling>
+                <studyExtent>
+                    <description>
+                        <para>Currently about 15000 herbarium specimens from NS and NSK have been digitized at 600 dpi by special scanners HerbScan and ObjectScan and are available for researchers worldwide. Images and metadata of herbarium specimens are stored in the CSBG Database (http://84.237.85.99:8081), generated by ScanWizard Botany and MiVapp Botany (Kovtonyuk et al., 2018).
+The database is structured in such a way that, while using a specimen record, the user can access a high-resolution image along with the following information: specimen ID (= barcode), family name, scientific name (genus, species, author of taxon), collector’s name and collection date and the country and administrative region. Alternatively, a query may be submitted using habitat characteristics as key words, for example, “pine forest” (“сосновый лес” in Russian), “meadows” (“заливные луга”), etc. Images of specimens, label data and maps are available for downloads (the latter as attached images).
+In our internal database each image is provided with the following information: barcode, type status, genus name, species name, author’s name, infraspecific name, family name, collector’s name, field collection number, date (yyyy-mm-dd), country, administrative region, latitude (degrees and minutes), longitude (degrees and minutes), label text, name of identifier, annotation and accepted name in the Catalogue of Life (CoL) with a link to this database. Data from herbarium labels are entered in 26 fields in the Calc tables of the LibreOffice software package. Parsing information from herbarium labels allows the placement of queries, exporting electronic tables to other media, such as domestic bio-resource networks or international databases. Our plan at the CSBG is to continue with digitization of herbarium specimens of various families as requested by multiple experts. Developing virtual herbaria will not only facilitate the study and research on herbarium specimens, analysis of variability and distribution of taxa, of their composition in certain geographical regions, but also speed up regional projects, such as the long-awaited Flora of Russia, along with worldwide biodiversity projects.</para>
+                    </description>
+                </studyExtent>
+                <samplingDescription>
+                    <para>Digitization of the vascular plants in the NSK and NS collections initially was undertaken with a customized HerbScan unit, which consisted of a flatbed scanner (Epson Expression 10000XL) modified for inverted use. Currently digitization of samples is carried out using Herbscan and two ObjectScan 1600 scanners. Each workstation consists of an ObjectScan 1600 scanner, ScanWizard_Botany software (reg. number I41-018966) and MiVapp_Botany archive management system (reg. number I41-018969) software (Microtek, Taiwan). This integrated workstation is characterized by on-top scan design for full-frame focus, a maximum of 1600 dpi (equal to 1 Gigabyte pixels), color CCD, Optical Character Recognition (OCR) for specimen label and ID barcode, and image archive and privileged-account cloud management system.</para>
+                </samplingDescription>
+            </sampling>
+            <qualityControl>
+                <description>
+                    <para>Specimens were scanned using international standards: with the resolution of 600 dpi, a barcode for each specimen, and a 24-color scale and scale. Following recommendations of the Global Plant Initiative (GPI), a training course &quot;Specimen Digitization and Quality Assurance&quot; was organized at Royal Botanic Gardens, Kew (London, UK) on 13–15 May, 2014 by Dr. Jonathan Krieger and his team. Dr. Nataliya Kovtonyuk attended this course and received a Certificate of Attendance.</para>
+                </description>
+            </qualityControl>
+      </methods>
+
+      <project >
+          <title>Family Primulaceae in Digital Herbaria of CSBG SB RAS (NS)</title>
+          <personnel>
+    <individualName>
+<givenName>Nataliya</givenName>          <surName>Kovtonyuk</surName>
+    </individualName>
+      <userId directory="http://orcid.org/">0000-0002-4018-6634</userId>
+    <role>PUBLISHER</role>
+          </personnel>
+          <personnel>
+    <individualName>
+<givenName>Evgrniya</givenName>          <surName>Gatilova</surName>
+    </individualName>
+      <userId directory="http://orcid.org/">0000-0001-9478-0244</userId>
+    <role>PUBLISHER</role>
+          </personnel>
+          <personnel>
+    <individualName>
+<givenName>Irina</givenName>          <surName>Han</surName>
+    </individualName>
+      <userId directory="http://orcid.org/">0000-0001-8385-5247</userId>
+    <role>PROGRAMMER</role>
+          </personnel>
+          <abstract>
+              <para>Images and metadata are stored in the CSBG Database (http://84.237.85.99:8081) generated by ScanWizard Botany and MiVapp Botany software (Microtek, Taiwan).</para>
+          </abstract>
+          <funding>
+              <para></para>
+          </funding>
+            <studyAreaDescription>
+                <descriptor name="generic" citableClassificationSystem="false">
+                    <descriptorValue>In 2017 a new research group Unique Scientific Unit – Herbarium (USU-Herbarium) was organized in the CSBG for the digitization and management of herbarium collections. Herbarium specimens are being digitized using three customized scanners: Herbscan and two ObjectScan 1600, according to the international standards, at 600 dpi, with a barcode, 24-color scale and spatial scale bar. Images and metadata are stored in the CSBG Database (http://herb.csbg.nsc.ru:8081) generated by ScanWizard Botany and MiVapp Botany software (Microtek, Taiwan).</descriptorValue>
+                </descriptor>
+            </studyAreaDescription>
+      </project>
+</dataset>
+
+<additionalMetadata>
+    <metadata>
+      <gbif>
+        <dateStamp>2021-04-22T17:04:38Z</dateStamp>
+      <citation identifier="http://www.csbg.nsc.ru:8080/ipt/resource?r=primulaceaens&amp;amp;v=1.0">Kovtonyuk N, Han I, Gatilova E (2019). Family Primulaceae in Digital Herbaria of CSBG SB RAS (NS). Central Siberian Botanical Garden SB RAS. Occurrence dataset https://doi.org/10.15468/be6owh accessed via GBIF.org on 2021-04-22.</citation>
+              <bibliography>
+      <citation identifier="http://skvortsovia.uran.ru/2018/4302.pdf ">Nataliya K. Kovtonyuk, Irina V. Han and Evgeniya A. Gatilova. Digitization of vascular plant herbarium collections at the Central Siberian Botanical Garden, Novosibirsk, Russia // Skvortsovia: 4(3): 100–111 (2018).</citation>
+      <citation identifier="DOI: 10.21782/RMAR1995-2449-2018-4(19-29)">Kovtonyuk N.K., Han I.V., Gatilova E.A. (2018) Family Primulaceae in digital Herbarium of the Central Siberian Botanical garden SB RAS // Rast. Mir Asian Russia, № 4 (32). P. 19-29. DOI: 10.21782/RMAR1995-2449-2018-4(19-29)</citation>
+      <citation identifier="DOI:10.21782/RMAR1995-2449-2017-1(98-104).">Kovtonyuk N.K. 2017. Virtual herbarium collections as a resource for taxonomy and biodiversity study // Rast. Mir Asian Russia, N 1 (25). P. 98-104. 
+http://www.izdatgeo.ru/pdf/rast/2017-1/98.pdf</citation>
+      <citation identifier="DOI: https://doi.org/10.1007/978-3-030-11720-7_4">Kovtonyuk N., Han I., Gatilova E. (2019) Digital Herbarium Collections of the Central Siberian Botanical Garden SB RAS, Novosibirsk, Russia. In: Bychkov I., Voronin V. (eds) Information Technologies in the Research of Biodiversity. Springer Proceedings in Earth and Environmental Sciences. Springer, Cham. – pp. 22–27.</citation>
+              </bibliography>
+              <resourceLogoUrl>http://www.csbg.nsc.ru/uploads/images/csbg.png</resourceLogoUrl>
+              <collection>
+                <parentCollectionIdentifier></parentCollectionIdentifier>
+                <collectionIdentifier>NS</collectionIdentifier>
+                <collectionName>I.M.Krasnoborov Herbarium</collectionName>
+              </collection>
+        </gbif>
+    </metadata>
+</additionalMetadata>
+
+</eml:eml>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.1/eml.xsd"
+        packageId="744edc21-8dd2-474e-8a0b-b8c3d56a3c2d"  system="http://gbif.org" scope="system"
+  xml:lang="en">
+
+<dataset>
+      <alternateIdentifier>10.15468/a7ujmj</alternateIdentifier>
+    <title>Taxon occurrence data for the FungalRoot database</title>
+    <creator>
+    <individualName>
+<givenName>Nadejda A.</givenName>          <surName>Soudzilovskaia</surName>
+    </individualName>
+<electronicMailAddress>n.a.soudzilovskaia@cml.leidenuniv.nl</electronicMailAddress>    </creator>
+    <creator>
+    <individualName>
+<givenName>Stijn</givenName>          <surName>Vaessen</surName>
+    </individualName>
+<electronicMailAddress>stijn.v@hotmail.com</electronicMailAddress>    </creator>
+    <creator>
+    <individualName>
+<givenName>Milagros</givenName>          <surName>Barcelo</surName>
+    </individualName>
+<electronicMailAddress>m.barcelo@cml.leidenuniv.nl</electronicMailAddress>    </creator>
+    <creator>
+    <individualName>
+<givenName>Jinhong</givenName>          <surName>He</surName>
+    </individualName>
+<electronicMailAddress>fungalrootl@example.com</electronicMailAddress>    </creator>
+    <creator>
+    <individualName>
+<givenName>Saleh</givenName>          <surName>Rahimlou</surName>
+    </individualName>
+<electronicMailAddress>Saleh.Rahimlou@ut.ee</electronicMailAddress>    </creator>
+    <creator>
+    <individualName>
+<givenName>Kessy</givenName>          <surName>Abarenkov</surName>
+    </individualName>
+<electronicMailAddress>kessy.abarenkov@ut.ee</electronicMailAddress>    </creator>
+    <creator>
+    <individualName>
+<givenName>Mark C.</givenName>          <surName>Brundrett</surName>
+    </individualName>
+<electronicMailAddress>mark.brundrett@uwa.edu.au</electronicMailAddress>    </creator>
+    <creator>
+    <individualName>
+<givenName>Sofia</givenName>          <surName>Gomes</surName>
+    </individualName>
+<electronicMailAddress>fungalrootl@example.com</electronicMailAddress>    </creator>
+    <creator>
+    <individualName>
+<givenName>Vincent</givenName>          <surName>Merckx</surName>
+    </individualName>
+<electronicMailAddress>vincent.merckx@naturalis.nl</electronicMailAddress>    </creator>
+    <creator>
+    <individualName>
+<givenName>Laura</givenName>          <surName>Martinez-Suz</surName>
+    </individualName>
+<electronicMailAddress>fungalrootl@example.com</electronicMailAddress>    </creator>
+    <creator>
+    <individualName>
+<givenName>Leho</givenName>          <surName>Tedersoo</surName>
+    </individualName>
+<electronicMailAddress>leho.tedersoo@ut.ee</electronicMailAddress>    </creator>
+    <metadataProvider>
+    <individualName>
+<givenName>Kessy</givenName>          <surName>Abarenkov</surName>
+    </individualName>
+<electronicMailAddress>kessy.abarenkov@ut.ee</electronicMailAddress>    </metadataProvider>
+    <language>ENGLISH</language>
+    <abstract>
+        <para>The FungalRoot database accumulates information about plant mycorrhizal status and root colonization intensity, The database was assembled based on previously published reviews, local databases and a large number of yet neglected case studies and recent studies published in nine globally most important languages. The database enables to distinguish between reports of a presence of a particular mycorrhizal type, and reports where the plants were checked for all existing mycorrhizal types. In addition, our database provides information about the locality, ecosystem type, soil chemical data, and the method of mycorrhizal assessment that enable users to build more specific, local reference databases. The database contains 36,303 species by site observations for 14,870 plant species.</para>
+    </abstract>
+      <intellectualRights>
+        <para>This work is licensed under a <ulink url="http://creativecommons.org/licenses/by-nc/4.0/legalcode"><citetitle>Creative Commons Attribution Non Commercial (CC-BY-NC) 4.0 License</citetitle></ulink>.</para>
+      </intellectualRights>
+      <coverage>
+      </coverage>
+      <contact>
+    <individualName>
+<givenName>Leho</givenName>          <surName>Tedersoo</surName>
+    </individualName>
+<electronicMailAddress>leho.tedersoo@ut.ee</electronicMailAddress>      </contact>
+      <contact>
+    <individualName>
+<givenName>Nadejda A.</givenName>          <surName>Soudzilovskaia</surName>
+    </individualName>
+<electronicMailAddress>n.a.soudzilovskaia@cml.leidenuniv.nl</electronicMailAddress>      </contact>
+
+      <project >
+          <title></title>
+          <abstract>
+              <para></para>
+          </abstract>
+          <funding>
+              <para></para>
+          </funding>
+      </project>
+</dataset>
+
+<additionalMetadata>
+    <metadata>
+      <gbif>
+        <dateStamp>2021-05-25T19:19:25Z</dateStamp>
+      <citation>Soudzilovskaia N A, Vaessen S, Barcelo M, He J, Rahimlou S, Abarenkov K, Brundrett M C, Gomes S, Merckx V, Martinez-Suz L, Tedersoo L. Taxon occurrence data for the FungalRoot database. PlutoF. Occurrence dataset https://doi.org/10.15468/a7ujmj accessed via GBIF.org on 2021-05-25.</citation>
+        </gbif>
+    </metadata>
+</additionalMetadata>
+
+</eml:eml>

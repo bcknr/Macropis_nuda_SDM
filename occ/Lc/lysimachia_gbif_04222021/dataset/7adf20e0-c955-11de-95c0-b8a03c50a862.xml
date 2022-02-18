@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.1/eml.xsd"
+        packageId="7adf20e0-c955-11de-95c0-b8a03c50a862"  system="http://gbif.org" scope="system"
+  xml:lang="en">
+
+<dataset>
+      <alternateIdentifier>10.15468/bkzv1l</alternateIdentifier>
+        <alternateIdentifier>9167</alternateIdentifier>
+    <title>Royal Botanic Garden Edinburgh Living Plant Collections (E)</title>
+    <creator>
+    <individualName>
+          <surName>Rob Cubey</surName>
+    </individualName>
+    </creator>
+      <pubDate>
+      2018-11-18
+      </pubDate>
+    <language>ENGLISH</language>
+    <abstract>
+        <para>The Royal Botanic Garden Edinburgh was established in 1670 and during the 20th century acquired three Regional Gardens – the mountainous Benmore in Argyll; Dawyck in the wooded hills of the Scottish Borders and Logan on the Gulf Stream-warmed southern peninsula of Dumfries &amp;amp; Galloway.
+        Together they represent one of the world’s largest living collections of plants.</para>
+    </abstract>
+        <keywordSet>
+              <keyword>Living Plant Specimens</keyword>
+        </keywordSet>
+      <intellectualRights>
+        <para>This work is licensed under a <ulink url="http://creativecommons.org/licenses/by-nc/4.0/legalcode"><citetitle>Creative Commons Attribution Non Commercial (CC-BY-NC) 4.0 License</citetitle></ulink>.</para>
+      </intellectualRights>
+      <distribution scope="document">
+          <online>
+              <url function="information">http://www.rbge.org.uk/</url>
+          </online>
+      </distribution>
+
+</dataset>
+
+<additionalMetadata>
+    <metadata>
+      <gbif>
+        <dateStamp>2021-04-22T17:04:38Z</dateStamp>
+      <citation>Rob Cubey (2018). Royal Botanic Garden Edinburgh Living Plant Collections (E). Royal Botanic Garden Edinburgh. Occurrence dataset https://doi.org/10.15468/bkzv1l accessed via GBIF.org on 2021-04-22.</citation>
+        </gbif>
+    </metadata>
+</additionalMetadata>
+
+</eml:eml>

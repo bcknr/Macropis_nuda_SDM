@@ -1,0 +1,11 @@
+﻿id,col_id,species,date,country,state,county,muni,site,lat,lon
+GMacI_1,,Macropis nuda,7/9/20,Canada,QC,,Montreal,,45.501337,-73.76413
+BDuCl_1,2015P0665,Macropis nuda,7/9/15,US,Maine,Waldo,Lincolnville,,44.3054,-69.1156
+BDuCl_2,2014P0031,Macropis nuda,7/9/14,US,Maine,Waldo,Belmont,,44.3733,-69.0754
+wLab_1,SWG2016_4735,Macropis nuda,7/6/16,US,New Jersey,Morris,Randolph,Posner_Pond_natural,40.831453,-74.621981
+TJWood_1,,Macropis nuda,7/8/17,US,Michigan,Hillsdale,,Pittsford State Game Area: Tote Road to Trail Road,41.866,-84.522
+TJWood_2,,Macropis nuda,6/25/18,US,Michigan,Tuscola,,Dayton: Plain Rd x Riley Rd,43.465,-83.268
+TJWood_3,,Macropis nuda,6/30/18,US,Michigan,Dickinson,,Foster City: Felch,45.996,-87.825
+TJWood_4,,Macropis nuda,7/14/18,US,Michigan,St Clair,,Algonac State Park,42.65,-82.531
+TJWood_5,,Macropis nuda,7/15/18,US,Michigan,Alcona,,Black River: Black River Rd x La Vigne Rd,44.815,-83.324
+TJWood_6,,Macropis nuda,7/15/18,US,Michigan,Alpena,,Mackinaw State Forest: Long Rapids Rd x Truax Creek,45.116,-83.823

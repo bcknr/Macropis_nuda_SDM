@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.1/eml.xsd"
+        packageId="e523cf2d-4fc2-48d8-aa75-80ecbc90b3f5"  system="http://gbif.org" scope="system"
+  xml:lang="en">
+
+<dataset>
+      <alternateIdentifier>10.15468/ai1kou</alternateIdentifier>
+        <alternateIdentifier>https://cch2.org/portal/collections/misc/collprofiles.php?collid=3</alternateIdentifier>
+        <alternateIdentifier>http://cch2.org/portal/collections/misc/collprofiles.php?collid=3</alternateIdentifier>
+    <title>UCR - University of California, Riverside Herbarium - Vascular Plants</title>
+    <creator>
+<organizationName>CCH2 Portal</organizationName><electronicMailAddress>jyost@calpoly.edu</electronicMailAddress><onlineUrl>https://cch2.org/portal/index.php</onlineUrl>    </creator>
+    <metadataProvider>
+<organizationName>CCH2 Portal</organizationName><electronicMailAddress>jyost@calpoly.edu</electronicMailAddress><onlineUrl>https://cch2.org/portal/index.php</onlineUrl>    </metadataProvider>
+    <associatedParty>
+    <individualName>
+          <surName>Andrew Sanders</surName>
+    </individualName>
+<electronicMailAddress>Andrew.Sanders@ucr.edu</electronicMailAddress>    <role>CONTENT_PROVIDER</role>
+    </associatedParty>
+      <pubDate>
+      2021-05-06
+      </pubDate>
+    <language>ENGLISH</language>
+    <abstract>
+        <para></para>
+    </abstract>
+      <intellectualRights>
+        <para>This work is licensed under a <ulink url="http://creativecommons.org/licenses/by-nc/4.0/legalcode"><citetitle>Creative Commons Attribution Non Commercial (CC-BY-NC) 4.0 License</citetitle></ulink>.</para>
+      </intellectualRights>
+      <contact>
+<organizationName>UCR - University of California, Riverside Herbarium - Vascular Plants</organizationName><phone>(951) 827-3601</phone><electronicMailAddress>Andrew.Sanders@ucr.edu</electronicMailAddress><onlineUrl>http://herbarium.ucr.edu/Herbarium.html</onlineUrl>      </contact>
+
+</dataset>
+
+<additionalMetadata>
+    <metadata>
+      <gbif>
+        <dateStamp>2021-05-25T19:19:25Z</dateStamp>
+      <citation>University of California Riverside (2021). UCR - University of California, Riverside Herbarium - Vascular Plants. Occurrence dataset https://doi.org/10.15468/ai1kou accessed via GBIF.org on 2021-05-25.</citation>
+        </gbif>
+    </metadata>
+</additionalMetadata>
+
+</eml:eml>

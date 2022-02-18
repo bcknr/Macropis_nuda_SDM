@@ -1,0 +1,21 @@
+********************************************** 
+ Beginning Spatial Thinning.
+ Script Started at: Sun Sep 19 18:55:08 2021
+
+Thinning Parameter Used (in km): 10
+Number of replicates of thinning script: 100
+
+Elapsed time for thinning completion
+593.005 244.342 846.375 0 0
+
+Number of data.frames per locations retained
+loc.cnt df.freq
+729	730	731	732	733	734	735	736	737
+1	2	10	15	33	21	10	6	2
+Maximum number of records after thinning: 737
+Number of data.frames with max records: 2
+
+**New *.csv file creation:**
+Created new output directory: ../../occ/Aa_NE_thinned_full/
+Writing file: ../../occ/Aa_NE_thinned_full/Aa_ne_thinned_thin1.csv
+Writing file: ../../occ/Aa_NE_thinned_full/Aa_ne_thinned_thin2.csv

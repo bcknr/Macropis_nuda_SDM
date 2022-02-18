@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.1/eml.xsd"
+        packageId="2429287b-ef65-4cfd-afcc-11cc3ba95cca"  system="http://gbif.org" scope="system"
+  xml:lang="en">
+
+<dataset>
+      <alternateIdentifier>10.18165/qssyvr</alternateIdentifier>
+        <alternateIdentifier>10.15468/dqb9za</alternateIdentifier>
+        <alternateIdentifier>http://web.macs.ualberta.ca:8088/ipt/resource?r=uofa_vascular_plants_herbarium</alternateIdentifier>
+        <alternateIdentifier>http://web.macs.ualberta.ca:8088/ipt/resource.do?r=uofa_vascular_plants_herbarium</alternateIdentifier>
+        <alternateIdentifier>2429287b-ef65-4cfd-afcc-11cc3ba95cca</alternateIdentifier>
+    <title>University of Alberta Vascular Plant Herbarium (ALTA-VP)</title>
+    <creator>
+    <individualName>
+          <surName>University of Alberta Museums</surName>
+    </individualName>
+    <address>
+<deliveryPoint>Ring House 1, Museums and Collections Services, University of Alberta</deliveryPoint><city>Edmonton</city><administrativeArea>Alberta</administrativeArea><postalCode>T6G 2E1</postalCode><country>CANADA</country>    </address>
+<phone>780-492-5834</phone><electronicMailAddress>museums@ualberta.ca</electronicMailAddress><onlineUrl>http://www.museums.ualberta.ca/</onlineUrl>    </creator>
+    <metadataProvider>
+    <individualName>
+<givenName>Denis</givenName>          <surName>La France</surName>
+    </individualName>
+<organizationName>University of Alberta Museums</organizationName><positionName>Systems Administrator</positionName>    <address>
+<deliveryPoint>Ring House 1, Museums and Collections Services, University of Alberta</deliveryPoint><city>Edmonton</city><administrativeArea>Alberta</administrativeArea><postalCode>T6G 2E1</postalCode><country>CANADA</country>    </address>
+<phone>780-492-7958</phone><electronicMailAddress>dlafranc@ualberta.ca</electronicMailAddress><onlineUrl>http://www.museums.ualberta.ca/</onlineUrl>    </metadataProvider>
+    <metadataProvider>
+    <individualName>
+<givenName>Alyssa</givenName>          <surName>Becker-Burns</surName>
+    </individualName>
+<organizationName>University of Alberta Museums</organizationName><positionName>Assistant Director Collections Management</positionName>    <address>
+<deliveryPoint>Ring House 1, Museums and Collections Services, University of Alberta</deliveryPoint><city>Edmonton</city><administrativeArea>Alberta</administrativeArea><postalCode>T6G 2E1</postalCode><country>CANADA</country>    </address>
+<phone>780-492-3871</phone><electronicMailAddress>becker1@ualberta.ca</electronicMailAddress><onlineUrl>http://www.museums.ualberta.ca/</onlineUrl>    </metadataProvider>
+    <associatedParty>
+    <individualName>
+<givenName>Dorothy</givenName>          <surName>Fabijan</surName>
+    </individualName>
+<organizationName>University of Alberta</organizationName><positionName>Assistant Curator</positionName>    <address>
+<deliveryPoint>CW 405, Biological Sciences Bldg., University of Alberta</deliveryPoint><city>Edmonton</city><administrativeArea>Alberta</administrativeArea><postalCode>T6G 2E9</postalCode><country>CANADA</country>    </address>
+<phone>780-492-5523</phone><electronicMailAddress>dorothy.fabijan@ualberta.ca</electronicMailAddress>    <role>CURATOR</role>
+    </associatedParty>
+    <associatedParty>
+    <individualName>
+<givenName>Denis</givenName>          <surName>La France</surName>
+    </individualName>
+<organizationName>University of Alberta Museums</organizationName><positionName>Systems Administrator</positionName>    <address>
+<deliveryPoint>Ring House 1, Museums and Collections Services, University of Alberta</deliveryPoint><city>Edmonton</city><administrativeArea>Alberta</administrativeArea><postalCode>T6G 2E1</postalCode><country>CANADA</country>    </address>
+<phone>780-492-7958</phone><electronicMailAddress>dlafranc@ualberta.ca</electronicMailAddress><onlineUrl>http://www.museums.ualberta.ca/</onlineUrl>    <role>CUSTODIAN_STEWARD</role>
+    </associatedParty>
+    <associatedParty>
+    <individualName>
+<givenName>Alyssa</givenName>          <surName>Becker-Burns</surName>
+    </individualName>
+<organizationName>University of Alberta Museums</organizationName><positionName>Assistant Director Collections Management</positionName>    <address>
+<deliveryPoint>Ring House 1, Museums and Collections Services, University of Alberta</deliveryPoint><city>Edmonton</city><administrativeArea>Alberta</administrativeArea><postalCode>T6G 2E1</postalCode><country>CANADA</country>    </address>
+<phone>780-492-3871</phone><electronicMailAddress>becker1@ualberta.ca</electronicMailAddress><onlineUrl>http://www.museums.ualberta.ca/</onlineUrl>    <role>CUSTODIAN_STEWARD</role>
+    </associatedParty>
+    <associatedParty>
+    <individualName>
+<givenName>Jocelyn</givenName>          <surName>Hall</surName>
+    </individualName>
+<organizationName>University of Alberta</organizationName><positionName>Curator</positionName>    <address>
+<deliveryPoint>CW 405, Biological Sciences Bldg., University of Alberta</deliveryPoint><city>Edmonton</city><administrativeArea>Alberta</administrativeArea><postalCode>T6G 2E9</postalCode><country>CANADA</country>    </address>
+<phone>780-492-8611</phone><electronicMailAddress>jocelyn.hall@ualberta.ca</electronicMailAddress><onlineUrl>https://www.ualberta.ca/science/about-us/contact-us/faculty-directory/jocelyn-hall</onlineUrl>      <userId directory="http://orcid.org/">0000-0001-8889-7892</userId>
+    <role>CURATOR</role>
+    </associatedParty>
+      <pubDate>
+      2021-05-22
+      </pubDate>
+    <language>ENGLISH</language>
+    <abstract>
+        <para>The Vascular Plant Herbarium is a research and teaching resource for the study of evolution, diversity, distribution and ecology of cordilleran, prairie, arctic and alpine plants. It is the largest herbarium of its kind in Alberta, and the third largest in Western Canada. Founded in 1912, the herbarium holds more than 120,000 specimens dating from 1835 to the present and is built upon the collecting activities of faculty members and students, as well as the acquisition of outstanding amateur collections. Though global in scope, the strength of the collection lies in plants of Alberta and northern Canada.</para>
+    </abstract>
+        <keywordSet>
+              <keyword>Specimen</keyword>
+              <keywordThesaurus>GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+              <keyword>Occurrence</keyword>
+              <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+        </keywordSet>
+      <intellectualRights>
+        <para>To the extent possible under law, the publisher has waived all rights to these data and has dedicated them to the <ulink url="http://creativecommons.org/publicdomain/zero/1.0/legalcode"><citetitle>Public Domain (CC0 1.0)</citetitle></ulink>. Users may copy, modify, distribute and use the work, including for commercial purposes, without restriction.</para>
+      </intellectualRights>
+      <distribution scope="document">
+          <online>
+              <url function="information">https://www.ualberta.ca/museums/museum-collections/vascular-plant-herbarium.html</url>
+          </online>
+      </distribution>
+      <coverage>
+            <geographicCoverage>
+                  <geographicDescription>Global, North America, Canada, United States, Alberta</geographicDescription>
+                  <boundingCoordinates>
+                      <westBoundingCoordinate>-180</westBoundingCoordinate>
+                      <eastBoundingCoordinate>180</eastBoundingCoordinate>
+                      <northBoundingCoordinate>90</northBoundingCoordinate>
+                      <southBoundingCoordinate>-90</southBoundingCoordinate>
+                  </boundingCoordinates>
+            </geographicCoverage>
+              <taxonomicCoverage>
+                    <generalTaxonomicCoverage>The following taxonomic groups make up &gt;10% of the collection:
+Plantae, Angiospermae, Eudicots, Monocots, Poales, Asterales, Poaceae, Cyperaceae, Asteraceae, Carex</generalTaxonomicCoverage>
+                    <taxonomicClassification>
+                          <taxonRankName>Kingdom</taxonRankName>
+                        <taxonRankValue>Plantae</taxonRankValue>
+                          <commonName>Plants</commonName>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Unranked</taxonRankName>
+                        <taxonRankValue>Angiospermae</taxonRankValue>
+                          <commonName>Angiosperms</commonName>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Unranked</taxonRankName>
+                        <taxonRankValue>Eudicots</taxonRankValue>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Unranked</taxonRankName>
+                        <taxonRankValue>Monocots</taxonRankValue>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Order</taxonRankName>
+                        <taxonRankValue>Poales</taxonRankValue>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Order</taxonRankName>
+                        <taxonRankValue>Asterales</taxonRankValue>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Family</taxonRankName>
+                        <taxonRankValue>Poaceae</taxonRankValue>
+                          <commonName>Grasses</commonName>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Family</taxonRankName>
+                        <taxonRankValue>Cyperaceae</taxonRankValue>
+                          <commonName>Sedges</commonName>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Family</taxonRankName>
+                        <taxonRankValue>Asteraceae</taxonRankValue>
+                          <commonName>Asters, Daisies, Composites, Sunflowers</commonName>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Genus</taxonRankName>
+                        <taxonRankValue>Carex</taxonRankValue>
+                          <commonName>Sedges</commonName>
+                    </taxonomicClassification>
+              </taxonomicCoverage>
+      </coverage>
+      <maintenance>
+          <description>
+              <para></para>
+          </description>
+          <maintenanceUpdateFrequency>daily</maintenanceUpdateFrequency>
+      </maintenance>
+      <contact>
+    <individualName>
+<givenName>Jocelyn</givenName>          <surName>Hall</surName>
+    </individualName>
+<organizationName>University of Alberta</organizationName><positionName>Curator</positionName>    <address>
+<deliveryPoint>CW 405, Biological Sciences Bldg., University of Alberta</deliveryPoint><city>Edmonton</city><administrativeArea>Alberta</administrativeArea><postalCode>T6G 2E9</postalCode><country>CANADA</country>    </address>
+<phone>780-492-8611</phone><electronicMailAddress>jocelyn.hall@ualberta.ca</electronicMailAddress><onlineUrl>https://www.ualberta.ca/science/about-us/contact-us/faculty-directory/jocelyn-hall</onlineUrl>      <userId directory="http://orcid.org/">0000-0001-8889-7892</userId>
+      </contact>
+
+</dataset>
+
+<additionalMetadata>
+    <metadata>
+      <gbif>
+        <dateStamp>2021-06-17T19:14:37Z</dateStamp>
+      <citation identifier="http://doi.org/10.18165/qssyvr">University of Alberta Museums, La France D, Becker-Burns A (2021). University of Alberta Vascular Plant Herbarium (ALTA-VP). Version 10.54. University of Alberta Museums. Occurrence dataset https://doi.org/10.18165/qssyvr accessed via GBIF.org on 2021-06-17.</citation>
+              <collection>
+                <parentCollectionIdentifier>UAM</parentCollectionIdentifier>
+                <collectionIdentifier>ALTA-VP</collectionIdentifier>
+                <collectionName>University of Alberta Vascular Plant Herbarium</collectionName>
+              </collection>
+              <formationPeriod>1856-current</formationPeriod>
+                <specimenPreservationMethod>DRIED_AND_PRESSED</specimenPreservationMethod>
+      </gbif>
+    </metadata>
+</additionalMetadata>
+
+</eml:eml>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.1/eml.xsd"
+        packageId="ed3d96f2-db7b-48cd-9960-f871e7df7286"  system="http://gbif.org" scope="system"
+  xml:lang="en">
+
+<dataset>
+      <alternateIdentifier>10.15468/adb2bb</alternateIdentifier>
+        <alternateIdentifier>https://cch2.org/portal/collections/misc/collprofiles.php?collid=16</alternateIdentifier>
+    <title>SBBG - Clifton Smith Herbarium, Santa Barbara Botanic Garden</title>
+    <creator>
+<organizationName>CCH2 Portal</organizationName><electronicMailAddress>jyost@calpoly.edu</electronicMailAddress><onlineUrl>https://cch2.org/portal/index.php</onlineUrl>    </creator>
+    <metadataProvider>
+<organizationName>CCH2 Portal</organizationName><electronicMailAddress>jyost@calpoly.edu</electronicMailAddress><onlineUrl>https://cch2.org/portal/index.php</onlineUrl>    </metadataProvider>
+    <associatedParty>
+    <individualName>
+          <surName>C. Matt Guilliams</surName>
+    </individualName>
+<electronicMailAddress>mguilliams@sbbg.org</electronicMailAddress>    <role>CONTENT_PROVIDER</role>
+    </associatedParty>
+      <pubDate>
+      2021-05-06
+      </pubDate>
+    <language>ENGLISH</language>
+    <abstract>
+        <para>The SBBG herbaria house the region&amp;#39;s largest scientific collection of preserved Central Coast and California Channel Islands vascular plants, bryophytes, lichens, and macrofungi. Across these collections, the Garden curates approximately 190,000 specimens. Vascular plant specimen data are served on this portal (https://cch2.org/). Lichen specimen data are served on the Consortium of North American Lichen Herbaria (https://lichenportal.org/cnalh/). Macrofungus specimen data are served on the Mycology Collections Portal (https://mycoportal.org/portal/index.php). Bryophyte data are not yet served digitally.</para>
+    </abstract>
+      <intellectualRights>
+        <para>This work is licensed under a <ulink url="http://creativecommons.org/licenses/by-nc/4.0/legalcode"><citetitle>Creative Commons Attribution Non Commercial (CC-BY-NC) 4.0 License</citetitle></ulink>.</para>
+      </intellectualRights>
+      <contact>
+<organizationName>SBBG - Clifton Smith Herbarium, Santa Barbara Botanic Garden</organizationName><phone>(805)-682-4726 ext. 124</phone><electronicMailAddress>mguilliams@sbbg.org</electronicMailAddress><onlineUrl>https://www.sbbg.org/explore-garden/pritzlaff-conservation-center/herbarium</onlineUrl>      </contact>
+
+</dataset>
+
+<additionalMetadata>
+    <metadata>
+      <gbif>
+        <dateStamp>2021-05-25T19:19:25Z</dateStamp>
+      <citation>Santa Barbara Botanic Garden (2021). SBBG - Clifton Smith Herbarium, Santa Barbara Botanic Garden. Occurrence dataset https://doi.org/10.15468/adb2bb accessed via GBIF.org on 2021-05-25.</citation>
+        </gbif>
+    </metadata>
+</additionalMetadata>
+
+</eml:eml>

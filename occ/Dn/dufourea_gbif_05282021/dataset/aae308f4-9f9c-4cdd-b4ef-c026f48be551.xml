@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.1/eml.xsd"
+        packageId="aae308f4-9f9c-4cdd-b4ef-c026f48be551"  system="http://gbif.org" scope="system"
+  xml:lang="en">
+
+<dataset>
+      <alternateIdentifier>10.15468/fhntpy</alternateIdentifier>
+        <alternateIdentifier>http://ipt.nhm.ku.edu:8080/ipt/resource?r=kubi_entomology</alternateIdentifier>
+        <alternateIdentifier>http://ipt.nhm.ku.edu/ipt/resource?r=kubi_entomology</alternateIdentifier>
+        <alternateIdentifier>http://ipt.nhm.ku.edu/ipt/resource.do?r=kubi_entomology</alternateIdentifier>
+        <alternateIdentifier>aae308f4-9f9c-4cdd-b4ef-c026f48be551</alternateIdentifier>
+        <alternateIdentifier>13674</alternateIdentifier>
+    <title>Snow Entomological Museum Collection</title>
+    <creator>
+    <individualName>
+<givenName>Andrew</givenName>          <surName>Bentley</surName>
+    </individualName>
+<organizationName>University of Kansas, Biodiversity Institute</organizationName><positionName>Bioinformatics Manager</positionName>    <address>
+<deliveryPoint>1345 Jayhawk Boulevard</deliveryPoint><city>Lawrence</city><administrativeArea>Kansas</administrativeArea><postalCode>66045</postalCode><country>UNITED_STATES</country>    </address>
+<phone>+1 (785) 864-3863</phone><electronicMailAddress>abentley@ku.edu</electronicMailAddress><onlineUrl>https://biodiversity.ku.edu/</onlineUrl>    </creator>
+    <metadataProvider>
+    <individualName>
+<givenName>Jennifer</givenName>          <surName>Thomas</surName>
+    </individualName>
+<organizationName>University of Kansas, Biodiversity Institute</organizationName><positionName>Assistant Collection Manager</positionName>    <address>
+<deliveryPoint>1501 Crestline Dr. suite 140</deliveryPoint><city>Lawrence</city><administrativeArea>Kansas</administrativeArea><postalCode>66045</postalCode><country>UNITED_STATES</country>    </address>
+<phone>+1 (785) 864-2234</phone><electronicMailAddress>jct@ku.edu</electronicMailAddress><onlineUrl>https://biodiversity.ku.edu/entomology</onlineUrl>    </metadataProvider>
+    <associatedParty>
+    <individualName>
+<givenName>Michael</givenName>          <surName>Engel</surName>
+    </individualName>
+<organizationName>University of Kansas, Biodiversity Institute</organizationName><positionName>Curator in Charge</positionName>    <address>
+<deliveryPoint>1501 Crestline Dr. suite 140</deliveryPoint><city>Lawrence</city><administrativeArea>KS</administrativeArea><postalCode>66045</postalCode><country>UNITED_STATES</country>    </address>
+<phone>+01 (785) 864-2319</phone><electronicMailAddress>msengel@ku.edu</electronicMailAddress><onlineUrl>https://biodiversity.ku.edu/entomology</onlineUrl>    <role>CURATOR</role>
+    </associatedParty>
+    <associatedParty>
+    <individualName>
+<givenName>Andrew</givenName>          <surName>Short</surName>
+    </individualName>
+<organizationName>University of Kansas, Biodiversity Institute</organizationName><positionName>Curator</positionName>    <address>
+<deliveryPoint>1501 Crestline Dr. suite 140</deliveryPoint><city>Lawrence</city><administrativeArea>KS</administrativeArea><postalCode>66045</postalCode><country>UNITED_STATES</country>    </address>
+<phone>+01 (785) 864-2323</phone><electronicMailAddress>aezshort@ku.edu</electronicMailAddress><onlineUrl>https://biodiversity.ku.edu/entomology</onlineUrl>    <role>CURATOR</role>
+    </associatedParty>
+      <pubDate>
+      2021-05-06
+      </pubDate>
+    <language>ENGLISH</language>
+    <abstract>
+        <para>SEMC (Snow Entomological Museum Collection) comprises nearly 5 million pinned insect specimens.  Our strengths are Apoidea, Neotropical Coleoptera (especially Staphylinidae, Hydrophiloidea, and Chrysomoloidea), Mecoptera, and fossil insects.
+We have digitized approximately 800,000 individual specimens (mostly Apoidea and Staphylinidae, Orthoptera, and various other smaller families).</para>
+    </abstract>
+        <keywordSet>
+              <keyword>Specimen</keyword>
+              <keywordThesaurus>GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+              <keyword>Occurrence</keyword>
+              <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+        </keywordSet>
+      <additionalInfo>
+          <para>http://biodiversity.ku.edu/research/university-kansas-biodiversity-institute-data-publication-and-use-norms</para>
+      </additionalInfo>
+      <intellectualRights>
+        <para>This work is licensed under a <ulink url="http://creativecommons.org/licenses/by/4.0/legalcode"><citetitle>Creative Commons Attribution (CC-BY) 4.0 License</citetitle></ulink>.</para>
+      </intellectualRights>
+      <distribution scope="document">
+          <online>
+              <url function="information">http://biodiversity.ku.edu/entomology/collections</url>
+          </online>
+      </distribution>
+      <coverage>
+            <geographicCoverage>
+                  <geographicDescription>Our collection has excellent representation in Kansas and North America (generally), as well as Central and South America (Apoidea, Coleoptera). We have good representation for the Palearctic region as well as Southern Africa and Australia (Apoidea).</geographicDescription>
+                  <boundingCoordinates>
+                      <westBoundingCoordinate>-180</westBoundingCoordinate>
+                      <eastBoundingCoordinate>180</eastBoundingCoordinate>
+                      <northBoundingCoordinate>90</northBoundingCoordinate>
+                      <southBoundingCoordinate>-90</southBoundingCoordinate>
+                  </boundingCoordinates>
+            </geographicCoverage>
+      </coverage>
+      <maintenance>
+          <description>
+              <para></para>
+          </description>
+          <maintenanceUpdateFrequency>unkown</maintenanceUpdateFrequency>
+      </maintenance>
+      <contact>
+    <individualName>
+<givenName>Zack</givenName>          <surName>Falin</surName>
+    </individualName>
+<organizationName>University of Kansas, Biodiversity Institute</organizationName><positionName>Collection Manager</positionName>    <address>
+<deliveryPoint>1501 Crestline Dr., Suite 140</deliveryPoint><city>Lawrence</city><administrativeArea>Kansas</administrativeArea><postalCode>66045</postalCode><country>UNITED_STATES</country>    </address>
+<phone>+1 (785) 865-3034</phone><electronicMailAddress>ksem@ku.edu</electronicMailAddress><onlineUrl>https://biodiversity.ku.edu/entomology</onlineUrl>      </contact>
+
+</dataset>
+
+<additionalMetadata>
+    <metadata>
+      <gbif>
+        <dateStamp>2021-05-28T13:38:43Z</dateStamp>
+      <citation>Bentley A, Thomas J (2021). Snow Entomological Museum Collection. Version 26.50. University of Kansas Biodiversity Institute. Occurrence dataset https://doi.org/10.15468/fhntpy accessed via GBIF.org on 2021-05-28.</citation>
+              <collection>
+                <parentCollectionIdentifier>KU Biodiversity Institute</parentCollectionIdentifier>
+                <collectionIdentifier>SEMC</collectionIdentifier>
+                <collectionName>Division of Entomology (Snow Entomological Museum Collection)</collectionName>
+              </collection>
+                <specimenPreservationMethod>PINNED</specimenPreservationMethod>
+              <livingTimePeriod>1890-2011</livingTimePeriod>
+        </gbif>
+    </metadata>
+</additionalMetadata>
+
+</eml:eml>

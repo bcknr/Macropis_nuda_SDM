@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.1/eml.xsd"
+        packageId="cccd7d2f-33f5-4cc4-8076-6f2522befa92"  system="http://gbif.org" scope="system"
+  xml:lang="en">
+
+<dataset>
+      <alternateIdentifier>10.15468/nddf7z</alternateIdentifier>
+        <alternateIdentifier>cccd7d2f-33f5-4cc4-8076-6f2522befa92</alternateIdentifier>
+        <alternateIdentifier>http://ipt.vtecostudies.org/ipt-2.3.5/resource?r=llr</alternateIdentifier>
+    <title>Leif Richardson Vermont Bee Specimens</title>
+    <creator>
+    <individualName>
+<givenName>Leif</givenName>          <surName>Richardson</surName>
+    </individualName>
+<organizationName>University of Vermont</organizationName><electronicMailAddress>leif.richardson@uvm.edu</electronicMailAddress><onlineUrl>https://www.leifrichardson.org/</onlineUrl>      <userId directory="http://orcid.org/">0000-0003-4855-5737</userId>
+    </creator>
+    <creator>
+    <individualName>
+<givenName>Spencer</givenName>          <surName>Hardy</surName>
+    </individualName>
+<organizationName>Vermont Center for Ecostudies</organizationName><positionName>Project Coordinator</positionName>    <address>
+<city>Norwich</city><administrativeArea>VT</administrativeArea><postalCode>05055</postalCode><country>UNITED_STATES</country>    </address>
+<electronicMailAddress>shardy@vtecostudies.org</electronicMailAddress>      <userId directory="http://orcid.org/">0000-0003-3004-2271</userId>
+    </creator>
+    <metadataProvider>
+    <individualName>
+<givenName>Leif</givenName>          <surName>Richardson</surName>
+    </individualName>
+<organizationName>University of Vermont</organizationName><electronicMailAddress>leif.richardson@uvm.edu</electronicMailAddress><onlineUrl>https://www.leifrichardson.org/</onlineUrl>      <userId directory="http://orcid.org/">0000-0003-4855-5737</userId>
+    </metadataProvider>
+    <metadataProvider>
+    <individualName>
+<givenName>Spencer</givenName>          <surName>Hardy</surName>
+    </individualName>
+<organizationName>Vermont Center for Ecostudies</organizationName><positionName>Project Coordinator</positionName>    <address>
+<city>Norwich</city><administrativeArea>VT</administrativeArea><postalCode>05055</postalCode><country>UNITED_STATES</country>    </address>
+<electronicMailAddress>shardy@vtecostudies.org</electronicMailAddress>      <userId directory="http://orcid.org/">0000-0003-3004-2271</userId>
+    </metadataProvider>
+    <associatedParty>
+    <individualName>
+<givenName>Leif</givenName>          <surName>Richardson</surName>
+    </individualName>
+<organizationName>University of Vermont</organizationName><electronicMailAddress>leif.richardson@uvm.edu</electronicMailAddress><onlineUrl>https://www.leifrichardson.org/</onlineUrl>      <userId directory="http://orcid.org/">0000-0003-4855-5737</userId>
+    <role>AUTHOR</role>
+    </associatedParty>
+    <associatedParty>
+    <individualName>
+<givenName>Spencer</givenName>          <surName>Hardy</surName>
+    </individualName>
+<organizationName>Vermont Center for Ecostudies</organizationName>    <address>
+<city>Norwich</city><administrativeArea>VT</administrativeArea><postalCode>05055</postalCode><country>UNITED_STATES</country>    </address>
+<electronicMailAddress>shardy@vtecostudies.org</electronicMailAddress>      <userId directory="http://orcid.org/">0000-0003-3004-2271</userId>
+    <role>AUTHOR</role>
+    </associatedParty>
+      <pubDate>
+      2021-02-12
+      </pubDate>
+    <language>ENGLISH</language>
+    <abstract>
+        <para>Bee specimens collected or acquired by Leif Richardson for a variety of research projects. Additional determinations and Bumble bee records to be added.</para>
+    </abstract>
+        <keywordSet>
+              <keyword>Occurrence</keyword>
+              <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+              <keyword>Specimen</keyword>
+              <keywordThesaurus>GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml</keywordThesaurus>
+        </keywordSet>
+      <intellectualRights>
+        <para>This work is licensed under a <ulink url="http://creativecommons.org/licenses/by-nc/4.0/legalcode"><citetitle>Creative Commons Attribution Non Commercial (CC-BY-NC) 4.0 License</citetitle></ulink>.</para>
+      </intellectualRights>
+      <coverage>
+            <geographicCoverage>
+                  <geographicDescription>Predominately collected in Vermont</geographicDescription>
+                  <boundingCoordinates>
+                      <westBoundingCoordinate>-73.74</westBoundingCoordinate>
+                      <eastBoundingCoordinate>-71.104</eastBoundingCoordinate>
+                      <northBoundingCoordinate>45.398</northBoundingCoordinate>
+                      <southBoundingCoordinate>42.553</southBoundingCoordinate>
+                  </boundingCoordinates>
+            </geographicCoverage>
+          <temporalCoverage>
+            <rangeOfDates>
+              <beginDate>
+                <calendarDate>      1967
+</calendarDate>
+              </beginDate>
+              <endDate>
+                <calendarDate>      2016
+</calendarDate>
+              </endDate>
+            </rangeOfDates>
+          </temporalCoverage>
+              <taxonomicCoverage>
+                    <generalTaxonomicCoverage>Bees</generalTaxonomicCoverage>
+                    <taxonomicClassification>
+                          <taxonRankName>Superfamily</taxonRankName>
+                        <taxonRankValue>Apoidea</taxonRankValue>
+                    </taxonomicClassification>
+              </taxonomicCoverage>
+      </coverage>
+      <maintenance>
+          <description>
+              <para></para>
+          </description>
+          <maintenanceUpdateFrequency>unkown</maintenanceUpdateFrequency>
+      </maintenance>
+      <contact>
+    <individualName>
+<givenName>Leif</givenName>          <surName>Richardson</surName>
+    </individualName>
+<organizationName>University of Vermont</organizationName><electronicMailAddress>leif.richardson@uvm.edu</electronicMailAddress><onlineUrl>https://www.leifrichardson.org/</onlineUrl>      <userId directory="http://orcid.org/">0000-0003-4855-5737</userId>
+      </contact>
+      <methods>
+            <methodStep>
+                <description>
+                    <para>Unknown</para>
+                </description>
+            </methodStep>
+            <sampling>
+                <studyExtent>
+                    <description>
+                        <para>Various</para>
+                    </description>
+                </studyExtent>
+                <samplingDescription>
+                    <para>Various</para>
+                </samplingDescription>
+            </sampling>
+            <qualityControl>
+                <description>
+                    <para>Determinations by Sam Droege, Leif Richardson, and Spencer Hardy</para>
+                </description>
+            </qualityControl>
+      </methods>
+
+      <project >
+          <title>Vermont Atlas of Life</title>
+          <personnel>
+    <individualName>
+<givenName>Kent</givenName>          <surName>McFarland</surName>
+    </individualName>
+      <userId directory="http://orcid.org/">0000-0001-7809-5503</userId>
+    <role>PRINCIPAL_INVESTIGATOR</role>
+          </personnel>
+          <abstract>
+              <para></para>
+          </abstract>
+          <funding>
+              <para></para>
+          </funding>
+      </project>
+</dataset>
+
+<additionalMetadata>
+    <metadata>
+      <gbif>
+        <dateStamp>2021-05-28T13:38:43Z</dateStamp>
+      <citation>Richardson L, Hardy S (2021). Leif Richardson Vermont Bee Specimens. Version 1.5. Vermont Center for Ecostudies. Occurrence dataset https://doi.org/10.15468/nddf7z accessed via GBIF.org on 2021-05-28.</citation>
+        </gbif>
+    </metadata>
+</additionalMetadata>
+
+</eml:eml>

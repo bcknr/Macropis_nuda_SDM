@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.1/eml.xsd"
+        packageId="10e44c48-0839-4a20-86d5-f0e23ae2e366"  system="http://gbif.org" scope="system"
+  xml:lang="en">
+
+<dataset>
+      <alternateIdentifier>10.15468/anyror</alternateIdentifier>
+        <alternateIdentifier>https://bison.usgs.gov/ipt/resource?r=usda-ars-beebiologyandsystematicslab</alternateIdentifier>
+        <alternateIdentifier>10e44c48-0839-4a20-86d5-f0e23ae2e366</alternateIdentifier>
+        <alternateIdentifier>13708</alternateIdentifier>
+    <title>Bee Biology and Systematics Laboratory</title>
+    <creator>
+    <individualName>
+<givenName>Harold</givenName>          <surName>Ikerd</surName>
+    </individualName>
+<organizationName>USDA-ARS Pollinating Insects Research Unit</organizationName><positionName>Biological Science Lab Technician</positionName>    <address>
+<deliveryPoint>5310 Old Main Hill</deliveryPoint><city>Logan</city><administrativeArea>Utah</administrativeArea><postalCode>84321</postalCode><country>UNITED_STATES</country>    </address>
+<phone>435-797-2526</phone><electronicMailAddress>Hikerd@gmail.com</electronicMailAddress><onlineUrl>https://www.ars.usda.gov/people-locations/person/?person-id=39335</onlineUrl>    </creator>
+    <metadataProvider>
+    <individualName>
+<givenName>Harold</givenName>          <surName>Ikerd</surName>
+    </individualName>
+<organizationName>USDA-ARS Pollinating Insects Research Unit</organizationName><positionName>Biological Science Lab Technician</positionName>    <address>
+<deliveryPoint>5310 Old Main Hill</deliveryPoint><city>Logan</city><administrativeArea>Utah</administrativeArea><postalCode>84321</postalCode><country>UNITED_STATES</country>    </address>
+<phone>435-797-2526</phone><electronicMailAddress>Hikerd@gmail.com</electronicMailAddress><onlineUrl>https://www.ars.usda.gov/people-locations/person/?person-id=39335</onlineUrl>    </metadataProvider>
+    <associatedParty>
+    <individualName>
+<givenName>Elizabeth</givenName>          <surName>Sellers</surName>
+    </individualName>
+<electronicMailAddress>esellers@usgs.gov</electronicMailAddress>    <role>USER</role>
+    </associatedParty>
+      <pubDate>
+      2019-11-26
+      </pubDate>
+    <language>ENGLISH</language>
+    <abstract>
+        <para>The Pollinating Insects -- Biology, Management and Systematics Research Unit (PIRU) was founded in the late 1940s as part of the alfalfa seed production unit.  We focus primarily on pollination research with bees.The mission of the Pollinating Insect - Biology, Management and Systematics Research Unit is the development of non-Apis bees, for example the alfalfa leafcutting bee and blue orchard bee, as crop pollinators.  Research emphasis areas include the development and improvement of management systems for bee populations, biological studies of bees, plant-pollination systems, and bee biosystematics.  Cross-pollinated crops not effectively pollinated by honey bees have been targeted for improved pollination management, and the candidacy of selected pollinator species continues to be evaluated.  Current research on established species, like the alfalfa leafcutting bee and blue orchard bee, is directed toward developing control programs for pests and diseases, improving management that will result in better bee health and demonstrating pollination efficacy and increased producer profitability on &amp;#34;new&amp;#34; crops.</para>
+    </abstract>
+        <keywordSet>
+              <keyword>Metadata</keyword>
+              <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+              <keyword>Specimen</keyword>
+              <keywordThesaurus>GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml</keywordThesaurus>
+        </keywordSet>
+      <intellectualRights>
+        <para>This work is licensed under a <ulink url="http://creativecommons.org/licenses/by/4.0/legalcode"><citetitle>Creative Commons Attribution (CC-BY) 4.0 License</citetitle></ulink>.</para>
+      </intellectualRights>
+      <coverage>
+          <temporalCoverage>
+            <rangeOfDates>
+              <beginDate>
+                <calendarDate>      1819-08-07
+</calendarDate>
+              </beginDate>
+              <endDate>
+                <calendarDate>      2012-08-25
+</calendarDate>
+              </endDate>
+            </rangeOfDates>
+          </temporalCoverage>
+              <taxonomicCoverage>
+                    <taxonomicClassification>
+                          <taxonRankName>Kingdom</taxonRankName>
+                        <taxonRankValue>Animalia</taxonRankValue>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Phylum</taxonRankName>
+                        <taxonRankValue>Arthropoda</taxonRankValue>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Class</taxonRankName>
+                        <taxonRankValue>Insecta</taxonRankValue>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Order</taxonRankName>
+                        <taxonRankValue>Hymenoptera</taxonRankValue>
+                    </taxonomicClassification>
+              </taxonomicCoverage>
+      </coverage>
+      <maintenance>
+          <description>
+              <para></para>
+          </description>
+          <maintenanceUpdateFrequency>unkown</maintenanceUpdateFrequency>
+      </maintenance>
+      <contact>
+    <individualName>
+<givenName>Harold</givenName>          <surName>Ikerd</surName>
+    </individualName>
+<organizationName>USDA-ARS Pollinating Insects Research Unit</organizationName><positionName>Biological Science Lab Technician</positionName>    <address>
+<deliveryPoint>5310 Old Main Hill</deliveryPoint><city>Logan</city><administrativeArea>Utah</administrativeArea><postalCode>84321</postalCode><country>UNITED_STATES</country>    </address>
+<phone>435-797-2526</phone><electronicMailAddress>Hikerd@gmail.com</electronicMailAddress><onlineUrl>https://www.ars.usda.gov/people-locations/person/?person-id=39335</onlineUrl>      </contact>
+
+</dataset>
+
+<additionalMetadata>
+    <metadata>
+      <gbif>
+        <dateStamp>2021-05-28T13:38:43Z</dateStamp>
+      <citation>Ikerd H (2019). Bee Biology and Systematics Laboratory. USDA-ARS Pollinating Insect-Biology, Management, Systematics Research. Occurrence dataset https://doi.org/10.15468/anyror accessed via GBIF.org on 2021-05-28.</citation>
+              <resourceLogoUrl>https://www.usda.gov/sites/default/files/usda-symbol.svg</resourceLogoUrl>
+        </gbif>
+    </metadata>
+</additionalMetadata>
+
+</eml:eml>

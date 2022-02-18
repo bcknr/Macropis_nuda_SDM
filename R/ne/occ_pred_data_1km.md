@@ -1,0 +1,337 @@
+Mn SDM Regional Model | Occurance and Predictor Data Processing
+================
+Mark Buckner
+r sys.date()
+
+  - [Occurance data](#occurance-data)
+      - [*Macropis nuda*](#macropis-nuda)
+      - [*Lysimachia ciliata*](#lysimachia-ciliata)
+      - [*Apocynum androsaemifolium*](#apocynum-androsaemifolium)
+  - [Predictors](#predictors)
+      - [Topographic and soils data](#topographic-and-soils-data)
+      - [Climate data](#climate-data)
+      - [Resample and clip extents](#resample-and-clip-extents)
+
+``` r
+#install.packages("remotes")
+#remotes::install_github("SEEG-Oxford/seegSDM")
+
+library(raster)
+library(tidyverse)
+library(lubridate)
+library(knitr)
+library(seegSDM)
+```
+
+## Occurance data
+
+I obtained occurrence data for each species (both bees and their host
+plants) from several different sources.
+
+### *Macropis nuda*
+
+*SCAN* - Symbiota Collections of Arthropods Network, online database of
+arthropod observation data (Accessed: 03/24/2021).
+
+*GBIF* - Global Biodiversity Information Facility, online database of
+observation data (Accessed: 03/24/2021).
+
+*AMNH* - American Museum of Natural History’s Arthropod Easy Capture
+locality database. (Accessed: 01/18/2021).
+
+*BISON* - USGS’ Biodiversity Information Serving Our Nation database
+(Accessed: 03/24/2021).
+
+*CSBM* - Crowd sourced locality data from the beemonitoring list serve.
+Multiple sources see .txt in folder.
+
+``` r
+scan <- read_csv("../../occ/Mn/macropis_scan_03242021/occurrences.csv")
+
+gbif <- read_tsv("../../occ/Mn/macropis_gbif_03242021/occurrence.txt")
+
+#Start dates older than 1900, no date, or uncertain date removed manually.
+amnh <- read_csv("../../occ/Mn/Macropis_query_result_20210118_d.csv")
+
+bison <- read_csv("../../occ/Mn/macropis_bison_03242021.csv")
+
+csbm <- read_csv("../../occ/Mn/csbm_03262021.csv")
+```
+
+Each dataset is formatted differently but contains a unique identifier,
+date of collection, and decimal latitude and longitude data. Each
+database is transformed to only retain these columns with the date in
+“yyyy-mm-dd” format. All location data was rounded to five decimal
+places to facilitate the identification and removal of data duplicated
+between each dataset. Ultimately, MaxEnt will remove any duplicates in
+the same raster cell. (BISON data reported lat/lon with a greater number
+of digits than the other data sources and was rounded to five decimal
+places.)
+
+``` r
+t_scan <- scan %>% 
+  select(id, date = eventDate, lat = decimalLatitude, lon = decimalLongitude) %>% 
+  drop_na() %>% 
+  mutate(lat = round(lat,5), lon = round(lon,5)) %>%
+  mutate(source = "SCAN")
+
+t_gbif <- gbif %>% 
+  select(gbifID, eventDate, verbatimEventDate, lat = decimalLatitude, lon = decimalLongitude) %>% 
+  separate(eventDate, c("date", NA), sep = " ") %>% 
+  mutate(verbatimEventDate = ifelse(is.na(date), verbatimEventDate, NA)) %>% 
+  unite(date, date, verbatimEventDate, na.rm = TRUE) %>% 
+  mutate(date = parse_date_time(date, orders = c("mdy", "ymd", "dmy"))) %>% 
+  drop_na() %>% 
+  mutate(lat = round(lat,5), lon = round(lon,5)) %>%
+  mutate(source = "GBIF")
+
+t_amnh <- amnh %>% 
+  mutate(date = parse_date_time(amnh$Start_Date, orders = c("mdy", "dmy"))) %>%
+  filter(species == "nuda") %>%
+  select(PBIUSI, date, lat = Lat, lon = Lon) %>% 
+  drop_na() %>% 
+  mutate(lat = round(lat,5), lon = round(lon,5)) %>%
+  mutate(source = "AMNH")
+
+t_bison <- bison %>% 
+  mutate(date = parse_date_time(bison$eventDate, orders = "ymd")) %>% 
+  select(bisonID, date, lat = decimalLatitude, lon = decimalLongitude) %>% 
+  drop_na() %>% 
+  mutate(lat = round(lat,5), lon = round(lon,5)) %>% 
+  mutate(source = "BISON")
+
+t_csbm <- csbm %>% 
+  mutate(date = parse_date_time(csbm$date, orders = "mdy")) %>% 
+  select(id, date, lat, lon) %>% 
+  drop_na() %>% 
+  mutate(lat = round(lat,5), lon = round(lon,5)) %>%
+  mutate(source = "BMN")
+```
+
+#### Joining datasets and removing duplicates
+
+``` r
+j_data_d <- full_join(t_scan, t_gbif, by = c("date", "lat", "lon")) %>% 
+  full_join(t_amnh, by = c("date", "lat", "lon")) %>% 
+  full_join(t_bison, by = c("date", "lat", "lon")) %>% 
+  full_join(t_csbm, by = c("date", "lat", "lon"))
+
+j_data <- j_data_d %>%
+  filter(!duplicated(j_data_d[c("date", "lat", "lon")])) %>% 
+  unite(data_source,source, source.x, source.y, source.x.x, source.y.y, sep = "/", na.rm = TRUE) %>% 
+  select(date, lat, lon, data_source, scanID = id.x, gbifID, PBIUSI, bisonID, bmID = id.y)
+
+
+kable(head(j_data))
+```
+
+| date       |      lat |        lon | data\_source |   scanID | gbifID | PBIUSI |    bisonID | bmID |
+| :--------- | -------: | ---------: | :----------- | -------: | -----: | :----- | ---------: | :--- |
+| 1949-07-19 | 44.23329 | \-95.61918 | SCAN         | 49221888 |     NA | NA     |         NA | NA   |
+| 1926-08-01 | 41.98954 | \-73.09566 | SCAN         | 26199040 |     NA | NA     |         NA | NA   |
+| 1894-07-12 | 42.23899 | \-71.36978 | SCAN         | 26206680 |     NA | NA     |         NA | NA   |
+| 1890-07-05 | 42.44063 | \-76.49661 | SCAN         | 26206681 |     NA | NA     |         NA | NA   |
+| 1892-07-06 | 42.68620 | \-72.04397 | SCAN         | 26206975 |     NA | NA     |         NA | NA   |
+| 1984-07-19 | 42.38028 | \-72.52361 | SCAN/BISON   | 14207212 |     NA | NA     | 1039034317 | NA   |
+
+#### Subset to observations
+
+I limited observations to during or after 1970 and located only in a
+small region of the northeastern US.
+
+``` r
+Mn_NE70 <- j_data %>% 
+  filter(date >= as.Date("1970-01-01")) %>% 
+  filter(lon <= -70 & lon >= -80) %>% 
+  filter(lat >= 40 & lon <= 46) %>% 
+  mutate(lat = floor(lat*10000)/10000, lon = floor(lon*10000)/10000) %>% 
+  select(lat, lon) %>% 
+  unique()
+
+write_csv(Mn_NE70, file = "../../Occ/Mn_NE70.csv")
+```
+
+### *Lysimachia ciliata*
+
+Data downloaded from GBIF : GBIF.org (22 April 2021) GBIF Occurrence
+Download [](https://doi.org/10.15468/dl.m3wjf4)
+
+*L. ciliata* observations were already subset to the northeastern US
+study area and restricted to observation occuring during or after 1970.
+Here I adjust the data structure to fit the standardized format I will
+use for this project.
+
+``` r
+#number of parsing errors but not in columns of interests (i.e. date, lat, lon) see `problems(gbif)`
+gbif <- read_tsv("../../occ/Lc/lysimachia_gbif_04222021/occurrence.txt")
+
+#Simplify data structure to only include relevant data for modeling, parse dates, remove NAs, and round coordinates.
+Lc_NE70 <- gbif %>% 
+  select(gbifID, eventDate, verbatimEventDate, lat = decimalLatitude, lon = decimalLongitude) %>% 
+  separate(eventDate, c("date", NA), sep = " ") %>% 
+  mutate(verbatimEventDate = ifelse(is.na(date), verbatimEventDate, NA)) %>% 
+  unite(date, date, verbatimEventDate, na.rm = TRUE) %>% 
+  mutate(date = parse_date_time(date, orders = c("mdy", "ymd", "dmy"))) %>% 
+  drop_na() %>% 
+  mutate(lat = round(lat,5), lon = round(lon,5))
+
+write_csv(Lc_NE70, file = "../../occ/Lc_NE70.csv")
+```
+
+### *Apocynum androsaemifolium*
+
+Data downloaded from GBIF : GBIF.org (17 June 2021) GBIF Occurrence
+Download [](https://doi.org/10.15468/dl.7ym9vn)
+
+*A. androsaemifolium* observations were already subset to the
+northeastern US study area and restricted to observation occurring
+during or after 1970. Here I adjust the data structure to fit the
+standardized format I will use for this project.
+
+``` r
+#number of parsing errors but not in columns of interests (i.e. date, lat, lon) see `problems(gbif)`
+gbif <- read_tsv("../../occ/Aa/Apocynum_gbif_06172021/occurrence.txt")
+
+#Simplify data structure to only include relevant data for modeling, parse dates, remove NAs, and round coordinates.
+Aa_NE70 <- gbif %>% 
+  select(gbifID, eventDate, verbatimEventDate, lat = decimalLatitude, lon = decimalLongitude) %>% 
+  separate(eventDate, c("date", NA), sep = " ") %>% 
+  mutate(verbatimEventDate = ifelse(is.na(date), verbatimEventDate, NA)) %>% 
+  unite(date, date, verbatimEventDate, na.rm = TRUE) %>% 
+  mutate(date = parse_date_time(date, orders = c("mdy", "ymd", "dmy"))) %>% 
+  drop_na() %>% 
+  mutate(lat = round(lat,5), lon = round(lon,5))
+
+write_csv(Aa_NE70, file = "../../occ/Aa_NE70.csv")
+```
+
+## Predictors
+
+### Topographic and soils data
+
+DEM obtained from a 0.5 arc-minutes DEM from worldClim.
+
+Due to the relatively course project resolution, slope and aspect are
+not particularly representative in the northeast and are not used.
+
+``` r
+dem <- raster("../../pred/in/dem_ne.tif")
+```
+
+I generated a proximity to water raster from the European Commission
+[JRC’s](https://global-surface-water.appspot.com/download) water
+occurrence dataset using any area with the proximity tool in QGIS.
+
+``` r
+wprox <- raster("../../pred/in/wprox.tif")
+res(wprox); crs(wprox)
+```
+
+    ## [1] 0.00025 0.00025
+
+    ## CRS arguments: +proj=longlat +datum=WGS84 +no_defs
+
+Two soil metrics were obtained from [](openlandmap.org). These are [sand
+content](https://zenodo.org/record/2525662#.YMDGYi2cbRY) and [soil water
+content](https://zenodo.org/record/2784001#.YMDKPi2cbRY) both at 0cm
+depth with the water content using 33kpa suction making it an estimate
+of field capacity. Both layers were cropped to the correct extent in
+QGIS.
+
+``` r
+soil_sand <- raster("../../pred/in/soil_sand.tif")
+res(soil_sand); crs(soil_sand)
+```
+
+    ## [1] 0.002083333 0.002083333
+
+    ## CRS arguments: +proj=longlat +datum=WGS84 +no_defs
+
+``` r
+soil_h2o <- raster("../../pred/in/soil_h2o.tif")
+res(soil_h2o); crs(soil_h2o)
+```
+
+    ## [1] 0.002083333 0.002083333
+
+    ## CRS arguments: +proj=longlat +datum=WGS84 +no_defs
+
+### Climate data
+
+``` r
+clim <- getData("worldclim", var="bio", res=0.5, lon=-75, lat=43, path = "../../pred/in")
+```
+
+``` r
+setwd("../../pred/in/ch0.5")
+chvars <- list.files()
+
+clim <- stack(chvars) %>% 
+  crop(dem, filename = "../ch05_baseline.tif", overwrite = TRUE)
+
+clim <- resample(clim, dem, method = "bilinear")
+```
+
+### Resample and clip extents
+
+Resample all datasets to the same resolution and extent.
+
+``` r
+# Adjust resolutions (approx. 1km) and clip extent of variables to be uniform
+
+#clim <- crop(clim, dem)
+
+#dem <- resample(dem, clim, method = "bilinear")
+#res(dem)
+
+wprox <- resample(wprox, dem, method = "bilinear")
+res(wprox)
+```
+
+    ## [1] 0.008333333 0.008333333
+
+``` r
+soil_sand <- resample(soil_sand, dem, method = "bilinear")
+res(soil_sand)
+```
+
+    ## [1] 0.008333333 0.008333333
+
+``` r
+soil_h2o <- resample(soil_h2o, dem, method = "bilinear")
+res(soil_h2o)
+```
+
+    ## [1] 0.008333333 0.008333333
+
+``` r
+# Create raster stack of predictors
+env <- raster::stack(c(clim, dem, wprox, soil_sand, soil_h2o))
+
+mask <- masterMask(env)
+
+env <- mask(env, mask)
+
+plot(env[[1:12]])
+```
+
+![](occ_pred_data_1km_files/figure-gfm/resample%20and%20clip-1.png)<!-- -->
+
+``` r
+plot(env[[13:23]])
+```
+
+![](occ_pred_data_1km_files/figure-gfm/resample%20and%20clip-2.png)<!-- -->
+
+``` r
+#Save Stack
+#dir.create("../Data/Pred/pred_stack_1km")
+
+#setwd("../../pred/pred_stack_ne")
+#env.s <- writeRaster(env, filename=names(env), bylayer=TRUE, format="GTiff", overwrite = TRUE)
+#stackSave(env.s,"stack")
+
+
+names(env) <- c(paste("bio", seq(1,19), sep = ""), "dem", "wprox", "sand", "h20")
+writeRaster(env, filename="../../pred/pred_stack_ne/baseline.tif", options="INTERLEAVE=BAND", overwrite=TRUE)
+```

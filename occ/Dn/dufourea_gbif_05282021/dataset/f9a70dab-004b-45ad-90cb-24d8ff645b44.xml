@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.1/eml.xsd"
+        packageId="f9a70dab-004b-45ad-90cb-24d8ff645b44"  system="http://gbif.org" scope="system"
+  xml:lang="en">
+
+<dataset>
+      <alternateIdentifier>10.15468/mbwnw9</alternateIdentifier>
+        <alternateIdentifier>f9a70dab-004b-45ad-90cb-24d8ff645b44</alternateIdentifier>
+        <alternateIdentifier>https://ipt.uoguelph.ca/ipt/resource?r=cbg_canadian_specimens</alternateIdentifier>
+    <title>Centre for Biodiversity Genomics - Canadian Specimens</title>
+    <creator>
+    <individualName>
+<givenName>Angela</givenName>          <surName>Telfer</surName>
+    </individualName>
+<organizationName>University of Guelph</organizationName><positionName>Data Management Lead, Collections</positionName>    <address>
+<deliveryPoint>50 Stone Road East</deliveryPoint><city>Guelph</city><administrativeArea>ON</administrativeArea><postalCode>N1G2W1</postalCode><country>CANADA</country>    </address>
+<phone>15198244120</phone><electronicMailAddress>atelfer@uoguelph.ca</electronicMailAddress><onlineUrl>http://biodiversitygenomics.net/</onlineUrl>    </creator>
+    <metadataProvider>
+    <individualName>
+<givenName>Angela</givenName>          <surName>Telfer</surName>
+    </individualName>
+<organizationName>University of Guelph</organizationName><positionName>Data Management Lead, Collections</positionName>    <address>
+<deliveryPoint>50 Stone Road East</deliveryPoint><city>Guelph</city><administrativeArea>ON</administrativeArea><postalCode>N1G2W1</postalCode><country>CANADA</country>    </address>
+<phone>15198244120</phone><electronicMailAddress>atelfer@uoguelph.ca</electronicMailAddress><onlineUrl>http://biodiversitygenomics.net/</onlineUrl>    </metadataProvider>
+    <associatedParty>
+    <individualName>
+<givenName>Jeremy</givenName>          <surName>deWaard</surName>
+    </individualName>
+<organizationName>Centre for Biodiversity Genomics, University of Guelph</organizationName><positionName>Associate Director, Collections</positionName>    <address>
+<deliveryPoint>50 Stone Road East</deliveryPoint><city>Guelph</city><administrativeArea>ON</administrativeArea><postalCode>N1G 2W1</postalCode><country>CANADA</country>    </address>
+<phone>5198244120</phone><electronicMailAddress>dewaardj@uoguelph.ca</electronicMailAddress><onlineUrl>http://biodiversitygenomics.net/</onlineUrl>    <role>USER</role>
+    </associatedParty>
+      <pubDate>
+      2019-07-26
+      </pubDate>
+    <language>ENGLISH</language>
+    <abstract>
+        <para>The Centre for Biodiversity Genomics (CBG) at the University of Guelph is spearheading a novel approach to biodiversity research within Canada and internationally. Its three research units -- CBG Collections, CBG Genomics (or the Canadian Centre for DNA Barcoding, CCDB) and CBG Informatics -- are advancing 21st century biodiversity science by enabling species identification and discovery that is based on the analysis of sequence diversity in short, standardized gene regions, DNA barcodes. CBG Collections maintains a globally unique natural history collection of 3.3 million specimens. Every specimen is digitized, and the exact storage location of each specimen is tracked in a collection management information system for quick reference and retrieval. The databased information for every voucher is also archived in the Barcode of Life Data System (BOLD; www.boldsystems.org), permitting the permanent storage, validation and analysis of barcode sequence data and associated specimen metadata. Most (88.6%) of the specimens have been DNA barcoded, and a few representatives of every species have been digitally imaged. The CCDB holds high quality DNA extracts in a secure 2000 ft2 ultra-cold freezer bank. These DNA extracts reflect residual material following the barcode analysis of samples; it contains 5.3 million extracts from over 250,000 species derived from 231 countries, oceans and dependent territories, all connected to a voucher specimen on BOLD.
+
+This resource represents the Canadian specimens held in the Specimen Archives of CBG Collections as of Dec 2017.  Please address inquiries to ccdbcol&amp;#64;uoguelph.ca</para>
+    </abstract>
+        <keywordSet>
+              <keyword>Occurrence</keyword>
+              <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+              <keyword>Specimen</keyword>
+              <keywordThesaurus>GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml</keywordThesaurus>
+        </keywordSet>
+      <intellectualRights>
+        <para>To the extent possible under law, the publisher has waived all rights to these data and has dedicated them to the <ulink url="http://creativecommons.org/publicdomain/zero/1.0/legalcode"><citetitle>Public Domain (CC0 1.0)</citetitle></ulink>. Users may copy, modify, distribute and use the work, including for commercial purposes, without restriction.</para>
+      </intellectualRights>
+      <coverage>
+            <geographicCoverage>
+                  <geographicDescription>These specimens derive from Canada, stemming primarily from collections made by the CBG at 159 sites since 2008 including 45 national parks, 65 provincial parks and 49 other protected or private areas.</geographicDescription>
+                  <boundingCoordinates>
+                      <westBoundingCoordinate>-151.875</westBoundingCoordinate>
+                      <eastBoundingCoordinate>-50.625</eastBoundingCoordinate>
+                      <northBoundingCoordinate>83.52</northBoundingCoordinate>
+                      <southBoundingCoordinate>45.089</southBoundingCoordinate>
+                  </boundingCoordinates>
+            </geographicCoverage>
+          <temporalCoverage>
+            <rangeOfDates>
+              <beginDate>
+                <calendarDate>      1981-01-01
+</calendarDate>
+              </beginDate>
+              <endDate>
+                <calendarDate>      2017-04-30
+</calendarDate>
+              </endDate>
+            </rangeOfDates>
+          </temporalCoverage>
+              <taxonomicCoverage>
+                    <generalTaxonomicCoverage>Specimens were identified to species where possible by taxonomic experts. As we operate a high-throughput facility with an influx of approximately 1 million specimens every year, we also rely on semi-automated and automated methods of assigning taxonomy to specimens. Using DNA barcode sequences from BOLD Systems (BOLD; www.boldsystems.org), these remaining specimens were assigned a taxonomic name based on sequence similarity to named specimens. Two different procedures were used to assign names based on DNA barcode sequences: 1)CollectionsID - Taxonomic names were assigned to all specimens found in the same Barcode Index Number (BIN). An advanced algorithm is used to cluster BINs based on sequence similarity and BINs show high concordance with species (see Ratnasingham and Hebert 2013 https://doi.org/10.1371/journal.pone.0066213). CollectionsID scans the existing database of named specimens, and assigns taxonomic information whenever a BIN match is found. Applies to : Phylum- Species level ID 2)BOLD ID Engine (Manual) – BOLD stores sequence information for every barcoded organism. The BOLD ID Engine compares the sequence similarity of your chosen specimen against the other sequences in the database, and returns the taxonomic information for the best matches. We then assign taxonomy based on the following rule set: a.Order to Family identification: Assigned when class, order, or family name has greater than 80% sequence similarity to listed results b.Genus identification: Assigned when genus name has greater than 95% sequence similarity to listed results c.Species identification: Assigned when species name has greater than 98% sequence similarity to listed results (indicating specimens are from the same BIN) If there are conflicts present in the result (i.e. more than one family name present and having greater than 80% sequence similarity), we assign names when it is overwhelmingly clear one name is more prevalent and is likely the correct taxonomic name (i.e. 20 Tipulidae listed, 1 Limoniidae, we would assign Tipulidae). This is a judgment call made by trained senior staff of the CBG Collections Unit.</generalTaxonomicCoverage>
+                    <taxonomicClassification>
+                          <taxonRankName>Phylum</taxonRankName>
+                        <taxonRankValue>Arthropoda</taxonRankValue>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Phylum</taxonRankName>
+                        <taxonRankValue>Chordata</taxonRankValue>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Phylum</taxonRankName>
+                        <taxonRankValue>Annelida</taxonRankValue>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Phylum</taxonRankName>
+                        <taxonRankValue>Mollusca</taxonRankValue>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Phylum</taxonRankName>
+                        <taxonRankValue>Cnidaria</taxonRankValue>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Phylum</taxonRankName>
+                        <taxonRankValue>Platyhelminthes</taxonRankValue>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Phylum</taxonRankName>
+                        <taxonRankValue>Brachiopoda</taxonRankValue>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Phylum</taxonRankName>
+                        <taxonRankValue>Bryozoa</taxonRankValue>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Phylum</taxonRankName>
+                        <taxonRankValue>Echinodermata</taxonRankValue>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Phylum</taxonRankName>
+                        <taxonRankValue>Hemichordata</taxonRankValue>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Phylum</taxonRankName>
+                        <taxonRankValue>Nematoda</taxonRankValue>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Phylum</taxonRankName>
+                        <taxonRankValue>Nemertea</taxonRankValue>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Phylum</taxonRankName>
+                        <taxonRankValue>Porifera</taxonRankValue>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Phylum</taxonRankName>
+                        <taxonRankValue>Priapulida</taxonRankValue>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Phylum</taxonRankName>
+                        <taxonRankValue>Rhodophyta</taxonRankValue>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Phylum</taxonRankName>
+                        <taxonRankValue>Tardigrada</taxonRankValue>
+                    </taxonomicClassification>
+              </taxonomicCoverage>
+      </coverage>
+      <purpose>
+          <para>The Centre for Biodiversity Genomics (CBG) at the University of Guelph maintains a globally unique natural history collection and is spearheading a novel approach to biodiversity research within Canada and internationally. To maintain continued accessibility of this digitized collection, the CBG aims to liberate more data and derivatives of the specimens it holds.</para>
+      </purpose>
+      <maintenance>
+          <description>
+              <para></para>
+          </description>
+          <maintenanceUpdateFrequency>unkown</maintenanceUpdateFrequency>
+      </maintenance>
+      <contact>
+    <individualName>
+<givenName>Jeremy</givenName>          <surName>deWaard</surName>
+    </individualName>
+<organizationName>Centre for Biodiversity Genomics, University of Guelph</organizationName><positionName>Associate Director, Collections</positionName>    <address>
+<city>Guelph</city><administrativeArea>ON</administrativeArea><country>CANADA</country>    </address>
+<onlineUrl>http://biodiversitygenomics.net/</onlineUrl>      </contact>
+      <contact>
+    <individualName>
+<givenName>Jayme</givenName>          <surName>Sones</surName>
+    </individualName>
+<organizationName>Centre for Biodiversity Genomics, University of Guelph</organizationName><positionName>Collections Manager</positionName>    <address>
+<deliveryPoint>50 Stone Road East</deliveryPoint><city>Guelph</city><administrativeArea>Ontario</administrativeArea><postalCode>N1G 2W1</postalCode><country>CANADA</country>    </address>
+<phone>15198244120</phone><electronicMailAddress>jsones@uoguelph.ca</electronicMailAddress><onlineUrl>http://biodiversitygenomics.net/</onlineUrl>      </contact>
+      <methods>
+            <methodStep>
+                <description>
+                    <para>Please see individual data records for complete collection details.</para>
+                </description>
+            </methodStep>
+            <sampling>
+                <studyExtent>
+                    <description>
+                        <para>Sampling frequency varies according to project, year and location of collection. Please see individual data records for complete collection details.</para>
+                    </description>
+                </studyExtent>
+                <samplingDescription>
+                    <para>Please see individual data records for complete collection details.</para>
+                </samplingDescription>
+            </sampling>
+            <qualityControl>
+                <description>
+                    <para>All specimens are visible on BOLD (www.boldsystems.org). Through comparison with other specimens using their DNA barcode sequences, contaminated specimens and misidentifications were discovered and fixed where possible. All fields underwent a data cleansing process to ensure data were entered in a standardized matter.</para>
+                </description>
+            </qualityControl>
+      </methods>
+
+      <project >
+          <title>Centre for Biodiversity Genomics - Canadian Specimens</title>
+          <personnel>
+    <individualName>
+<givenName>Jeremy</givenName>          <surName>deWaard</surName>
+    </individualName>
+    <role>OWNER</role>
+          </personnel>
+          <personnel>
+    <individualName>
+<givenName>Jayme</givenName>          <surName>Sones</surName>
+    </individualName>
+    <role>OWNER</role>
+          </personnel>
+          <personnel>
+    <individualName>
+<givenName>Angela</givenName>          <surName>Telfer</surName>
+    </individualName>
+    <role>CUSTODIAN_STEWARD</role>
+          </personnel>
+          <abstract>
+              <para>The specimens/DNA in this resource are a composite of many collecting events undertaken by the Centre for Biodiversity Genomics staff and associated parties. All are currently held in the Specimen and DNA Archives of the Centre for Biodiversity Genomics. We wish to thank numerous BOLD project managers whose records are held in our Archive and granted permission to publish their data as part of this dataset: Adriana E. Radulovici Alex Smith Alex V. Borisenko Anthony W. Thomas Beth Clare Beverly Mcclenaghan Dirk Steinke Donald J. Baird E. Anne Chambers Harpreet Singh Ghator Jeffrey M. Webb Kara K. S. Layton Nicholas Jeffery Sarah Adamowicz Monica R. Young</para>
+          </abstract>
+          <funding>
+              <para>National Science and Engineering Research Council (NSERC), Genome Canada, Ontario Genomics Institute, Ontario Ministry of Research and Innovation, the Canadian Foundation for Innovation, and the McCain/Evans Foundation.</para>
+          </funding>
+            <designDescription>
+                <description>
+                    <para>Collections and acquisitions are aimed at gathering a synoptic collection of voucher specimens of non-endangered invertebrates which occur in protected areas across North America for subsequent molecular analyses at the Center for Biodiversity Genomics and identification by taxonomic experts.</para>
+                </description>
+            </designDescription>
+      </project>
+</dataset>
+
+<additionalMetadata>
+    <metadata>
+      <gbif>
+        <dateStamp>2021-05-28T13:38:43Z</dateStamp>
+      <citation>Telfer A (2019). Centre for Biodiversity Genomics - Canadian Specimens. Version 1.5. University of Guelph. Occurrence dataset https://doi.org/10.15468/mbwnw9 accessed via GBIF.org on 2021-05-28.</citation>
+              <resourceLogoUrl>https://ipt.uoguelph.ca/ipt/logo.do?r=cbg_canadian_specimens</resourceLogoUrl>
+              <collection>
+                <parentCollectionIdentifier></parentCollectionIdentifier>
+                <collectionIdentifier>BIOUG</collectionIdentifier>
+                <collectionName>Centre for Biodiversity Genomics Collections</collectionName>
+              </collection>
+                <specimenPreservationMethod>DEEP_FROZEN</specimenPreservationMethod>
+        </gbif>
+    </metadata>
+</additionalMetadata>
+
+</eml:eml>

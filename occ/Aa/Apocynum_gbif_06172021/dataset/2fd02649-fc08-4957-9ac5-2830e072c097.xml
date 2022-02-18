@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.1/eml.xsd"
+        packageId="2fd02649-fc08-4957-9ac5-2830e072c097"  system="http://gbif.org" scope="system"
+  xml:lang="en">
+
+<dataset>
+      <alternateIdentifier>10.5886/3p8ltbg7</alternateIdentifier>
+        <alternateIdentifier>https://data.canadensys.net/ipt/resource?r=qfa-vascular-specimens</alternateIdentifier>
+        <alternateIdentifier>http://data.canadensys.net/ipt/resource?r=qfa-vascular-specimens</alternateIdentifier>
+        <alternateIdentifier>10.15468/sbbil6</alternateIdentifier>
+        <alternateIdentifier>http://data.canadensys.net/ipt/resource.do?r=qfa-vascular-specimens</alternateIdentifier>
+        <alternateIdentifier>2fd02649-fc08-4957-9ac5-2830e072c097</alternateIdentifier>
+        <alternateIdentifier>14361</alternateIdentifier>
+    <title>Herbier Louis-Marie (QFA) - Collection de plantes vasculaires</title>
+    <creator>
+    <individualName>
+<givenName>Kim</givenName>          <surName>Damboise</surName>
+    </individualName>
+<organizationName>Herbier Louis-Marie, Université Laval</organizationName><positionName>Technicienne en travaux d&apos;enseignement et de recherche</positionName>    <address>
+<deliveryPoint>1030 rue de la médecine</deliveryPoint><city>Québec</city><administrativeArea>Québec</administrativeArea><postalCode>G1V 0L6</postalCode><country>CANADA</country>    </address>
+<phone>418-656-2131</phone><electronicMailAddress>kim.damboise@herbier.ulaval.ca</electronicMailAddress>    </creator>
+    <metadataProvider>
+    <individualName>
+<givenName>Kim</givenName>          <surName>Damboise</surName>
+    </individualName>
+<organizationName>Herbier Louis-Marie, Université Laval</organizationName><positionName>Technicienne en travaux d&apos;enseignement et de recherche</positionName>    <address>
+<deliveryPoint>1030 rue de la médecine</deliveryPoint><city>Québec</city><administrativeArea>Québec</administrativeArea><postalCode>G1V 0L6</postalCode><country>CANADA</country>    </address>
+<phone>418-656-2131</phone><electronicMailAddress>kim.damboise@herbier.ulaval.ca</electronicMailAddress>    </metadataProvider>
+    <associatedParty>
+    <individualName>
+<givenName>Serge</givenName>          <surName>Payette</surName>
+    </individualName>
+<organizationName>Herbier Louis-Marie, Université Laval</organizationName><positionName>Conservateur</positionName>    <address>
+<deliveryPoint>1030 rue de la Médecine</deliveryPoint><city>Québec</city><administrativeArea>Québec</administrativeArea><postalCode>G1V 0A6</postalCode><country>CANADA</country>    </address>
+<phone>418-656-2544</phone><electronicMailAddress>serge.payette@bio.ulaval.ca</electronicMailAddress><onlineUrl>http://www.herbier.ulaval.ca</onlineUrl>    <role>CUSTODIAN_STEWARD</role>
+    </associatedParty>
+    <associatedParty>
+    <individualName>
+<givenName>Kim</givenName>          <surName>Damboise</surName>
+    </individualName>
+<organizationName>Herbier Louis-Marie, Université Laval</organizationName><positionName>Technicienne en travaux d&apos;enseignement et de recherche</positionName>    <address>
+<deliveryPoint>1030 rue de la Médecine</deliveryPoint><city>Québec</city><administrativeArea>Québec</administrativeArea><postalCode>G1V 0A6</postalCode><country>CANADA</country>    </address>
+<phone>418-656-2131</phone><electronicMailAddress>kim.damboise@herbier.ulaval.ca</electronicMailAddress><onlineUrl>http://www.herbier.ulaval.ca</onlineUrl>    <role>CONTENT_PROVIDER</role>
+    </associatedParty>
+    <associatedParty>
+<organizationName>Université Laval</organizationName>    <address>
+<deliveryPoint>1030 rue de la médecine</deliveryPoint><city>Québec</city><administrativeArea>Québec</administrativeArea><postalCode>G1V 0A6</postalCode><country>CANADA</country>    </address>
+<electronicMailAddress>herbier@herbier.ulaval.ca</electronicMailAddress>    <role>PUBLISHER</role>
+    </associatedParty>
+      <pubDate>
+      2020-05-15
+      </pubDate>
+    <language>FRENCH</language>
+    <abstract>
+        <para>The Louis-Marie Herbarium houses 790000 specimens among which 600000 are vascular plants. The collection also houses 135000 bryophytes and lichens, 13000 fungi as well as a collection of 2000 seeds. The Louis-Marie Herbarium prioritizes the collection of Arctic-alpine, subarctic and boreal species form Canada and the northern hemisphere. The digitization of the collection is a work in progress. This dataset includes more than 65000 specimens of vascular plants from the province of Quebec. / La collection de l&amp;#39;Herbier comprend au total près de 790000 spécimens dont 600000 plantes vasculaires, 135000 bryophytes et lichens, 13000 champignons ainsi qu&amp;#39;une collection de 2000 graines. L&amp;#39;Herbier accorde une priorité aux espèces arctiques-alpines, subarctiques et boréales du Canada et de l&amp;#39;hémisphère nord. Ce jeu de données comprend plus de 65000 spécimens de plantes vasculaires du Québec.</para>
+    </abstract>
+        <keywordSet>
+              <keyword>plantes vasculaires</keyword>
+              <keyword>arctic-alpine</keyword>
+              <keyword>hemisphère nord.</keyword>
+              <keyword>collection</keyword>
+              <keyword>QFA</keyword>
+              <keyword>Québec</keyword>
+              <keyword>Herbier Louis-Marie</keyword>
+              <keyword>Canada</keyword>
+              <keyword>herbarium</keyword>
+              <keyword>northern hemisphere</keyword>
+              <keyword>Université Laval</keyword>
+              <keyword>Canadensys</keyword>
+              <keyword>herbier</keyword>
+              <keyword>plantes arctiques-alpines</keyword>
+              <keywordThesaurus>n/a</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+              <keyword>Occurrence</keyword>
+              <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+              <keyword>Specimen</keyword>
+              <keywordThesaurus>GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml</keywordThesaurus>
+        </keywordSet>
+      <intellectualRights>
+        <para>To the extent possible under law, the publisher has waived all rights to these data and has dedicated them to the <ulink url="http://creativecommons.org/publicdomain/zero/1.0/legalcode"><citetitle>Public Domain (CC0 1.0)</citetitle></ulink>. Users may copy, modify, distribute and use the work, including for commercial purposes, without restriction.</para>
+      </intellectualRights>
+      <distribution scope="document">
+          <online>
+              <url function="information">http://www.herbier.ulaval.ca</url>
+          </online>
+      </distribution>
+      <coverage>
+            <geographicCoverage>
+                  <geographicDescription>The Louis-Marie herbarium grants a priority to the Arctic-alpine, subarctic and boreal species from the province of Quebec and the northern hemisphere. This dataset is mainly populated with specimens from the province of Quebec. / L&apos;Herbier Louis-Marie accorde une priorité aux espèces arctiques-alpines, subarctiques et boréales du Québec, du Canada et de l&apos;hémisphère nord. Ce jeu présente principalement des spécimens provenant du Québec.</geographicDescription>
+                  <boundingCoordinates>
+                      <westBoundingCoordinate>-86.64</westBoundingCoordinate>
+                      <eastBoundingCoordinate>-53.28</eastBoundingCoordinate>
+                      <northBoundingCoordinate>63.48</northBoundingCoordinate>
+                      <southBoundingCoordinate>43.68</southBoundingCoordinate>
+                  </boundingCoordinates>
+            </geographicCoverage>
+              <taxonomicCoverage>
+                    <generalTaxonomicCoverage>This dataset includes vascular plants of 145 different families. The most represented families are Asteraceae (7.75%), Cyperaceae (7.25%), Poaceae (6.25%), Lycopodiaceae (6.20%), Rosaceae (5.4%) and Equisetaceae (4.75%). / Le jeu de données comprend des plantes vasculaires de 145 familles différentes. Les familles les plus représentées sont Asteraceae (7.75%), Cyperaceae (7.25%), Poaceae (6.25%), Lycopodiaceae (6.20%), Rosaceae (5.4%) et Equisetaceae (4.75%).</generalTaxonomicCoverage>
+                    <taxonomicClassification>
+                          <taxonRankName>Family</taxonRankName>
+                        <taxonRankValue>Asteraceae</taxonRankValue>
+                          <commonName>Asteracées</commonName>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Family</taxonRankName>
+                        <taxonRankValue>Cyperaceae</taxonRankValue>
+                          <commonName>Cypéracées</commonName>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Family</taxonRankName>
+                        <taxonRankValue>Poaceae</taxonRankValue>
+                          <commonName>Poacées</commonName>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Family</taxonRankName>
+                        <taxonRankValue>Lycopodiaceae</taxonRankValue>
+                          <commonName>Lycopodiacées</commonName>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Family</taxonRankName>
+                        <taxonRankValue>Rosaceae</taxonRankValue>
+                          <commonName>Rosacées</commonName>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Family</taxonRankName>
+                        <taxonRankValue>Equisetaceae</taxonRankValue>
+                          <commonName>Équisetacées</commonName>
+                    </taxonomicClassification>
+              </taxonomicCoverage>
+      </coverage>
+      <maintenance>
+          <description>
+              <para></para>
+          </description>
+          <maintenanceUpdateFrequency>asNeeded</maintenanceUpdateFrequency>
+      </maintenance>
+      <contact>
+    <individualName>
+<givenName>Serge</givenName>          <surName>Payette</surName>
+    </individualName>
+<organizationName>Herbier Louis-Marie, Université Laval</organizationName><positionName>Conservateur</positionName>    <address>
+<deliveryPoint>1030 rue de la médecine</deliveryPoint><city>Québec</city><administrativeArea>Québec</administrativeArea><postalCode>G1V 0L6</postalCode><country>CANADA</country>    </address>
+<phone>418-656-2544</phone><electronicMailAddress>herbier@herbier.ulaval.ca</electronicMailAddress><onlineUrl>http://www.bio.ulaval.ca/no_cache/departement/professeurs/fiche_des_professeurs/professeur/11/15/</onlineUrl>      </contact>
+
+</dataset>
+
+<additionalMetadata>
+    <metadata>
+      <gbif>
+        <dateStamp>2021-06-17T19:14:37Z</dateStamp>
+      <citation identifier="doi:10.5886/3p8ltbg7">Damboise K (2020). Herbier Louis-Marie (QFA) - Collection de plantes vasculaires. Version 10.6. Université Laval. Occurrence dataset https://doi.org/10.5886/3p8ltbg7 accessed via GBIF.org on 2021-06-17.</citation>
+              <physical>
+                  <objectName>Canadensys explorer</objectName>
+                  <characterEncoding>UTF-8</characterEncoding>
+                  <dataFormat>
+                      <externallyDefinedFormat>
+                          <formatName>HTML</formatName>
+                      </externallyDefinedFormat>
+                  </dataFormat>
+                  <distribution>
+                      <online>
+                          <url function="download">http://data.canadensys.net/explorer/en/resources/qfa-vascular-specimens</url>
+                      </online>
+                  </distribution>
+              </physical>
+              <physical>
+                  <objectName>GBIF data portal</objectName>
+                  <characterEncoding>UTF-8</characterEncoding>
+                  <dataFormat>
+                      <externallyDefinedFormat>
+                          <formatName>HTML</formatName>
+                      </externallyDefinedFormat>
+                  </dataFormat>
+                  <distribution>
+                      <online>
+                          <url function="download">http://www.gbif.org/dataset/2fd02649-fc08-4957-9ac5-2830e072c097</url>
+                      </online>
+                  </distribution>
+              </physical>
+              <resourceLogoUrl>http://data.canadensys.net/ipt/logo.do?r=qfa-vascular-specimens</resourceLogoUrl>
+              <collection>
+                <parentCollectionIdentifier>QFA</parentCollectionIdentifier>
+                <collectionIdentifier>QFA</collectionIdentifier>
+                <collectionName>Herbier Louis-Marie</collectionName>
+              </collection>
+              <formationPeriod>1824-present</formationPeriod>
+                <specimenPreservationMethod>MOUNTED</specimenPreservationMethod>
+      </gbif>
+    </metadata>
+</additionalMetadata>
+
+</eml:eml>

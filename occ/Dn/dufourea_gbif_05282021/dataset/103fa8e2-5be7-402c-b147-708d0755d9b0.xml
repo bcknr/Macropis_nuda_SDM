@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.1/eml.xsd"
+        packageId="103fa8e2-5be7-402c-b147-708d0755d9b0"  system="http://gbif.org" scope="system"
+  xml:lang="en">
+
+<dataset>
+      <alternateIdentifier>10.5886/4pp2vt5a</alternateIdentifier>
+        <alternateIdentifier>http://data.canadensys.net/ipt/resource?r=debu-specimens</alternateIdentifier>
+        <alternateIdentifier>10.15468/c2jmlm</alternateIdentifier>
+        <alternateIdentifier>http://data.canadensys.net/ipt/resource.do?r=debu-specimens</alternateIdentifier>
+        <alternateIdentifier>103fa8e2-5be7-402c-b147-708d0755d9b0</alternateIdentifier>
+    <title>University of Guelph Insect Collection (DEBU)</title>
+    <creator>
+    <individualName>
+<givenName>Steven</givenName>          <surName>Paiero</surName>
+    </individualName>
+<organizationName>University of Guelph</organizationName><positionName>Acting Curator</positionName>    <address>
+<city>Guelph</city><administrativeArea>Ontario</administrativeArea><postalCode>N1G 2W1</postalCode><country>CANADA</country>    </address>
+<phone>519-824-4120 ext. 52582</phone><electronicMailAddress>paieros@uoguelph.ca</electronicMailAddress>    </creator>
+    <metadataProvider>
+    <individualName>
+<givenName>Steve</givenName>          <surName>Paiero</surName>
+    </individualName>
+<organizationName>University of Guelph</organizationName><positionName>Acting Curator</positionName>    <address>
+<city>Guelph</city><administrativeArea>Ontario</administrativeArea><country>CANADA</country>    </address>
+<phone>519-824-4120 ext. 52582</phone>    </metadataProvider>
+    <associatedParty>
+    <individualName>
+<givenName>Steven</givenName>          <surName>Paieros</surName>
+    </individualName>
+<organizationName>University of Guelph</organizationName><positionName>Acting Curator</positionName>    <address>
+<city>Guelph</city><administrativeArea>Ontario</administrativeArea><country>CANADA</country>    </address>
+<electronicMailAddress>paieros@uoguelph.ca</electronicMailAddress>    <role>CURATOR</role>
+    </associatedParty>
+    <associatedParty>
+<organizationName>University of Guelph</organizationName>    <address>
+<city>Guelph</city><administrativeArea>Ontario</administrativeArea><country>CANADA</country>    </address>
+    <role>PUBLISHER</role>
+    </associatedParty>
+      <pubDate>
+      2017-08-29
+      </pubDate>
+    <language>ENGLISH</language>
+    <abstract>
+        <para>The University of Guelph Insect Collection has its roots in the insect collection of the Entomological Society of Ontario, founded in 1863. It is the oldest insect collection in Canada and was, in effect, Canada&amp;#39;s national insect collection before there was a Canada and before the establishment of the Canadian National Collection in Ottawa. Although our current collection of just over two million specimens is relatively small by world standards, the University of Guelph Insect Collection remains one of North America&amp;#39;s most important heritage insect collections, and is Canada&amp;#39;s third or fourth largest insect collection. It is the best collection of Ontario insects, including many irreplaceable specimens of extirpated species.</para>
+    </abstract>
+        <keywordSet>
+              <keyword>Occurrence</keyword>
+              <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+              <keyword>Specimen</keyword>
+              <keywordThesaurus>GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+              <keyword>Canada</keyword>
+              <keyword>specimens</keyword>
+              <keyword>DEBU</keyword>
+              <keyword>collection</keyword>
+              <keyword>University of Guelph Insect Collection</keyword>
+              <keyword>Canadensys</keyword>
+              <keyword>Ontario</keyword>
+              <keywordThesaurus>n/a</keywordThesaurus>
+        </keywordSet>
+      <intellectualRights>
+        <para>To the extent possible under law, the publisher has waived all rights to these data and has dedicated them to the <ulink url="http://creativecommons.org/publicdomain/zero/1.0/legalcode"><citetitle>Public Domain (CC0 1.0)</citetitle></ulink>. Users may copy, modify, distribute and use the work, including for commercial purposes, without restriction.</para>
+      </intellectualRights>
+      <distribution scope="document">
+          <online>
+              <url function="information">http://www.uoguelph.ca/debu/</url>
+          </online>
+      </distribution>
+      <coverage>
+            <geographicCoverage>
+                  <geographicDescription>The University of Guelph Insect Collection houses material from around the world with an emphasis on the Ontario insect fauna, and the Nearctic and Neotropical Diptera.</geographicDescription>
+                  <boundingCoordinates>
+                      <westBoundingCoordinate>-180</westBoundingCoordinate>
+                      <eastBoundingCoordinate>180</eastBoundingCoordinate>
+                      <northBoundingCoordinate>90</northBoundingCoordinate>
+                      <southBoundingCoordinate>-90</southBoundingCoordinate>
+                  </boundingCoordinates>
+            </geographicCoverage>
+      </coverage>
+      <maintenance>
+          <description>
+              <para></para>
+          </description>
+          <maintenanceUpdateFrequency>unkown</maintenanceUpdateFrequency>
+      </maintenance>
+      <contact>
+    <individualName>
+<givenName>Steve</givenName>          <surName>Marshall</surName>
+    </individualName>
+<organizationName>University of Guelph</organizationName><positionName>Collection Director</positionName>    <address>
+<city>Guelph</city><administrativeArea>Ontario</administrativeArea><country>CANADA</country>    </address>
+<phone>519-824-4120 ext. 52582</phone><electronicMailAddress>samarsha@uoguelph.ca</electronicMailAddress><onlineUrl>http://www.uoguelph.ca/debu/index.htm</onlineUrl>      </contact>
+
+</dataset>
+
+<additionalMetadata>
+    <metadata>
+      <gbif>
+        <dateStamp>2021-05-28T13:38:43Z</dateStamp>
+      <citation identifier="doi:10.5886/4pp2vt5a">Paiero S, Paiero S (2017). University of Guelph Insect Collection (DEBU). Version 2.2. University of Guelph. Occurrence dataset https://doi.org/10.5886/4pp2vt5a accessed via GBIF.org on 2021-05-28.</citation>
+              <physical>
+                  <objectName>Canadensys explorer</objectName>
+                  <characterEncoding>UTF-8</characterEncoding>
+                  <dataFormat>
+                      <externallyDefinedFormat>
+                          <formatName>HTML</formatName>
+                      </externallyDefinedFormat>
+                  </dataFormat>
+                  <distribution>
+                      <online>
+                          <url function="download">http://data.canadensys.net/explorer/en/resources/debu-specimens</url>
+                      </online>
+                  </distribution>
+              </physical>
+              <physical>
+                  <objectName>GBIF data portal</objectName>
+                  <characterEncoding>UTF-8</characterEncoding>
+                  <dataFormat>
+                      <externallyDefinedFormat>
+                          <formatName>HTML</formatName>
+                      </externallyDefinedFormat>
+                  </dataFormat>
+                  <distribution>
+                      <online>
+                          <url function="download">http://www.gbif.org/dataset/103fa8e2-5be7-402c-b147-708d0755d9b0</url>
+                      </online>
+                  </distribution>
+              </physical>
+              <physical>
+                  <objectName>University of Guelph Insect Collection (DEBU)</objectName>
+                  <characterEncoding>UTF-8</characterEncoding>
+                  <dataFormat>
+                      <externallyDefinedFormat>
+                          <formatName>HTML</formatName>
+                      </externallyDefinedFormat>
+                  </dataFormat>
+                  <distribution>
+                      <online>
+                          <url function="download">http://www.uoguelph.ca/debu/</url>
+                      </online>
+                  </distribution>
+              </physical>
+        </gbif>
+    </metadata>
+</additionalMetadata>
+
+</eml:eml>

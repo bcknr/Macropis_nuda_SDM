@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.1/eml.xsd"
+        packageId="10.15468/dl.eybtdf"  system="http://gbif.org" scope="system"
+  xml:lang="en">
+
+<dataset>
+        <alternateIdentifier>0288695-200613084148143</alternateIdentifier>
+    <title>GBIF Occurrence Download 10.15468/dl.eybtdf</title>
+    <creator>
+    <individualName>
+          <surName>GBIF Download Service</surName>
+    </individualName>
+<electronicMailAddress>support@gbif.org</electronicMailAddress>    </creator>
+    <metadataProvider>
+    <individualName>
+          <surName>GBIF Download Service</surName>
+    </individualName>
+<electronicMailAddress>support@gbif.org</electronicMailAddress>    </metadataProvider>
+      <pubDate>
+      2021-05-28
+      </pubDate>
+    <language>ENGLISH</language>
+    <abstract>
+        <para>A dataset containing all occurrences available in GBIF matching the query:
+{
+  &quot;and&quot; : [
+    &quot;HasCoordinate is true&quot;,
+    &quot;HasGeospatialIssue is false&quot;,
+    &quot;TaxonKey is Dufourea novaeangliae (Robertson, 1897)&quot;
+  ]
+}
+The dataset includes records from the following constituent datasets. The full metadata for each constituent is also included in this archive:
+1 records from CEPANN - Coleção Entomológica Paulo Nogueira-Neto - IB/USP
+1 records from USGS PWRC - Native Bee Inventory and Monitoring Lab (BIML)
+1 records from Vermont Bee Records Collected by John Ascher
+1 records from University of Guelph Insect Collection (DEBU)
+1 records from Essig Museum of Entomology
+5 records from University of New Hamsphire Collection of Insects and other Arthropods
+10 records from Centre for Biodiversity Genomics - Canadian Specimens
+10 records from NMNH_material_samples
+10 records from iNaturalist Research-grade Observations
+12 records from Geographically tagged INSDC sequences
+12 records from Leif Richardson Vermont Bee Specimens
+12 records from Illinois Natural History Survey Insect Collection
+13 records from Snow Entomological Museum Collection
+13 records from International Barcode of Life project (iBOL)
+18 records from hymenoptera
+24 records from Museum of Comparative Zoology, Harvard University
+259 records from Bee Biology and Systematics Laboratory
+</para>
+    </abstract>
+      <contact>
+    <individualName>
+          <surName>GBIF Download Service</surName>
+    </individualName>
+<electronicMailAddress>support@gbif.org</electronicMailAddress>      </contact>
+
+</dataset>
+
+<additionalMetadata>
+    <metadata>
+      <gbif>
+        <dateStamp>2021-05-28T13:38:44Z</dateStamp>
+      <citation identifier="10.15468/dl.eybtdf">GBIF Occurrence Download 10.15468/dl.eybtdf</citation>
+              <physical>
+                  <objectName>Darwin Core Archive</objectName>
+                  <characterEncoding>UTF-8</characterEncoding>
+                  <dataFormat>
+                      <externallyDefinedFormat>
+                          <formatName>Darwin Core Archive</formatName>
+                      </externallyDefinedFormat>
+                  </dataFormat>
+                  <distribution>
+                      <online>
+                          <url function="download">https://api.gbif.org/v1/occurrence/download/request/0288695-200613084148143.zip</url>
+                      </online>
+                  </distribution>
+              </physical>
+        </gbif>
+    </metadata>
+</additionalMetadata>
+
+</eml:eml>
