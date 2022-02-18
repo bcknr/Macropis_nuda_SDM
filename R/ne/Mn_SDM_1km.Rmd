@@ -1,0 +1,247 @@
+---
+title: "Macropis Nuda SDM | MaxEnt"
+author: "Mark Buckner"
+date: "`r Sys.Date()`"
+output: 
+  github_document:
+    toc: true
+    toc_depth: 3
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r Load pkgs, message=FALSE}
+library(spatial)
+library(rgdal)
+library(ENMeval, attach.required = T)
+library(rmaxent)
+library(raster)
+library(tidyverse)
+library(lubridate)
+library(knitr)
+```
+
+### Load Occurance Data and Predictors
+
+Occurrence and predictor data processed in `occ_pred_data_1km.Rmd`. Occurrence data needs to have the unique identifiers removed and projected to the project projection (`+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs`) to create a `matrix array`. The predictors are described below.
+
+Bioclimatic variables (USGS descriptions available [here](https://pubs.usgs.gov/ds/691/ds691.pdf))
+
+ - Bio 1 : Mean Annual Temperature
+ - Bio 2 : Annual Mean Diurnal Range
+ - Bio 3 : Isothermality 
+ - Bio 4 : Temperature Seasonality
+ - Bio 5 : Max Temperature of Warmest Month
+ - Bio 7 : Annual Temperature Range
+ - Bio 8 : Mean Temperature of Wettest Quarter
+ - Bio 9 : Mean Temperature of Driest Quarter
+ - Bio 10 : Mean Temperature of Warmest Quarter
+ - Bio 11 : Mean Temperature of Coldest Quarter
+ - Bio 12 : Annual Precipitation
+ - Bio 13 : Precipitation of Wettest Month
+ - Bio 14 : Precipitation of Driest Month
+ - Bio 15 : Precipitation Seasonality
+ - Bio 16 : Precipitation of Wettest Quarter
+ - Bio 17 : Precipitation of Driest Quarter
+ - Bio 18 : Precipitation of Warmest Quarter
+ - Bio 19 : Precipitation of Coldest Quarter
+ 
+Topographical and soils data
+
+ - DEM : Elevation in m
+ - Proximity to Water : Arbitrary 
+ - Soil Water Content : 0cm depth
+ - Soil Sand Content : 0cm depth
+ 
+Host Plant
+
+ - 1km resolution *Lysimachia ciliata* SDM
+ - 1km resolution *Apocynum androsaemifolium* SDM (Commonly visits to nectar)
+
+```{r Occ and pred, message=FALSE}
+#Predictors
+#env <- stackOpen("../../pred/pred_stack_ne/stack")
+env <- stack("../../pred/pred_stack_ne/baseline.tif")
+names(env) <- c(paste("bio", seq(1,19), sep = ""), "dem", "wprox", "sand", "h20")
+
+lc <- raster("../../pred/out/Lc/Lc_SDM_ME_1km.tif")
+aa <- raster("../../pred/out/Aa/Aa_SDM_ME_1km.tif")
+
+env <- addLayer(env, lc, aa)
+
+plot(env[[1:12]])
+plot(env[[13:nlayers(env)]])
+
+#Occurrences
+occ <- read_csv("../../occ/Mn_NE70.csv")
+
+occs <- select(occ, lat, lon)
+occs <- rgdal::project(as.matrix(occs[,c("lon","lat")]), proj = "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs")
+
+plot(env[[1]], main="Mean ann. temp. | M. nuda Occ.")
+points(occs, pch = 16, cex = 0.5)
+
+
+#Load spThin dataset from Lc_Mn_SDM_1km_RF.Rmd
+occs <- read_csv("../../occ/Mn_NE_thinned_full/Mn_ne_thinned_thin1.csv") %>% 
+  select(lat,lon)
+  
+occs <- rgdal::project(as.matrix(occs[,c("lon","lat")]), proj = "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs")
+
+plot(env[[1]], main="Mean ann. temp. | M. nuda Occ.")
+points(occs, pch = 16, cex = 0.5)
+```
+
+### MESS
+
+```{r MESS, message=FALSE}
+occs.z <- raster::extract(env, occs)
+occs.sim <- similarity(env, occs.z)
+occs.mess <- occs.sim$similarity_min
+occs.sp <- sp::SpatialPoints(occs)
+
+myScale <- seq(cellStats(occs.mess, min), cellStats(occs.mess, max), length.out = 100)
+rasterVis::levelplot(occs.mess, main = "Environmental similarity", at = myScale, margin = FALSE) + 
+  latticeExtra::layer(sp.points(occs.sp, col="black"))
+```
+
+### Random Background Points
+
+```{r Bkg points}
+(points <- sum(!is.na(getValues(env[[1]])))*0.15)
+bg <- dismo::randomPoints(env, n = round(points)) %>% as.data.frame()
+colnames(bg) <- colnames(occs)
+
+plot(env[[1]])
+points(bg, pch = 20, cex = 0.3)
+```
+
+### Partition for Model Evaluation
+
+```{r partition, message=FALSE}
+block <- get.block(occs, bg)
+
+evalplot.grps(pts = occs, pts.grp = block$occs.grp, envs = env) + 
+  ggplot2::ggtitle("Spatial Block partitions: occurrences")
+```
+
+### Env. Similarity of Partions
+
+```{r Env Sim}
+occs.z <- cbind(occs, raster::extract(env, occs))
+bg.z <- cbind(bg, raster::extract(env, bg))
+evalplot.envSim.hist(sim.type = "mess", ref.data = "occs", occs.z = occs.z, bg.z = bg.z, 
+                     occs.grp = block$occs.grp, bg.grp = block$bg.grp)
+
+#evalplot.envSim.hist(sim.type = "most_diff", ref.data = "occs", occs.z = occs.z, bg.z = bg.z, 
+#                     occs.grp = block$occs.grp, bg.grp = block$bg.grp)
+
+evalplot.envSim.map(sim.type = "mess", ref.data = "occs", envs = env, occs.z = occs.z, 
+                    bg.z = bg.z, occs.grp = block$occs.grp, bg.grp = block$bg.grp, bb.buf = 7)
+```
+
+### Tune model
+
+```{r Tune}
+library(rJava)
+
+e.mx <- ENMevaluate(occs = occs, envs = env, bg = bg, 
+                    algorithm = 'maxent.jar', partitions = 'block', parallel = TRUE, 
+                    tune.args = list(fc = c("L","LQ","LQH","H"), rm = 1:5))
+
+e.mx
+```
+
+### Model turning results and Selection
+
+```{r model selection}
+evalplot.stats(e = e.mx, stats = c("AICc"), color = "fc", x.var = "rm", 
+               error.bars = FALSE)
+
+evalplot.stats(e = e.mx, stats = c("auc.val"), color = "fc", x.var = "rm", 
+               error.bars = FALSE)
+```
+
+```{r AICc}
+res <- eval.results(e.mx)
+kable(res)
+
+opt.aicc <- res %>% 
+  filter(delta.AICc <= 2) %>% 
+  slice_max(auc.val.avg)
+kable(opt.aicc)
+```
+
+```{r Resp curves, message=FALSE}
+par(mar = c(1, 1, 1, 1))
+dismo::response(eval.models(e.mx)[[opt.aicc$tune.args]])
+plot(eval.models(e.mx)[[opt.aicc$tune.args]])
+```
+
+### Prediction
+
+```{r Prediction, message = FALSE}
+pred.seq <- eval.predictions(e.mx)[[opt.aicc$tune.args]]
+plot(pred.seq)
+
+writeRaster(pred.seq, "../../pred/out/Mn/Mn_SDM_ME_1km.tif", overwrite = TRUE)
+```
+
+
+### Threshold
+
+```{r Thresh func}
+#Function code: https://babichmorrowc.github.io/post/2019-04-12-sdm-threshold/
+sdm_threshold <- function(sdm, occs, type = "mtp", binary = FALSE){
+  occPredVals <- raster::extract(sdm, occs)
+  if(type == "mtp"){
+    thresh <- min(na.omit(occPredVals))
+  } else if(type == "p10"){
+    if(length(occPredVals) < 10){
+      p10 <- floor(length(occPredVals) * 0.9)
+    } else {
+      p10 <- ceiling(length(occPredVals) * 0.9)
+    }
+    thresh <- rev(sort(occPredVals))[p10]
+  }
+  sdm_thresh <- sdm
+  sdm_thresh[sdm_thresh < thresh] <- NA
+  if(binary){
+    sdm_thresh[sdm_thresh >= thresh] <- 1
+  }
+  return(sdm_thresh)
+}
+```
+
+### Minimum training presence 
+
+```{r MTP}
+mtp <- sdm_threshold(pred.seq, occs, type = "mtp")
+plot(mtp)
+
+writeRaster(mtp, "../../pred/out/Mn/Mn_SDM_ME_1km_mtp.tif", overwrite = TRUE)
+```
+
+### 10th percentile training presence
+
+```{r}
+p10 <- sdm_threshold(pred.seq, occs, type = "p10")
+plot(p10)
+
+p10.b <- sdm_threshold(pred.seq, occs, type = "p10", binary = TRUE)
+plot(p10.b)
+
+writeRaster(p10, "../../pred/out/Mn/Mn_SDM_ME_1km_p10.tif", overwrite = TRUE)
+```
+
+
+
+
+
+
+
+
+
+

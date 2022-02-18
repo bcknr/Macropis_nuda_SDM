@@ -1,0 +1,572 @@
+---
+title: "Macropis nuda | Range-wide distribution under future climate projections"
+author: "Mark Buckner"
+date: "`r Sys.Date()`"
+output: 
+  github_document:
+    toc: true
+    toc_depth: 3
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#### Packages
+```{r Load pkgs, message=FALSE}
+library(spatial)
+library(rgdal)
+library(spThin)
+library(ENMeval, attach.required = T)
+library(rmaxent)
+library(raster)
+library(tidyverse)
+library(lubridate)
+library(mapdata)
+library(rJava)
+library(knitr)
+```
+
+#### Functions
+```{r Functions}
+#Function code: https://babichmorrowc.github.io/post/2019-04-12-sdm-threshold/
+sdm_threshold <- function(sdm, occs, type = "mtp", binary = FALSE){
+  occPredVals <- raster::extract(sdm, occs)
+  if(type == "mtp"){
+    thresh <- min(na.omit(occPredVals))
+  } else if(type == "p10"){
+    if(length(occPredVals) < 10){
+      p10 <- floor(length(occPredVals) * 0.9)
+    } else {
+      p10 <- ceiling(length(occPredVals) * 0.9)
+    }
+    thresh <- rev(sort(occPredVals))[p10]
+  }
+  sdm_thresh <- sdm
+  sdm_thresh[sdm_thresh < thresh] <- NA
+  if(binary){
+    sdm_thresh[sdm_thresh >= thresh] <- 1
+  }
+  return(sdm_thresh)
+}
+
+#futurePred() : Predicts distribution over a certain model raster stack and plots output. Written to be used with list.files() and sapply().
+#file = file name of raster stack; model = training model; envnames = names of predictor layers, vector; host = (optional) two letter abbr. of host, character; drop = names of layers to drop from final raster stack, vector.
+futurePred <- function(file, model, envnames, host, drop) {
+  path <- paste("./", file, sep = "")
+  m <- str_extract(file, "_.*_")
+  m <- str_sub(m, 2, -2)
+  
+  if(missing(host)) {
+    r <- stack(path)
+  } else {
+    yr <- str_extract(file, "\\d+")
+    ssp <- str_extract(file, "ssp.*")
+    hpath <- paste("../out/", host, "/", host, "_SDM_ME_rw_mean20", yr, ssp, sep = "")
+    r <- stack(path, hpath)
+  }
+  
+  names(r) <- envnames
+  
+  if(!missing(drop)) {
+    r <- dropLayer(r, drop)
+  }
+  
+  pred <- predict(model, r)
+  
+  plot(pred, main = m)
+  map('worldHires', fill=FALSE, add=TRUE, xlim = c(-127.75, -55), ylim = c(30.83333, 62.25), lforce = "e")
+  
+  return(pred)
+}
+
+#futureSave() : Calculates the mean distribution for all models at a particular time and ssp, saves results of mean and p10 threshold, and plots.
+#pred = mean prediction; spp = two letter species name abbr., character; year = YYYY; ssp = CMIP6 scenario
+futureSave <- function(pred, spp, year, ssp, thres) {
+  pred.s <- stack(pred)
+  pred.m <- calc(pred.s, mean)
+
+  plot(pred.m, main = paste(year, ssp, "mean", sep = "_"))
+  map('worldHires', fill=FALSE, add=TRUE, xlim = c(-127.75, -55), ylim = c(30.83333, 62.25), lforce = "e")
+  
+  name <- paste("../../pred/out/",spp, "/", spp, "_SDM_ME_rw_", "mean", year, ssp, ".tif", sep = "")
+  
+  writeRaster(pred.m, filename = name, options="INTERLEAVE=BAND", overwrite=TRUE)
+
+  #10th percentile training presence
+  if(!missing(thres)) {
+    p10 <- pred.m
+    p10[p10 < thres] <- NA 
+    plot(p10, main = paste(year, ssp, "p10", sep = "_"))
+    map('worldHires', fill=FALSE, add=TRUE, xlim = c(-127.75, -55), ylim = c(30.83333, 62.25), lforce = "e")
+  
+    name <- paste("../../pred/out/",spp, "/", spp, "_SDM_ME_rw_", "p10_", year, ssp, ".tif", sep = "")
+  
+    writeRaster(p10, filename = name, options="INTERLEAVE=BAND", overwrite=TRUE)
+  }
+}
+```
+
+## Load Occurance Data and Predictors
+
+Occurrence and predictor data processed in `occ_pred_data_NA.Rmd`. Occurrence data needs to have the unnecessary fields removed and projected to the project projection (`+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs`) to create a `matrix array`. 
+
+```{r occ, message=FALSE}
+#Occurrences
+occ <- read_csv("../../occ/Mn_RW70.csv")
+
+occs <- select(occ, lat, lon) %>% 
+  mutate("spp" = "Mc")
+
+occp <- rgdal::project(as.matrix(occs[,c("lon","lat")]), proj = "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs")
+```
+
+
+The predictors are described below. Only bold predictors are included after accounting for collinearity. All other variables were highly correlated (r > 0.7) with one of the other variables and were excluded. Variables were chosen based on the network of correlation and the perceived importance.
+
+Bioclimatic variables (USGS descriptions available [here](https://pubs.usgs.gov/ds/691/ds691.pdf))
+
+ - Bio 1 : Mean Annual Temperature
+ - Bio 2 : Annual Mean Diurnal Range
+ - Bio 3 : Isothermality 
+ - **Bio 4 : Temperature Seasonality**
+ - Bio 5 : Max Temperature of Warmest Month
+ - Bio 7 : Annual Temperature Range
+ - **Bio 8 : Mean Temperature of Wettest Quarter**
+ - Bio 9 : Mean Temperature of Driest Quarter
+ - **Bio 10 : Mean Temperature of Warmest Quarter**
+ - Bio 11 : Mean Temperature of Coldest Quarter
+ - **Bio 12 : Annual Precipitation**
+ - Bio 13 : Precipitation of Wettest Month
+ - Bio 14 : Precipitation of Driest Month
+ - **Bio 15 : Precipitation Seasonality**
+ - Bio 16 : Precipitation of Wettest Quarter
+ - Bio 17 : Precipitation of Driest Quarter
+ - **Bio 18 : Precipitation of Warmest Quarter**
+ - Bio 19 : Precipitation of Coldest Quarter
+ 
+Topography
+
+ - **DEM : SRTM at 5 arc-minute resolution downloaded from WorldClim**
+ 
+Other
+
+ - Solar Radiation : Mean solar radiation during meteorological summer (June, July, August)
+ - **Soil Sand Content : Soil sand content (%) at 0cm of depth**
+ - **Soil Clay Content : Soil clay content (%) at 0cm of depth**
+ 
+Host Plant Distribution
+
+ - Lc_sdm : *Lysimachia ciliata* distribution model (see: Lc_SDM_rw.Rmd)
+
+General Circulation Models (GCMs)
+
+ - bcc    : BCC-CSM2-MR | [Beijing Climate Center Climate System Model](https://gmd.copernicus.org/articles/12/1573/2019/)
+ - cnrm_c : CNRM-CM6-1 | [CNRM/CERFACS](http://www.umr-cnrm.fr/cmip6/spip.php?article11)
+ - cnrm_e : CNRM-ESM2-1 | [CNRM/CERFACS](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019MS001791)
+ - can    : CanESM5 | [Canadian Earth System Model](https://gmd.copernicus.org/articles/12/4823/2019/gmd-12-4823-2019.html)
+ - ipsl   : IPSL-CM6A-LR | [Institut Pierre-Simon Laplace](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019MS002010)
+ - miroc  : MIROC-ES2L | [https://gmd.copernicus.org/articles/13/2197/2020/](https://gmd.copernicus.org/articles/13/2197/2020/)
+ - miroc6 : MIROC6 | [https://gmd.copernicus.org/articles/12/2727/2019/](https://gmd.copernicus.org/articles/12/2727/2019/)
+ - mri    : MRI-ESM2-0 | [Meteorological Research Institute](https://www.jstage.jst.go.jp/article/jmsj/advpub/0/advpub_2019-051/_article/-char/en)
+ 
+
+```{r pred, message = FALSE}
+env <- stack("../../pred/pred_stack_rw/baseline.tif")
+
+envnames <- c("bio4", "bio8", "bio10", "bio12", "bio15", "bio18", "dem", "sand", "clay", "pH")
+
+names(env) <- envnames
+
+env <- dropLayer(env, "pH")
+
+plot(env[[1:nlayers(env)]])
+```
+
+```{r occ plot}
+plot(env[[1]], main="Mean ann. temp. | M. nuda Occ.")
+points(occp, pch = 16, cex = 0.5)
+```
+
+### Spatial Thinning
+
+```{r spThin, eval=FALSE}
+thinned <-
+  thin( loc.data = occs, 
+        lat.col = "lat", long.col = "lon", 
+        spec.col = "spp", 
+        thin.par = 10, reps = 100, 
+        locs.thinned.list.return = TRUE, 
+        write.files = TRUE, 
+        max.files = 5, 
+        out.dir = "../../occ/Mn_thinned_full/", out.base = "Mn_thinned", 
+        write.log.file = TRUE,
+        log.file = "Mn_thinned_full_log_file.txt" )
+
+plotThin(thinned)
+```
+
+```{r load thin, message=FALSE}
+#Load thinned dataset in place of original
+occs <- read_csv("../../occ/Mn_thinned_full/Mn_thinned_thin1.csv") %>% 
+  select(lat,lon)
+  
+occs <- rgdal::project(as.matrix(occs[,c("lon","lat")]), proj = "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs")
+```
+
+After thinning we are left with `r nrow(occs)` occurrences.
+
+## MESS
+
+```{r MESS, message = FALSE, warning=FALSE}
+occs.z <- raster::extract(env, occs)
+occs.sim <- similarity(env, occs.z)
+occs.mess <- occs.sim$similarity_min
+occs.sp <- sp::SpatialPoints(occs)
+
+myScale <- seq(cellStats(occs.mess, min), cellStats(occs.mess, max), length.out = 100)
+rasterVis::levelplot(occs.mess, main = "Environmental similarity", at = myScale, margin = FALSE) + 
+  latticeExtra::layer(sp.points(occs.sp, col="black"))
+```
+
+### Random Background Points
+
+```{r Bkg points}
+(points <- sum(!is.na(getValues(env[[1]])))*0.4)
+
+
+bg <- dismo::randomPoints(env, n = round(points)) %>% as.data.frame()
+colnames(bg) <- colnames(occs)
+
+plot(env[[1]], main="Mean ann. temp. | Background Points")
+points(bg, pch = 20, cex = 0.05)
+```
+
+### Partition for Model Evaluation
+
+```{r partition, message=FALSE}
+block <- get.block(occs, bg)
+table(block$occs.grp)
+
+evalplot.grps(pts = occs, pts.grp = block$occs.grp, envs = env) + 
+  ggplot2::ggtitle("Block partitions: occurrences")
+```
+
+
+### Env. Similarity of Partions
+
+```{r Env Sim, message=FALSE, warning=FALSE}
+occs.z <- cbind(occs, raster::extract(env, occs))
+bg.z <- cbind(bg, raster::extract(env, bg))
+evalplot.envSim.hist(sim.type = "mess", ref.data = "occs", occs.z = occs.z, bg.z = bg.z, 
+                     occs.grp = block$occs.grp, bg.grp = block$bg.grp)
+
+evalplot.envSim.hist(sim.type = "most_diff", ref.data = "occs", occs.z = occs.z, bg.z = bg.z, 
+                     occs.grp = block$occs.grp, bg.grp = block$bg.grp)
+
+evalplot.envSim.map(sim.type = "mess", ref.data = "occs", envs = env, occs.z = occs.z, 
+                    bg.z = bg.z, occs.grp = block$occs.grp, bg.grp = block$bg.grp, bb.buf = 7)
+```
+
+### Tune model
+
+```{r Tune}
+e.mx <- ENMevaluate(occs = occs, envs = env, bg = bg, 
+                    algorithm = 'maxent.jar', partitions = 'block', parallel = TRUE, 
+                    tune.args = list(fc = c("L","LQ","LQH","H"), rm = 1:10))
+
+e.mx
+```
+
+### Model turning results and Selection
+
+```{r model selection}
+evalplot.stats(e = e.mx, stats = c("AICc"), color = "fc", x.var = "rm", 
+               error.bars = FALSE)
+
+evalplot.stats(e = e.mx, stats = c("auc.val"), color = "fc", x.var = "rm", 
+               error.bars = FALSE)
+```
+
+
+```{r AICc}
+res <- eval.results(e.mx)
+kable(res)
+
+opt.aicc <- res %>% 
+  filter(delta.AICc <= 2) %>% 
+  slice_max(auc.val.avg)
+kable(opt.aicc)
+```
+
+```{r Resp curves, out.width = '100%', message=FALSE}
+par(mar = c(4, 2, 0.5, 1)) 
+dismo::response(eval.models(e.mx)[[opt.aicc$tune.args]])
+par(mar = c(4, 2, 1, 1)) 
+plot(eval.models(e.mx)[[opt.aicc$tune.args]])
+par(mar = c(5.1, 4.1, 4.1, 2.1))
+```
+
+### Prediction
+
+```{r Prediction}
+pred.seq <- eval.predictions(e.mx)[[opt.aicc$tune.args]]
+plot(pred.seq)
+map('worldHires', fill=FALSE, add=TRUE, xlim = c(-127.75, -55), ylim = c(30.83333, 62.25), lforce = "e")
+
+writeRaster(pred.seq, "../../pred/out/Mn/Mn_SDM_ME_rw_baseline_np.tif", overwrite = TRUE)
+```
+
+### Threshold
+
+#### Minimum training presence 
+
+
+
+```{r MTP, eval=FALSE}
+mtp <- sdm_threshold(pred.seq, occs, type = "mtp")
+plot(mtp)
+map('worldHires', fill=FALSE, add=TRUE, xlim = c(-127.75, -55), ylim = c(30.83333, 62.25), lforce = "e")
+
+writeRaster(mtp, "../../pred/out/Mn/Mn_SDM_ME_rw_mtp_baseline_np.tif", overwrite = TRUE)
+```
+
+#### 10th percentile training presence
+
+```{r baseline p10}
+p10 <- sdm_threshold(pred.seq, occs, type = "p10")
+plot(p10)
+map('worldHires', fill=FALSE, add=TRUE, xlim = c(-127.75, -55), ylim = c(30.83333, 62.25), lforce = "e")
+
+p10.b <- sdm_threshold(pred.seq, occs, type = "p10", binary = TRUE)
+plot(p10.b)
+map('worldHires', fill=FALSE, add=TRUE, xlim = c(-127.75, -55), ylim = c(30.83333, 62.25), lforce = "e")
+
+writeRaster(p10, "../../pred/out/Mn/Mn_SDM_ME_rw_p10_baseline_np.tif", overwrite = TRUE)
+```
+
+### Future Climate Models
+
+```{r}
+for (i in 1:length(e.mx@models)) {
+  if(names(e.mx@models[i]) == as.character(opt.aicc[,3])) {
+    model <- e.mx@models[[i]]
+    print(paste("Opt. model : ", names(e.mx@models[i]), sep = ""))
+  }
+}
+
+(thres <- min(na.omit(as.vector(p10))))
+
+```
+
+#### 2041 - 2060
+
+##### 2050 | ssp126
+
+```{r 2050ssp126, warning = FALSE}
+setwd("../../pred/pred_stack_rw/")
+mdls <- list.files(pattern = "50.*ssp126.tif")
+
+par(mfrow = c(2,4))
+pred <- sapply(mdls, futurePred, envnames = envnames, model = model, drop = "pH")
+par(mfrow = c(1,1))
+```
+
+##### 2050 | ssp126 | Mean and Threshold
+
+```{r 2050ssp126 mean}
+futureSave(pred, "Mn", "2050", "ssp126_np", thres = thres)
+```
+
+##### 2050 | ssp245
+
+```{r 2050ssp245, warning = FALSE}
+setwd("../../pred/pred_stack_rw/")
+mdls <- list.files(pattern = "50.*ssp245.tif")
+
+par(mfrow = c(2,4))
+pred <- sapply(mdls, futurePred, envnames = envnames, model = model, drop = "pH")
+par(mfrow = c(1,1))
+```
+
+##### 2050 | ssp245 | Mean and Threshold
+
+```{r 2050ssp245 mean}
+futureSave(pred, "Mn", "2050", "ssp245_np", thres = thres)
+```
+
+##### 2050 | ssp370
+
+```{r 2050ssp370, warning = FALSE}
+setwd("../../pred/pred_stack_rw/")
+mdls <- list.files(pattern = "50.*ssp370.tif")
+
+par(mfrow = c(2,4))
+pred <- sapply(mdls, futurePred, envnames = envnames, model = model, drop = "pH")
+par(mfrow = c(1,1))
+```
+
+##### 2050 | ssp370 | Mean and Threshold
+
+```{r 2050ssp370 mean}
+futureSave(pred, "Mn", "2050", "ssp370_np", thres = thres)
+```
+
+##### 2050 | ssp585
+
+```{r 2050ssp585, warning = FALSE}
+setwd("../../pred/pred_stack_rw/")
+mdls <- list.files(pattern = "50.*ssp585.tif")
+
+par(mfrow = c(2,4))
+pred <- sapply(mdls, futurePred, envnames = envnames, model = model, drop = "pH")
+par(mfrow = c(1,1))
+```
+
+##### 2050 | ssp585 | Mean and Threshold
+
+```{r 2050ssp585 mean}
+futureSave(pred, "Mn", "2050", "ssp585_np", thres = thres)
+```
+
+
+#### 2081 - 2100
+
+##### 2090 | ssp126
+
+```{r 2090ssp126, warning = FALSE}
+setwd("../../pred/pred_stack_rw/")
+mdls <- list.files(pattern = "90.*ssp126.tif")
+
+par(mfrow = c(2,4))
+pred <- sapply(mdls, futurePred, envnames = envnames, model = model, drop = "pH")
+par(mfrow = c(1,1))
+```
+
+
+```{r, eval=FALSE, include=FALSE}
+bbc <- stack("../../Data/Pred/wc5_future/2090_ssp126/bbc_126_90.tif")
+names(bbc) <- names(env)
+bbc.p <- predict(eval.models(e.mx)[[opt.aicc$tune.args]], bbc)
+plot(bbc.p)
+map('worldHires', fill=FALSE, add=TRUE)
+
+
+cnrm_c <- stack("../../Data/Pred/wc5_future/2090_ssp126/cnrm_c_126_90.tif")
+names(cnrm_c) <- names(env)
+cnrm_c.p <- predict(e.mx@models$fc.H_rm.1, cnrm_c)
+plot(cnrm_c.p)
+map('worldHires', fill=FALSE, add=TRUE)
+
+cnrm_e <- stack("../../Data/Pred/wc5_future/2090_ssp126/cnrm_e_126_90.tif")
+names(cnrm_e) <- names(env)
+cnrm_e.p <- predict(e.mx@models$fc.H_rm.1, cnrm_e)
+plot(cnrm_e.p)
+map('worldHires', fill=FALSE, add=TRUE)
+
+can <- stack("../../Data/Pred/wc5_future/2090_ssp126/can_126_90.tif")
+names(can) <- names(env)
+can.p <- predict(e.mx@models$fc.H_rm.1, can)
+plot(can.p)
+map('worldHires', fill=FALSE, add=TRUE)
+
+
+ipsl <- stack("../../Data/Pred/wc5_future/2090_ssp126/ipsl_126_90.tif")
+names(ipsl) <- names(env)
+ipsl.p <- predict(e.mx@models$fc.H_rm.1, ipsl)
+plot(ipsl.p)
+map('worldHires', fill=FALSE, add=TRUE)
+
+
+miroc <- stack("../../Data/Pred/wc5_future/2090_ssp126/miroc_126_90.tif")
+names(miroc) <- names(env)
+miroc.p <- predict(e.mx@models$fc.H_rm.1, miroc)
+plot(miroc.p)
+map('worldHires', fill=FALSE, add=TRUE)
+
+
+miroc6 <- stack("../../Data/Pred/wc5_future/2090_ssp126/miroc6_126_90.tif")
+names(miroc6) <- names(env)
+miroc6.p <- predict(e.mx@models$fc.H_rm.1, miroc6)
+plot(miroc6.p)
+map('worldHires', fill=FALSE, add=TRUE)
+
+
+mri <- stack("../../Data/Pred/wc5_future/2090_ssp126/mri_126_90.tif")
+names(mri) <- names(env)
+mri.p <- predict(e.mx@models$fc.H_rm.1, mri)
+plot(mri.p)
+map('worldHires', fill=FALSE, add=TRUE)
+```
+
+##### 2090 | ssp126 | Mean and Threshold
+
+```{r 2090ssp126 mean}
+futureSave(pred, "Mn", "2090", "ssp126_np", thres = thres)
+```
+
+
+```{r, eval=FALSE, include=FALSE}
+pred.s <- stack(pred)
+pred.m <- calc(pred.s, mean)
+
+plot(pred.m)
+map('worldHires', fill=FALSE, add=TRUE)
+
+p10 <- sdm_threshold(pred.m, occs, type = "p10")
+plot(p10)
+map('worldHires', fill=FALSE, add=TRUE)
+```
+
+##### 2090 | ssp245
+
+```{r 2090ssp245, warning = FALSE}
+setwd("../../pred/pred_stack_rw/")
+mdls <- list.files(pattern = "90.*ssp245.tif")
+
+par(mfrow = c(2,4))
+pred <- sapply(mdls, futurePred, envnames = envnames, model = model, drop = "pH")
+par(mfrow = c(1,1))
+```
+
+##### 2090 | ssp245 | Mean and Threshold
+
+```{r 2090ssp245 mean}
+futureSave(pred, "Mn", "2090", "ssp245_np", thres = thres)
+```
+
+##### 2090 | ssp370
+
+```{r 2090ssp370, warning = FALSE}
+setwd("../../pred/pred_stack_rw/")
+mdls <- list.files(pattern = "90.*ssp370.tif")
+
+par(mfrow = c(2,4))
+pred <- sapply(mdls, futurePred, envnames = envnames, model = model, drop = "pH")
+par(mfrow = c(1,1))
+```
+
+##### 2090 | ssp370 | Mean and Threshold
+
+```{r 2090ssp370 mean}
+futureSave(pred, "Mn", "2090", "ssp370_np", thres = thres)
+```
+
+##### 2090 | ssp585
+
+```{r 2090ssp585, warning = FALSE}
+setwd("../../pred/pred_stack_rw/")
+mdls <- list.files(pattern = "90.*ssp585.tif")
+
+par(mfrow = c(2,4))
+pred <- sapply(mdls, futurePred, envnames = envnames, model = model, drop = "pH")
+par(mfrow = c(1,1))
+```
+
+##### 2090 | ssp585 | Mean and Threshold
+
+```{r 2090ssp585 mean}
+futureSave(pred, "Mn", "2090", "ssp585_np", thres = thres)
+```
+
+
